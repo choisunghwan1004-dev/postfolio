@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 모바일 화면 대응 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <!-- CSS 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+    <!-- ==================================================
+         HEADER
+    ================================================== -->
+
+    <header class="header">
+
+        <div class="logo">
+            MY PORTFOLIO
+        </div>
+
+
+        <nav class="nav">
+
+            <a href="#home">
+                홈
+            </a>
+
+            <a href="#portfolio">
+                포트폴리오
+            </a>
+
+            <a href="#about">
+                소개
+            </a>
+
+        </nav>
+
+
+        <button
+            class="login-button"
+            id="loginButton">
+
+            로그인
+
+        </button>
+
+    </header>
+
+
+
+    <!-- ==================================================
+         MAIN
+    ================================================== -->
+
+    <main>
+
+
+        <!-- ==================================================
+             HERO
+        ================================================== -->
+
+        <section
+            id="home"
+            class="hero">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    MY ASSIGNMENT PORTFOLIO
+                </p>
+
+
+                <h1>
+                    나의 과제물을<br>
+                    <span>포트폴리오</span>로 기록하세요.
+                </h1>
+
+
+                <p class="description">
+
+                    내가 만든 과제와 프로젝트를
+                    한곳에 모아 관리하고 보여줄 수 있습니다.
+
+                </p>
+
+
+                <button
+                    id="openUploadButton"
+                    class="start-button">
+
+                    + 포트폴리오 만들기
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             UPLOAD / CREATE
+        ================================================== -->
+
+        <section
+            id="upload"
+            class="upload-section">
+
+
+            <div class="section-title">
+
+                <p>
+                    CREATE PORTFOLIO
+                </p>
+
+                <h2>
+                    과제물 등록
+                </h2>
+
+                <span>
+                    나의 작품을 등록해 보세요.
+                </span>
+
+            </div>
+
+
+
+            <!-- 등록 폼 -->
+
+            <div class="form-container">
+
+
+                <!-- 제목 -->
+
+                <div class="form-group">
+
+                    <label for="titleInput">
+                        제목
+                    </label>
+
+                    <input
+                        type="text"
+                        id="titleInput"
+                        placeholder="과제물 제목을 입력하세요">
+
+                </div>
+
+
+
+                <!-- 카테고리 -->
+
+                <div class="form-group">
+
+                    <label for="categoryInput">
+                        카테고리
+                    </label>
+
+                    <select id="categoryInput">
+
+                        <option value="html">
+                            HTML
+                        </option>
+
+                        <option value="image">
+                            이미지
+                        </option>
+
+                        <option value="video">
+                            영상
+                        </option>
+
+                        <option value="document">
+                            문서
+                        </option>
+
+                        <option value="other">
+                            기타
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+
+                <!-- 설명 -->
+
+                <div class="form-group">
+
+                    <label for="descriptionInput">
+                        설명
+                    </label>
+
+                    <textarea
+                        id="descriptionInput"
+                        placeholder="과제물에 대한 설명을 입력하세요"></textarea>
+
+                </div>
+
+
+
+                <!-- 파일 -->
+
+                <div class="form-group">
+
+                    <label>
+                        과제물 파일
+                    </label>
+
+
+                    <div
+                        class="drop-zone"
+                        id="dropZone">
+
+                        <div class="upload-icon">
+                            📁
+                        </div>
+
+
+                        <h3>
+                            파일을 선택하세요
+                        </h3>
+
+
+                        <p>
+                            이미지, PDF, 영상, HTML 등
+                        </p>
+
+
+                        <label
+                            for="fileInput"
+                            class="file-button">
+
+                            파일 선택
+
+                        </label>
+
+
+                        <input
+                            type="file"
+                            id="fileInput"
+                            hidden>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- 썸네일 미리보기 -->
+
+                <div
+                    id="previewContainer"
+                    class="preview-container">
+
+                </div>
+
+
+
+                <!-- 버튼 -->
+
+                <div class="form-buttons">
+
+                    <button
+                        id="cancelButton"
+                        class="cancel-button">
+
+                        취소
+
+                    </button>
+
+
+                    <button
+                        id="saveButton"
+                        class="save-button">
+
+                        포트폴리오 등록
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ==================================================
+             PORTFOLIO
+        ================================================== -->
+
+        <section
+            id="portfolio"
+            class="portfolio-section">
+
+
+            <div class="section-title">
+
+                <p>
+                    MY WORK
+                </p>
+
+                <h2>
+                    나의 포트폴리오
+                </h2>
+
+                <span>
+                    등록한 작품을 관리하세요.
+                </span>
+
+            </div>
+
+
+
+            <!-- 검색 -->
+
+            <div class="search-area">
+
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="🔍 포트폴리오 검색">
+
+            </div>
+
+
+
+            <!-- 카테고리 -->
+
+            <div class="category-menu">
+
+
+                <button
+                    class="category-button active"
+                    data-category="all">
+
+                    전체
+
+                </button>
+
+
+                <button
+                    class="category-button"
+                    data-category="html">
+
+                    HTML
+
+                </button>
+
+
+                <button
+                    class="category-button"
+                    data-category="image">
+
+                    이미지
+
+                </button>
+
+
+                <button
+                    class="category-button"
+                    data-category="video">
+
+                    영상
+
+                </button>
+
+
+                <button
+                    class="category-button"
+                    data-category="document">
+
+                    문서
+
+                </button>
+
+
+                <button
+                    class="category-button"
+                    data-category="other">
+
+                    기타
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- 카드가 자동으로 생성되는 곳 -->
+
+            <div
+                id="portfolioGrid"
+                class="portfolio-grid">
+
+            </div>
+
+
+            <!-- 포트폴리오가 없을 때 -->
+
+            <div
+                id="emptyMessage"
+                class="empty-message">
+
+                아직 등록된 포트폴리오가 없습니다.
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==================================================
+             ABOUT
+        ================================================== -->
+
+        <section
+            id="about"
+            class="about-section">
+
+
+            <div>
+
+                <p class="small-title">
+                    ABOUT ME
+                </p>
+
+
+                <h2>
+                    나의 학습과정을<br>
+                    기록합니다.
+                </h2>
+
+            </div>
+
+
+            <p>
+
+                이 포트폴리오는 내가 배우고 만든 결과물을
+                기록하고 정리하기 위한 공간입니다.
+
+                작은 과제부터 하나씩 쌓아
+                나만의 작품집을 만들어갑니다.
+
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ==================================================
+         DETAIL MODAL
+    ================================================== -->
+
+    <div
+        id="detailModal"
+        class="modal">
+
+
+        <div class="modal-content">
+
+
+            <button
+                id="closeModal"
+                class="close-button">
+
+                ×
+
+            </button>
+
+
+            <div
+                id="detailContent">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 My Portfolio
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
