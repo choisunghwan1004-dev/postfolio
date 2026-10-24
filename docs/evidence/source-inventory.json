@@ -1,0 +1,570 @@
+{
+  "little-seed-adventure": {
+    "source_commit": "9d0b06ac255e1d6156bf8d19243bb2c5d1dee67b",
+    "manifest": {
+      "project_id": "appgprj_6adc43571d5c8191a725c0c1fac6d9ba",
+      "static": {
+        "directory": "dist"
+      }
+    },
+    "files": [
+      {
+        "path": "dist/forest.css",
+        "bytes": 7855,
+        "sha256": "f6a6ee9c50898cd95210da9a1a4d181e026256623eb39a0510926a477a28652e",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/forest.js",
+        "bytes": 14886,
+        "sha256": "65a6f2dd413cba2ad99a0a86d532e558476d950dc418dc492afb4d0880cbd2b5",
+        "localStorage": [
+          "animal-forest-backup",
+          "animal-forest-v1"
+        ],
+        "urls": []
+      },
+      {
+        "path": "dist/app.js",
+        "bytes": 23732,
+        "sha256": "13966be9f2a8a7ab895476b8a581cb934b673efb8f24cde6805d84694fbba068",
+        "localStorage": [
+          "seed-",
+          "seed-backup-"
+        ],
+        "urls": []
+      },
+      {
+        "path": "dist/style.css",
+        "bytes": 7031,
+        "sha256": "682e58ab24d67b39664b09998b7d47ca0519df6da0cecda2214be4c765b54f33",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/legacy.html",
+        "bytes": 1780,
+        "sha256": "a57e389c5be48818166310e8c3c8540f02a701d2714ad51fc07bf821ae112137",
+        "localStorage": [],
+        "urls": [
+          "https://www.history.go.kr/",
+          "https://www.i815.or.kr/"
+        ]
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 1514,
+        "sha256": "8ff92ca28800a663f2e7a14f1fd1ae52814695d8d09f35c824cb96f9a5b589e6",
+        "localStorage": [],
+        "urls": []
+      }
+    ]
+  },
+  "tomorrow-choice": {
+    "source_commit": "7033cef66fa082905b426d5cffbc4a4d4e68b25a",
+    "manifest": {
+      "project_id": "appgprj_6adc40561f248191950f7bf9f3bded4a",
+      "static": {
+        "directory": "dist"
+      }
+    },
+    "files": [
+      {
+        "path": "dist/app.js",
+        "bytes": 24950,
+        "sha256": "ec9a92645e2656137951d9cd033ec34fe37d0ddcdd8bd717180953273e92a06f",
+        "localStorage": [
+          "seed-",
+          "seed-backup-"
+        ],
+        "urls": []
+      },
+      {
+        "path": "dist/style.css",
+        "bytes": 6789,
+        "sha256": "7c58e2c41fdd68349a405e490bf2b3a15f6464c854c60e32c2038a6ea565e133",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 1749,
+        "sha256": "3c5c19e882e877299d7bbb1843272b055ba6586570512fd638254d0392eb7830",
+        "localStorage": [],
+        "urls": [
+          "https://www.history.go.kr/",
+          "https://www.i815.or.kr/"
+        ]
+      }
+    ]
+  },
+  "korea-world-frontier": {
+    "source_commit": "5a248e9b55ac6f4d4e86255d0bd7f6f1bb0051f4",
+    "manifest": {
+      "project_id": "appgprj_6adbe829ac90819193f10e4eaa2ab0bd",
+      "static": {
+        "directory": "dist"
+      }
+    },
+    "files": [
+      {
+        "path": "dist/cooperation.json",
+        "bytes": 10941,
+        "sha256": "18ecc8d36fd52964524987c06eaaab0fe73bb6ea85d8ef45b82bd3673ca29694",
+        "localStorage": [],
+        "urls": [
+          "https://afocosec.org/publication/living-legacy-south-koreas-forest-rehabilitation/",
+          "https://encykorea.aks.ac.kr/Article/E0080908",
+          "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+          "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn0209",
+          "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148646945",
+          "https://www.taean.go.kr/tour/sub04_10_06_01.do",
+          "https://www.unesco.org/en/memory-world/archives-national-debt-redemption-movement"
+        ]
+      },
+      {
+        "path": "dist/education.json",
+        "bytes": 1816,
+        "sha256": "70f40ca69d4fad9e0949990b735bed462587216718bf3bcb736250b58c14899b",
+        "localStorage": [],
+        "urls": [
+          "https://kr.object.gov-ncloudstorage.com/nile-bucket/nile/data/2023%EB%85%84_%EC%A0%9C4%EC%B0%A8_%EC%84%B1%EC%9D%B8%EB%AC%B8%ED%95%B4%EB%8A%A5%EB%A0%A5%EC%A1%B0%EC%82%AC_%EA%B2%B0%EA%B3%BC_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+          "https://sdgs.un.org/goals/goal4",
+          "https://www.le.or.kr/contentDetailView.do?id=3008&menuId=14",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2025_1a3543e2-en/korea_252c9ed2-en.html",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2026_c0e523a9-en/korea_5e4f6d39-en.html",
+          "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/korea-republic-of_5f95963c-en.html"
+        ]
+      },
+      {
+        "path": "dist/app.js",
+        "bytes": 21141,
+        "sha256": "3f2a954f54a0a9e2ffc736cfb9b91414f632f89822e4d1b49d1ea5ece05a81bc",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/ja.html",
+        "bytes": 52433,
+        "sha256": "ce3d80ab4e3cd093110a50563fbb6ffbca38becca9334202d0f17df168e3d386",
+        "localStorage": [],
+        "urls": [
+          "https://afocosec.org/publication/living-legacy-south-koreas-forest-rehabilitation/",
+          "https://contents.history.go.kr/front/hm/view.do?levelId=hm_151_0060",
+          "https://encykorea.aks.ac.kr/Article/E0080908",
+          "https://ich.unesco.org/en/RL/kimjang-00881",
+          "https://ifr.org/ifr-press-releases/news/robot-density-surges-in-europe-asia-and-americas",
+          "https://kr.object.gov-ncloudstorage.com/nile-bucket/nile/data/2023%EB%85%84_%EC%A0%9C4%EC%B0%A8_%EC%84%B1%EC%9D%B8%EB%AC%B8%ED%95%B4%EB%8A%A5%EB%A0%A5%EC%A1%B0%EC%82%AC_%EA%B2%B0%EA%B3%BC_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+          "https://sdgs.un.org/goals/goal4",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/4_19.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+          "https://www.globalfirepower.com/country-military-strength-detail.php?country_id=south-korea",
+          "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn0209",
+          "https://www.kdi.re.kr/eng/research/reportView?pub_no=13684",
+          "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148646945",
+          "https://www.mafra.go.kr/bbs/home/795/572875/artclView.do",
+          "https://www.mofa.go.kr/eng/brd/m_5676/view.do?itm_seq_1=0&amp;itm_seq_2=0&amp;multi_itm_seq=0&amp;seq=313150",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2025_1a3543e2-en/korea_252c9ed2-en.html",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2026_c0e523a9-en/korea_5e4f6d39-en.html",
+          "https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en.html",
+          "https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en/full-report/responding-to-population-decline_7f6620e6.html",
+          "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/korea-republic-of_5f95963c-en.html",
+          "https://www.taean.go.kr/tour/sub04_10_06_01.do",
+          "https://www.unesco.org/en/memory-world/archives-national-debt-redemption-movement",
+          "https://www.unesco.org/en/prizes/literacy?hub=66908",
+          "https://www.wipo.int/en/web/global-innovation-index/2026/index",
+          "https://www.worldbank.org/ext/en/country/korea"
+        ]
+      },
+      {
+        "path": "dist/history-flow.json",
+        "bytes": 11090,
+        "sha256": "366ecc0f113e6c7140b32c511099a2ecdfd1390cb9b0db1e61a767354d870cda",
+        "localStorage": [],
+        "urls": [
+          "https://afocosec.org/publication/living-legacy-south-koreas-forest-rehabilitation/",
+          "https://contents.history.go.kr/front/hm/view.do?levelId=hm_151_0060",
+          "https://encykorea.aks.ac.kr/Article/E0080908",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/4_19.do",
+          "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn0209",
+          "https://www.taean.go.kr/tour/sub04_10_06_01.do",
+          "https://www.unesco.org/en/memory-world/archives-national-debt-redemption-movement"
+        ]
+      },
+      {
+        "path": "dist/industries.json",
+        "bytes": 65058,
+        "sha256": "a7c5a2f1946e8c43ed8b97b10fb7149e7a3e54a2aa99d9cdd2f4f6d5fc355484",
+        "localStorage": [],
+        "urls": [
+          "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2185/view",
+          "https://english.motir.go.kr/eng/article/EATCLdfa319ada/2470/view",
+          "https://ifr.org/ifr-press-releases/news/global-robotics-race-korea-singapore-and-germany-in-the-lead",
+          "https://ifr.org/ifr-press-releases/news/robot-density-surges-in-europe-asia-and-americas",
+          "https://mafra.go.kr/bbs/english/25/593797/download.do",
+          "https://welcon.kocca.kr/ko/info/business/1954872",
+          "https://welcon.kocca.kr/ko/info/business/1957374",
+          "https://www.globalfirepower.com/country-military-strength-detail.php?country_id=south-korea",
+          "https://www.iea.org/commentaries/the-battery-industry-has-entered-a-new-phase",
+          "https://www.ifpi.org/taylor-swifts-the-life-of-a-showgirl-named-ifpis-official-biggest-selling-global-album-of-the-year-2025/",
+          "https://www.korea.kr/news/policyNewsView.do?newsId=148970423",
+          "https://www.mafra.go.kr/bbs/home/795/572875/artclView.do",
+          "https://www.netflix.com/tudum/articles/kdramas-on-netflix",
+          "https://www.oscars.org/oscars/ceremonies/92nd-oscar-highlights",
+          "https://www.wipo.int/web-publications/global-innovation-index-2025/en/gii-2025-results.html"
+        ]
+      },
+      {
+        "path": "dist/en.html",
+        "bytes": 51061,
+        "sha256": "a6f101eed582a43f106347033540447f6df7e91768a160876f4b6dff46a01898",
+        "localStorage": [],
+        "urls": [
+          "https://afocosec.org/publication/living-legacy-south-koreas-forest-rehabilitation/",
+          "https://contents.history.go.kr/front/hm/view.do?levelId=hm_151_0060",
+          "https://encykorea.aks.ac.kr/Article/E0080908",
+          "https://ich.unesco.org/en/RL/kimjang-00881",
+          "https://ifr.org/ifr-press-releases/news/robot-density-surges-in-europe-asia-and-americas",
+          "https://kr.object.gov-ncloudstorage.com/nile-bucket/nile/data/2023%EB%85%84_%EC%A0%9C4%EC%B0%A8_%EC%84%B1%EC%9D%B8%EB%AC%B8%ED%95%B4%EB%8A%A5%EB%A0%A5%EC%A1%B0%EC%82%AC_%EA%B2%B0%EA%B3%BC_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+          "https://sdgs.un.org/goals/goal4",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/4_19.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+          "https://www.globalfirepower.com/country-military-strength-detail.php?country_id=south-korea",
+          "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn0209",
+          "https://www.kdi.re.kr/eng/research/reportView?pub_no=13684",
+          "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148646945",
+          "https://www.mafra.go.kr/bbs/home/795/572875/artclView.do",
+          "https://www.mofa.go.kr/eng/brd/m_5676/view.do?itm_seq_1=0&amp;itm_seq_2=0&amp;multi_itm_seq=0&amp;seq=313150",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2025_1a3543e2-en/korea_252c9ed2-en.html",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2026_c0e523a9-en/korea_5e4f6d39-en.html",
+          "https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en.html",
+          "https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en/full-report/responding-to-population-decline_7f6620e6.html",
+          "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/korea-republic-of_5f95963c-en.html",
+          "https://www.taean.go.kr/tour/sub04_10_06_01.do",
+          "https://www.unesco.org/en/memory-world/archives-national-debt-redemption-movement",
+          "https://www.unesco.org/en/prizes/literacy?hub=66908",
+          "https://www.wipo.int/en/web/global-innovation-index/2026/index",
+          "https://www.worldbank.org/ext/en/country/korea"
+        ]
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 55057,
+        "sha256": "cc4c2444cca5fca39bcb57fcac29365cdd14100d17d52935a5ddc9f6ca5679c4",
+        "localStorage": [],
+        "urls": [
+          "https://afocosec.org/publication/living-legacy-south-koreas-forest-rehabilitation/",
+          "https://contents.history.go.kr/front/hm/view.do?levelId=hm_151_0060",
+          "https://encykorea.aks.ac.kr/Article/E0080908",
+          "https://ich.unesco.org/en/RL/kimjang-00881",
+          "https://ifr.org/ifr-press-releases/news/robot-density-surges-in-europe-asia-and-americas",
+          "https://kr.object.gov-ncloudstorage.com/nile-bucket/nile/data/2023%EB%85%84_%EC%A0%9C4%EC%B0%A8_%EC%84%B1%EC%9D%B8%EB%AC%B8%ED%95%B4%EB%8A%A5%EB%A0%A5%EC%A1%B0%EC%82%AC_%EA%B2%B0%EA%B3%BC_%EB%B3%B4%EA%B3%A0%EC%84%9C.pdf",
+          "https://sdgs.un.org/goals/goal4",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/4_19.do",
+          "https://theme.archives.go.kr/next/koreaOfRecord/imf.do",
+          "https://www.globalfirepower.com/country-military-strength-detail.php?country_id=south-korea",
+          "https://www.imf.org/en/news/articles/2015/09/28/04/53/pn0209",
+          "https://www.kdi.re.kr/eng/research/reportView?pub_no=13684",
+          "https://www.korea.kr/briefing/policyBriefingView.do?newsId=148646945",
+          "https://www.mafra.go.kr/bbs/home/795/572875/artclView.do",
+          "https://www.mofa.go.kr/eng/brd/m_5676/view.do?itm_seq_1=0&amp;itm_seq_2=0&amp;multi_itm_seq=0&amp;seq=313150",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2025_1a3543e2-en/korea_252c9ed2-en.html",
+          "https://www.oecd.org/en/publications/education-at-a-glance-2026_c0e523a9-en/korea_5e4f6d39-en.html",
+          "https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en.html",
+          "https://www.oecd.org/en/publications/oecd-economic-surveys-korea-2024_c243e16a-en/full-report/responding-to-population-decline_7f6620e6.html",
+          "https://www.oecd.org/en/publications/survey-of-adults-skills-2023-country-notes_ab4f6b8c-en/korea-republic-of_5f95963c-en.html",
+          "https://www.taean.go.kr/tour/sub04_10_06_01.do",
+          "https://www.unesco.org/en/memory-world/archives-national-debt-redemption-movement",
+          "https://www.unesco.org/en/prizes/literacy?hub=66908",
+          "https://www.wipo.int/en/web/global-innovation-index/2026/index",
+          "https://www.worldbank.org/ext/en/country/korea"
+        ]
+      }
+    ]
+  },
+  "those-days-we": {
+    "source_commit": "ddeabf28cfaf701fd923f6102e3df2c56933b5d3",
+    "manifest": {
+      "project_id": "appgprj_6adbf65ab8a0819189dfa5dc482957ed",
+      "static": {
+        "directory": "dist"
+      }
+    },
+    "files": [
+      {
+        "path": "dist/stories.js",
+        "bytes": 33327,
+        "sha256": "adca3b97d38afd3c5b94802fce43fbe8d0c1c022f16c09bdf4bd0e598db77837",
+        "localStorage": [],
+        "urls": [
+          "https://contents.history.go.kr/front/nh/view.do?levelId=nh_048_0040_0020_0010_0020'],['국사편찬위원회",
+          "https://contents.history.go.kr/front/ta/view.do?levelId=ta_m71_0110_0010_0010_0010'],['국가기록원",
+          "https://contents.history.go.kr/mobile/hm/view.do?levelId=hm_125_0070'],['국사편찬위원회",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i401100'],['국사편찬위원회",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i402720']],body:[",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i403400']],body:[",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_o403300']],body:[",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i401000']],body:[",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i402900']],body:[",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i403220'],['국가기록원",
+          "https://contents.history.go.kr/mobile/mid/hm_124_0090?tabId=e']],body:[",
+          "https://contents.history.go.kr/mobile/nh/view.do?levelId=nh_050_0020_0020_0090']],body:[",
+          "https://theme.archives.go.kr/next/chronology/yearRecord.do?year=1003']],body:[",
+          "https://theme.archives.go.kr/next/indy/viewIncident.do']],body:[",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do']],body:[",
+          "https://theme.archives.go.kr/next/koreaOfRecord/koreaGovernment.do']],body:[",
+          "https://www.nmkpg.go.kr/webzine/story/cn.do?rid=368']],body:["
+        ]
+      },
+      {
+        "path": "dist/app.js",
+        "bytes": 16758,
+        "sha256": "3597720c3633c05af94a4d41a23cfecdf44b1ae98f4d676d27443f14937e670a",
+        "localStorage": [
+          "history-language"
+        ],
+        "urls": [
+          "https://contents.history.go.kr/front/ht/view.do?levelId=ht_003_0010']);",
+          "https://contents.history.go.kr/front/tg/view.do?ganada=&levelId=tg_004_0740&pageUnit=10&treeId=0204'],['국가기록원",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i401100'],['국사편찬위원회",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i402720'],['국사편찬위원회",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_o403300'],['국립대한민국임시정부기념관",
+          "https://db.history.go.kr/modern/level.do?levelId=mh_003_0010']];",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do'],['국가기록원",
+          "https://theme.archives.go.kr/next/koreaOfRecord/koreaGovernment.do'],['동북아역사재단",
+          "https://www.nahf.or.kr/web/portal/webzine/774/60453'],['국사편찬위원회",
+          "https://www.nmkpg.go.kr/webzine/story/cn.do?rid=368'],['국사편찬위원회"
+        ]
+      },
+      {
+        "path": "dist/source-summary.js",
+        "bytes": 3570,
+        "sha256": "37d46d67b3a7f92636fe804355f94cee70ce97b6381615cb16b4ff87b2da6787",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/repression.js",
+        "bytes": 4763,
+        "sha256": "72e29a0ca2de165d8e72d4558283253ed69209f22acb3bf18cb17d285388f3d3",
+        "localStorage": [],
+        "urls": [
+          "https://commons.wikimedia.org/wiki/File:(Red_Cross_pamphlet_on_March_1st_Movement)_(KADA-shyun15-012~35).jpg'}",
+          "https://commons.wikimedia.org/wiki/File:JeamniMassacre.png'},"
+        ]
+      },
+      {
+        "path": "dist/catalog.js",
+        "bytes": 4294,
+        "sha256": "e5be234410b162f1cbb5dfa8a49a882358bed54570e5871897edc79ef79e78b6",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/source-links.js",
+        "bytes": 5831,
+        "sha256": "9860c278cc4c5341d5e5966181449b8bd2e2ce21d085d85e6c882f90e97eb5b8",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 19616,
+        "sha256": "c8aacc541ae1589cf51fb172d7cb31ed0546d46ccfe57c57f7ff01a82b37b849",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/media.js",
+        "bytes": 10516,
+        "sha256": "d0b21dfa730e84db5af82f35dc7ef19f866e30a2600b1c96512b95696199e0ff",
+        "localStorage": [],
+        "urls": [
+          "https://commons.wikimedia.org/wiki/File:(Red_Cross_pamphlet_on_March_1st_Movement)_(KADA-shyun15-012~23).jpg',events:[4]},",
+          "https://commons.wikimedia.org/wiki/File:Company_of_Korean_rebels_1907_by_F.A._McKenzie.png',events:[2]},",
+          "https://commons.wikimedia.org/wiki/File:Gojong_letter.jpg',events:[1]},",
+          "https://commons.wikimedia.org/wiki/File:Kim_Ku_and_Chiang-Kai-shek_in_ROK_provisional_government_farewell_party.jpg',events:[11]}",
+          "https://commons.wikimedia.org/wiki/File:Korea-Portrait_of_Emperor_Gojong-01.jpg',events:[0]},",
+          "https://commons.wikimedia.org/wiki/File:Korea_Independence_Army.jpg',events:[10]},",
+          "https://commons.wikimedia.org/wiki/File:Provisional_Government_of_the_Republic_of_Korea.jpg',events:[5]},",
+          "https://commons.wikimedia.org/wiki/File:광주학생운동_사건1.PNG',events:[7]}"
+        ]
+      },
+      {
+        "path": "dist/data/media-catalog.json",
+        "bytes": 7855,
+        "sha256": "ef64ca9a520be589f3325647d9dabea4e19e590415fda6bcf764278cdca81cd4",
+        "localStorage": [],
+        "urls": [
+          "https://commons.wikimedia.org/wiki/File:(Red_Cross_pamphlet_on_March_1st_Movement)_(KADA-shyun15-012~23).jpg",
+          "https://commons.wikimedia.org/wiki/File:Company_of_Korean_rebels_1907_by_F.A._McKenzie.png",
+          "https://commons.wikimedia.org/wiki/File:Gojong_letter.jpg",
+          "https://commons.wikimedia.org/wiki/File:Kim_Ku_and_Chiang-Kai-shek_in_ROK_provisional_government_farewell_party.jpg",
+          "https://commons.wikimedia.org/wiki/File:Korea-Portrait_of_Emperor_Gojong-01.jpg",
+          "https://commons.wikimedia.org/wiki/File:Korea_Independence_Army.jpg",
+          "https://commons.wikimedia.org/wiki/File:Provisional_Government_of_the_Republic_of_Korea.jpg",
+          "https://commons.wikimedia.org/wiki/File:광주학생운동_사건1.PNG"
+        ]
+      },
+      {
+        "path": "dist/previous/app.js",
+        "bytes": 16514,
+        "sha256": "9d8b671c38b7f2b0aafe8b88cdf4cc17e657873ae7da9e13e2864223a94a0ab9",
+        "localStorage": [
+          "history-language"
+        ],
+        "urls": [
+          "https://contents.history.go.kr/front/ht/view.do?levelId=ht_003_0010']);",
+          "https://contents.history.go.kr/front/tg/view.do?ganada=&levelId=tg_004_0740&pageUnit=10&treeId=0204'],['국가기록원",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i401100'],['국사편찬위원회",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_i402720'],['국사편찬위원회",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_40&levelId=kc_o403300'],['국립대한민국임시정부기념관",
+          "https://db.history.go.kr/modern/level.do?levelId=mh_003_0010']];",
+          "https://theme.archives.go.kr/next/koreaOfRecord/3_1.do'],['국가기록원",
+          "https://theme.archives.go.kr/next/koreaOfRecord/koreaGovernment.do'],['동북아역사재단",
+          "https://www.nahf.or.kr/web/portal/webzine/774/60453'],['국사편찬위원회",
+          "https://www.nmkpg.go.kr/webzine/story/cn.do?rid=368'],['국사편찬위원회"
+        ]
+      },
+      {
+        "path": "dist/previous/index.html",
+        "bytes": 7090,
+        "sha256": "400608836ecb7bcdcf17b74d36bdb32e7e87e4b2f1ede07e565b401c3f9e9554",
+        "localStorage": [],
+        "urls": []
+      }
+    ]
+  },
+  "korean-war-history-atlas": {
+    "source_commit": "2604afb8e8b4806fa138bdd14163e5b771b43af3",
+    "manifest": {
+      "project_id": "appgprj_6adc0a68d26c81918bcc6c013b207cf7",
+      "static": {
+        "directory": "dist"
+      }
+    },
+    "files": [
+      {
+        "path": "dist/app.js",
+        "bytes": 11671,
+        "sha256": "3c98699f4eb5d7b46b00be660046adc424bc22d21511d67ba92df0789ea155c1",
+        "localStorage": [],
+        "urls": [
+          "https://commons.wikimedia.org/wiki/File:Korea_Independence_Army.jpg"
+        ]
+      },
+      {
+        "path": "dist/style.css",
+        "bytes": 10969,
+        "sha256": "8b59a4802bf9781135105d68d76fd49fd28d36d57ef365dea621ffb7ad49aef2",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/events.json",
+        "bytes": 54077,
+        "sha256": "6d305754282cbbf864afe5ab260b885bc5fd73b3acc6a0c95718292a10a7d411",
+        "localStorage": [],
+        "urls": [
+          "https://commons.wikimedia.org/wiki/File:Company_of_Korean_rebels_1907_by_F.A._McKenzie.png",
+          "https://contents.history.go.kr/front/ta/view.do?levelId=ta_h62_0040_0030_0040",
+          "https://contents.history.go.kr/front/ta/view.do?levelId=ta_m41_0040_0020",
+          "https://contents.history.go.kr/front/ta/view.do?levelId=ta_m41_0070_0050",
+          "https://contents.history.go.kr/front/ta/view.do?levelId=ta_m71_0030_0010_0040_0010",
+          "https://contents.history.go.kr/front/ta/view.do?levelId=ta_m71_0030_0030_0010_0020",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_10&levelId=kc_i101220",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_10&levelId=kc_n101190",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_20&levelId=kc_i200400",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_30&levelId=kc_i302700",
+          "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_30&levelId=kc_i302800",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i100300",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i100720",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i200800",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i300200",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i303800",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i400800",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i501100",
+          "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_i502950",
+          "https://contents.history.go.kr/mobile/ta/view.do?levelId=ta_m71_0050_0010_0010_0020",
+          "https://encykorea.aks.ac.kr/Article/E0006598",
+          "https://encykorea.aks.ac.kr/Article/E0011307",
+          "https://encykorea.aks.ac.kr/Article/E0014343",
+          "https://encykorea.aks.ac.kr/Article/E0021626",
+          "https://encykorea.aks.ac.kr/Article/E0023142",
+          "https://encykorea.aks.ac.kr/Article/E0023151",
+          "https://encykorea.aks.ac.kr/Article/E0023974",
+          "https://encykorea.aks.ac.kr/Article/E0026415",
+          "https://encykorea.aks.ac.kr/Article/E0042143",
+          "https://encykorea.aks.ac.kr/Article/E0047674",
+          "https://encykorea.aks.ac.kr/Article/E0050194",
+          "https://encykorea.aks.ac.kr/Article/E0065744",
+          "https://encykorea.aks.ac.kr/Article/E0071958",
+          "https://theme.archives.go.kr/next/625/process/frontline.do",
+          "https://www.trumanlibrary.gov/photograph-records/67-7417"
+        ]
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 3318,
+        "sha256": "01d1e53189b034d805038b2fd10f54ced2aaf65be6fdad8386f719b78bb48b59",
+        "localStorage": [],
+        "urls": []
+      }
+    ]
+  },
+  "korea-together-tomorrow": {
+    "source_commit": "5d882e55195654265b1113c4bd1510be41ff0a22",
+    "manifest": {
+      "project_id": "appgprj_6adc2c1a23f881918851534927c92023",
+      "static": {
+        "directory": "dist"
+      }
+    },
+    "files": [
+      {
+        "path": "dist/app.js",
+        "bytes": 27575,
+        "sha256": "cde47331bbdd31fb56563759d96f9ea9c346e672b031d66572833919084da2b6",
+        "localStorage": [
+          "together-records-v1"
+        ],
+        "urls": [
+          "https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099070224032598476'},",
+          "https://itcc.rda.go.kr/kopia/portal/kopiaBiz/kopiaBizStatus.do?languageGb=01&menuNo=1'},",
+          "https://www.eeas.europa.eu/delegations/nepal/nepal-launches-national-pashmina-sector-export-strategy-increase-exports-usd-75-million-euro-687_en'},",
+          "https://www.oecd.org/en/publications/korean-focus-areas_f91f3b75-en/from-emerging-donor-to-global-development-partner_66044045-en.html'},",
+          "https://www.rda.go.kr/board/board.do?boardId=farmprmninfo&currPage=126&dataNo=100000805472&mode=updateCnt&prgId=day_farmprmninfoEntry&searchEDate=&searchKey=&searchOrgDeptKey=&searchOrgDeptVal=&searchSDate=&searchVal='},",
+          "https://www.worldbank.org/en/country/vietnam/publication/2022-vietnam-poverty-and-equity-assessment-report'}"
+        ]
+      },
+      {
+        "path": "dist/style.css",
+        "bytes": 14138,
+        "sha256": "935491bf5fc82aadb31774d4fe450a91a6e10221c03223f8cf54adf1bc0972e2",
+        "localStorage": [],
+        "urls": []
+      },
+      {
+        "path": "dist/index.html",
+        "bytes": 10491,
+        "sha256": "81ef1b66bacd162e6e8094aafb74b6fe73285d809333253c49e787d9b21f1e8a",
+        "localStorage": [],
+        "urls": [
+          "https://www.oecd.org/en/publications/korean-focus-areas_f91f3b75-en/from-emerging-donor-to-global-development-partner_66044045-en.html"
+        ]
+      },
+      {
+        "path": "dist/assets/timeline.json",
+        "bytes": 4234,
+        "sha256": "420e703b90fd883bb6a20f1f2266fc566f6e19092a7d9e525412eb9428d0c778",
+        "localStorage": [],
+        "urls": []
+      }
+    ]
+  }
+}
