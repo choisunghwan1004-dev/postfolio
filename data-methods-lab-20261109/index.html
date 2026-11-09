@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="통합수업일지 기반 데이터분석기법: Pandas, 결측, groupby, 상관, Welch 검정, 회귀, 표준화, KMeans, 코사인 유사도. 교육용 가상 데이터 실제 계산.">
+<title>데이터 분석기법 실습관 | MBC AI 저널리즘</title>
+<style>
+:root{--ink:#233a3b;--muted:#5d7374;--teal:#22877e;--mint:#e7f5ef;--bg:#f8faf7;--line:#dbe8e3;--blue:#557bab;--warn:#b76a3d;--shadow:0 8px 32px #255b4f0b;font-family:"Malgun Gothic","Noto Sans KR",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--bg);line-height:1.7}a{color:#196e72}a:hover{text-decoration-thickness:2px}a:focus-visible,button:focus-visible,select:focus-visible{outline:3px solid #e8ae3c;outline-offset:3px}.container{width:min(1180px,calc(100% - 32px));margin:auto}
+.top{background:#ffffffee;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:4;backdrop-filter:blur(10px)}.top .container{display:flex;gap:15px;justify-content:space-between;align-items:center;min-height:67px}.logo{font-size:16px;font-weight:900;color:var(--ink);text-decoration:none}.logo span{color:var(--teal)}nav{display:flex;flex-wrap:wrap;gap:12px}nav a{font-size:13px;font-weight:700;text-decoration:none;white-space:nowrap}
+.hero{background:linear-gradient(120deg,#e9f6ed 0,#eff7fa 68%,#fff5eb 100%);padding:62px 0 47px;border-bottom:1px solid var(--line)}.eyebrow{font-size:13px;color:var(--teal);font-weight:900;letter-spacing:.09em}.hero h1{font-size:clamp(32px,4.8vw,59px);line-height:1.2;letter-spacing:-.05em;margin:12px 0 15px}.hero p{max-width:760px;margin:0;color:#556b6f;font-size:17px}.badge{display:inline-block;background:white;border:1px solid #cbe1d9;color:#3a7169;font-size:12px;font-weight:800;padding:4px 10px;border-radius:40px}.badge.orange{color:#99562d;border-color:#f0d8c3;background:#fff8ed}.badges{display:flex;gap:8px;flex-wrap:wrap;margin:19px 0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.btn{display:inline-block;padding:10px 16px;background:white;color:#245650;border:1px solid #c9dfd6;border-radius:12px;text-decoration:none;font-size:14px;font-weight:800}.btn.main{color:white;background:var(--teal)}.btn:hover{filter:brightness(.97);text-decoration:none}
+.section{padding:43px 0}.section-title{font-size:clamp(25px,3vw,36px);letter-spacing:-.04em;margin:4px 0 12px}.subtitle{color:var(--muted);margin:0 0 22px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin:23px 0}.stat{background:#fff;border:1px solid var(--line);padding:22px;border-radius:18px;box-shadow:var(--shadow)}.stat strong{font-size:clamp(22px,2.8vw,34px);line-height:1.2;display:block;font-weight:900}.stat small{color:var(--muted);display:block;margin-top:9px;font-size:12px}.steps{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}.step{background:#fff;padding:15px 12px;border:1px solid var(--line);border-radius:14px;font-weight:800;font-size:14px;text-align:center}.step span{display:block;color:var(--teal);font-size:13px}
+.method-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.card{border-radius:20px;border:1px solid var(--line);background:white;padding:23px;box-shadow:var(--shadow);min-width:0}.card.wide{grid-column:span 2}.card h3{font-size:20px;letter-spacing:-.035em;margin:8px 0}.card p{margin:8px 0;color:var(--muted);font-size:14px}.card .question{font-weight:900;color:#234f4b}.answer{border-left:3px solid #35978d;padding:10px 13px;background:#f0faf5;border-radius:0 10px 10px 0;font-size:14px;margin:14px 0}.callout{border:1px solid #f0d9c3;background:#fff9f0;border-radius:14px;padding:14px 16px;color:#8a5833;font-size:14px;margin-top:15px}
+.card img{width:100%;height:auto;border-radius:12px;background:white;display:block;border:1px solid #eef3f1}.code{background:#f1f6f5;border:1px solid #dfeae6;border-radius:11px;padding:12px 14px;color:#37635e;font-family:Consolas,Monaco,monospace;font-size:13px;overflow-x:auto;white-space:pre-wrap;overflow-wrap:anywhere}
+.source{font-size:12px!important;color:#6e8582!important;border-top:1px solid #edf0ef;margin-top:19px!important;padding-top:11px}.table-scroll{overflow-x:auto}.table{border-collapse:collapse;width:100%;min-width:530px;font-size:13px}.table th,.table td{border-bottom:1px solid #e6eeeb;padding:9px 10px;text-align:left;white-space:nowrap}.table th{background:#f0f8f4;color:#30625f}.control{width:100%;max-width:260px;min-height:40px;border:1px solid #bed6cf;border-radius:10px;padding:8px 11px;background:#fff;font:inherit;font-size:14px;color:var(--ink);margin:8px 0}.result{font-weight:800;color:#146f67;padding:14px;border-radius:12px;background:#e6f5ef;min-height:50px;font-size:15px}.links{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.linkrow{background:white;border:1px solid var(--line);border-radius:13px;padding:15px;text-decoration:none;overflow-wrap:anywhere}.linkrow:hover{border-color:#78b7a6}.linkrow strong{display:block;color:var(--ink)}.linkrow small{color:var(--muted);font-size:12px}.footer{border-top:1px solid var(--line);padding:28px 0 45px;color:var(--muted);font-size:13px}.anchor{scroll-margin-top:90px}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}.steps{grid-template-columns:repeat(3,1fr)}.method-grid{grid-template-columns:1fr}.card.wide{grid-column:span 1}.links{grid-template-columns:1fr}}
+@media(max-width:530px){.hero{padding:42px 0}.stats .stat{padding:16px}.steps{grid-template-columns:repeat(2,1fr)}.top .container{display:block;padding:10px 0}.top nav{margin-top:6px}.card{padding:16px}.hero p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="top"><div class="container"><a href="#top" class="logo">MBC <span>DATA METHODS LAB</span></a><nav><a href="#methods">기법 9종</a><a href="#try">직접 실습</a><a href="#files">자료·코드</a><a href="../mbc-kpop-olist-20261109/">K-pop·Olist</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="container">
+<div class="eyebrow">통합수업일지 · 데이터 분석기법 실습 · 2026-11-09</div>
+<h1>기법을 고르고,<br>데이터로 직접 확인하다.</h1>
+<p>수업의 Pandas → 전처리 → 통계 → 회귀 → 군집 → 추천 흐름을 따라갑니다. Python으로 가상 회원 48명과 영화 평점 예제를 처리했고, 이 페이지에서 계산 결과와 그래프를 확인할 수 있습니다.</p>
+<div class="badges"><span class="badge orange">모든 회원·평점은 가상 데이터</span><span class="badge">원본 통합일지와 학습기법 연결</span><span class="badge">Python 실행 결과 공개</span><span class="badge">PC·모바일 화면</span></div>
+<div class="actions"><a class="btn main" href="#methods">기법별 결과 보기</a><a class="btn" href="#try">예제 직접 조작</a><a class="btn" href="통합일지_분석기법_예제실습.ipynb" download>실습 노트북 내려받기</a><a class="btn" href="../mbc-kpop-olist-20261109/">기존 과제 포트폴리오</a></div>
+</div></section>
+<section class="section container"><div class="eyebrow">질문부터 결과까지</div><h2 class="section-title">CRISP-DM 흐름으로 이해하기</h2>
+<div class="steps"><div class="step"><span>01</span>문제 이해</div><div class="step"><span>02</span>데이터 이해</div><div class="step"><span>03</span>전처리</div><div class="step"><span>04</span>모델·통계</div><div class="step"><span>05</span>평가</div><div class="step"><span>06</span>기사·보고서</div></div>
+<div class="stats">
+<div class="stat"><strong>50행</strong><small>가상 원본 · 중복 2행 포함</small></div>
+<div class="stat"><strong>48명</strong><small>중복 제거 후 분석 회원</small></div>
+<div class="stat"><strong>9종</strong><small>수업일지 기반 주요 분석기법</small></div>
+<div class="stat"><strong>5개</strong><small>기법 설명용 SVG 차트</small></div>
+</div>
+<p class="subtitle">질문 → 필요한 데이터 → 사용한 함수 → 계산값 → 해석 → 주의점 순서로 기록했습니다. <a href="https://docs.google.com/document/d/1vSeKZW3o3qWyyTn_n1IAkFmWvDxNO4j2cfKaMQaIZtk/edit" target="_blank" rel="noopener noreferrer">수업 원본 통합수업일지</a>에서 10월 29일~11월 9일 내용을 근거로 분류했습니다.</p>
+</section>
+<section id="methods" class="section container anchor"><div class="eyebrow">01 / METHOD CATALOG</div><h2 class="section-title">기법 9종: 언제, 어떻게 쓰나?</h2><p class="subtitle">각 기법마다 데이터 처리 방식과 예제 결과를 함께 표시합니다. 회귀 성능처럼 좋지 않은 결과도 그대로 공개합니다.</p>
+<div class="method-grid">
+<article class="card"><span class="badge">01 · 10/29, 11/02</span><h3>DataFrame · 기술통계</h3><p class="question">질문: 회원 정보는 몇 행이고, 어떤 값이 있을까?</p><p>파일을 읽고 형태·열·결측과 평균·최솟값을 확인하는 첫 단계입니다.</p><pre class="code">df = pd.read_csv("data/sports_center_members_demo.csv")
+df.head()
+df.info()
+df.describe()</pre><div class="answer">처리 결과: 50행. 중복 회원 ID 2건을 발견해 검수 대상으로 분리했습니다.</div><p class="source">원본 일지: 10/29 DA_01 Pandas/DataFrame · 11/02 read_csv, head, info, describe</p></article>
+<article class="card"><span class="badge">02 · 10/29, 11/02</span><h3>결측치 · 중복 · 이상값</h3><p class="question">질문: 비어 있거나 잘못된 값을 어떻게 다룰까?</p><p>회원 ID 중복을 제거하고 음수 방문을 오류로 처리했습니다. 실습에서는 누락값을 중앙값으로 채웠습니다.</p><pre class="code">d = df.drop_duplicates("member_id").copy()
+d.loc[d.visits_per_month &lt; 0,"visits_per_month"] = np.nan
+d["visits_per_month"] = d["visits_per_month"].fillna(d["visits_per_month"].median())</pre><div class="answer">50 → 48명. 요금 결측 3개, 방문 오류 1개, 만족도 결측 2개를 대치했습니다.</div><p class="source">원본 일지: 10/29 결측치 실습 · 11/02 fillna/dropna · 아래에서 처리법 비교 가능</p></article>
+<article class="card"><span class="badge">03 · 11/02</span><h3>groupby · agg · merge</h3><p class="question">질문: 프로그램 A와 B의 방문 횟수는 어떻게 다를까?</p><p>회원별 표와 프로그램 설명표를 병합하고 프로그램별 평균을 계산했습니다.</p><pre class="code">d.merge(programs,on="program").groupby("program").agg({"visits_per_month":"mean"})</pre><img src="figures/01_groupby.svg" alt="프로그램 A 평균 8.54회, B 평균 10.42회 비교 막대그래프" loading="lazy"><div class="answer">A 일반반 8.54회, B 활동반 10.42회. 평균 차이는 약 1.88회입니다.</div><p class="source">원본 일지: 11/02 groupby / agg / merge · 실측 자료 아님</p></article>
+<article class="card"><span class="badge">04 · 10/28, 11/02</span><h3>상관관계 corr</h3><p class="question">질문: 가입 후 활동 개월수와 월 방문수는 함께 증가할까?</p><p>두 수치형 변수의 피어슨 상관계수를 계산하고 산점도로 확인합니다.</p><pre class="code">r = d["months_active"].corr(d["visits_per_month"])</pre><img src="figures/02_correlation.svg" alt="회원 48명의 활동 개월수와 방문수 산점도, 피어슨 r 0.6374" loading="lazy"><div class="answer">상관계수 r = 0.6374. 양의 관계가 관측되지만 원인을 입증하지는 않습니다.</div><p class="source">원본 일지: 10/28 차이·상관 분석 · 11/02 corr</p></article>
+<article class="card"><span class="badge">05 · 10/29~10/30</span><h3>Welch t-검정 · p값</h3><p class="question">질문: 두 프로그램의 방문 평균 차이는 우연일까?</p><p>독립된 A/B 두 집단의 평균을 비교했습니다. 분산이 같다고 가정하지 않는 Welch 방법을 사용했습니다.</p><pre class="code">from scipy.stats import ttest_ind
+t,p = ttest_ind(group_A,group_B,equal_var=False)</pre><div class="answer">t = −2.3224, p = 0.025388. 통상적인 5% 유의수준에서는 차이에 대한 통계적 증거가 있습니다. 프로그램 효과·인과관계로 해석하면 안 됩니다.</div><div class="callout">주의: 이 데이터는 사람이 만든 가상 예제입니다. p값이 작아도 실제 스포츠센터나 정책에 대한 증거가 아닙니다.</div><p class="source">원본 일지: 10/29 DA_01 t-test / 병아리 부화장 A/B 실습 · 10/30 통계검정</p></article>
+<article class="card"><span class="badge">06 · 10/30, 11/02</span><h3>선형·다중회귀 + train/test</h3><p class="question">질문: 연령·가입개월·요금·반 유형으로 방문수를 예측할 수 있을까?</p><p>36명으로 학습하고 12명으로 평가했습니다. 대치와 StandardScaler는 훈련 데이터에만 맞춰 테스트 정보 누출을 막았습니다.</p><pre class="code">train_test_split(X,y,test_size=.25,random_state=42)
+make_pipeline(SimpleImputer(),StandardScaler(),LinearRegression())</pre><div class="answer">테스트 MAE = 2.3875회, R² = −0.2779. 평균만 예측하는 기준보다 좋지 않아서 이 모델은 그대로 쓰기 어렵습니다.</div><p class="source">원본 일지: 10/30 회귀 · 11/02 병아리·자동차연비·train_test_split</p></article>
+<article class="card"><span class="badge">07 · 11/02, 11/09</span><h3>StandardScaler · Log 변환</h3><p class="question">질문: 방문수(회)와 요금(천 원)을 그대로 모델에 넣어도 될까?</p><p>서로 다른 단위와 범위의 변수를 모델 목적에 따라 표준화합니다. 로그축은 그래프 눈금을 바꾸고, log1p는 데이터값을 바꿉니다.</p><pre class="code">z = StandardScaler().fit_transform(train_X)
+# 왜도가 큰 비음수 변수에는 np.log1p(x)도 검토
+# 모델 테스트값에는 train에서 fit한 변환기만 적용</pre><div class="answer">요금·방문수·만족도 3개 변수를 표준화해 K-Means에 사용했습니다. 모델에 따라 표준화 필요성이 달라집니다.</div><p class="source">원본 일지: 11/02 StandardScaler · 11/09 Logarithmic Scale vs Standard Scale</p></article>
+<article class="card"><span class="badge">08 · 10/30, 11/02</span><h3>K-Means · Elbow</h3><p class="question">질문: 이용 방식이 비슷한 회원을 몇 집단으로 묶을까?</p><p>방문수·요금·만족도를 표준화하고 k=2~6에서 군집 내 제곱합(SSE)을 계산했습니다. 시연은 k=3입니다.</p><pre class="code">z = StandardScaler().fit_transform(features)
+KMeans(n_clusters=3,n_init=20,random_state=42).fit(z)</pre><img src="figures/04_elbow.svg" alt="k 2부터 6까지 KMeans 군집 내 제곱합 그래프" loading="lazy"><img src="figures/05_clusters.svg" alt="가상 회원 48명을 14명, 16명, 18명의 세 군집으로 나눈 그래프" loading="lazy"><div class="answer">군집은 14명·16명·18명. 실루엣 점수는 0.3090으로, 군집 구분이 뚜렷하다고 보기 어렵습니다.</div><p class="source">원본 일지: 10/30 군집 · 11/02 K-Means, Elbow · k=3은 설명용 선택</p></article>
+<article class="card wide"><span class="badge">09 · 11/02 DA_03 영화추천</span><h3>코사인 유사도 · KNN 추천</h3><p class="question">질문: 영화A를 좋아한 사람들의 평점 패턴과 닮은 영화는?</p><p>영화 6편 × 평가자 5명의 가상 평점을 벡터로 만들고, 코사인 유사도와 NearestNeighbors로 이웃 3편을 찾았습니다. <strong>0은 미평가</strong>를 뜻하는 예제 규칙입니다.</p><pre class="code">NearestNeighbors(n_neighbors=4,metric="cosine").fit(ratings)
+similarity = 1 - cosine_distance</pre><img src="figures/06_movie_cosine.svg" alt="영화A와 유사한 영화는 영화B 0.9740, 영화E 0.8380, 영화F 0.4174" loading="lazy"><div class="answer">영화A 기준 유사도: 영화B 0.9740 → 영화E 0.8380 → 영화F 0.4174. 유사도는 선호 확률이 아닙니다.</div><p class="source">원본 일지: 11/02 DA_03_movie_mini_example / 코사인 유사도 / KNN</p></article>
+</div></section>
+<section id="try" class="section container anchor"><div class="eyebrow">02 / INTERACTIVE DEMO</div><h2 class="section-title">가상 데이터를 직접 바꿔 읽기</h2><p class="subtitle">GitHub Pages에서 CSV를 읽어 브라우저 안에서 계산합니다. 별도 API 키나 서버는 필요하지 않습니다.</p>
+<div class="method-grid">
+<article class="card"><h3>전처리 방법 바꾸기</h3><label for="missing-mode">누락·오류 행 처리 방식</label><select class="control" id="missing-mode"><option value="median">중앙값 채우기</option><option value="drop">완전한 행만 사용하기</option></select><div class="result" id="clean-result" aria-live="polite">데이터 불러오는 중…</div><p class="source">2건의 중복 회원 제거 → 음수 방문은 결측으로 변경 → 중앙값 대치 또는 행 삭제. 처리 선택에 따라 모집단이 달라집니다.</p></article>
+<article class="card"><h3>Elbow의 k값 비교</h3><label for="k-choice">군집 개수 선택</label><select class="control" id="k-choice"><option value="2">k = 2</option><option value="3" selected>k = 3 (시연)</option><option value="4">k = 4</option><option value="5">k = 5</option><option value="6">k = 6</option></select><div class="result" id="elbow-result" aria-live="polite">k=3 · SSE 60.9121</div><p class="source">결과는 Python에서 미리 계산한 KMeans SSE를 보여줍니다. 선택할 때마다 모델을 재학습하는 화면은 아닙니다.</p></article>
+<article class="card"><h3>추천 기준 영화 바꾸기</h3><label for="movie-choice">기준 영화</label><select class="control" id="movie-choice"><option>영화A</option><option>영화B</option><option>영화C</option><option>영화D</option><option>영화E</option><option>영화F</option></select><div class="result" id="movie-result" aria-live="polite">평점 CSV 불러오는 중…</div><p class="source">브라우저가 실제 CSV 행에 코사인 유사도를 계산합니다. 0값은 미평가로 처리했으므로 실제 추천 시스템의 결측 처리와 다를 수 있습니다.</p></article>
+<article class="card"><h3>실제 입력 데이터 표 보기</h3><div class="table-scroll"><table class="table"><thead><tr><th>회원ID</th><th>프로그램</th><th>활동개월</th><th>요금(천 원)</th><th>방문(월)</th></tr></thead><tbody id="sample-rows"><tr><td>M001</td><td>B</td><td>8</td><td>34</td><td>12</td></tr><tr><td>M002</td><td>A</td><td>15</td><td>43</td><td>11</td></tr></tbody></table></div><p class="source">CSV 원본 50행 중 앞 6행을 표시하며, 결측값은 빈칸으로 표기합니다.</p></article>
+</div></section>
+<section id="files" class="section container anchor"><div class="eyebrow">03 / REPRODUCE</div><h2 class="section-title">GitHub 코드와 출처</h2><p class="subtitle">다운로드 후 Python으로 실행하면 저장된 계산 결과를 다시 만들 수 있습니다. 기존 Olist·K-pop 프로젝트 파일은 변경하지 않았습니다.</p><div class="links">
+<a class="linkrow" href="통합일지_분석기법_예제실습.ipynb"><strong>Jupyter 실습 노트북</strong><small>기초 → 상관 → t-test → 회귀 → 군집 → 영화추천</small></a>
+<a class="linkrow" href="analysis.py"><strong>Python 분석 실행 코드</strong><small>pandas · scipy · scikit-learn</small></a>
+<a class="linkrow" href="data/sports_center_members_demo.csv"><strong>스포츠센터 회원 가상 CSV</strong><small>50행 · 중복·결측·오류가 포함된 학습용</small></a>
+<a class="linkrow" href="data/movie_ratings_demo.csv"><strong>영화평점 가상 CSV</strong><small>영화 6편 × 평가자 5명</small></a>
+<a class="linkrow" href="data/program_metadata_demo.csv"><strong>프로그램 설명 CSV</strong><small>merge 예제용 2행</small></a>
+<a class="linkrow" href="data/analysis_results.json"><strong>Python 실제 계산 결과 JSON</strong><small>검정 통계·회귀 오차·군집·추천 수치</small></a>
+<a class="linkrow" href="README.md"><strong>실습과제 실행 설명서</strong><small>코드 실행법·기법 종류·한계·재현 체크</small></a>
+<a class="linkrow" href="https://docs.google.com/document/d/1vSeKZW3o3qWyyTn_n1IAkFmWvDxNO4j2cfKaMQaIZtk/edit" target="_blank" rel="noopener noreferrer"><strong>통합수업일지 원문</strong><small>10/29 · 10/30 · 11/02 · 11/03 · 11/09 자료 근거</small></a>
+</div><div class="callout"><strong>검증 책임:</strong> 분석 숫자는 Python으로 실제 계산했지만, **입력 자료는 전부 가상**입니다. 이 결과를 실제 기사나 정책 판단에 사용해서는 안 됩니다. p값은 인과를 증명하지 않으며, 모델 성능은 시험 표본 크기에 따라 달라질 수 있습니다.</div>
+</section>
+</main>
+<footer class="footer"><div class="container">MBC AI 저널리즘 · 통합수업일지 분석기법 실습관 · 2026-11-09 · AI 작성·정리, 최종 검수·게시는 사람 책임<br><a href="../mbc-kpop-olist-20261109/">기존 K-pop × Olist 과제</a> · <a href="../">기존 포트폴리오</a></div></footer>
+<script>
+"use strict";
+const median = values => {const a=values.filter(v=>Number.isFinite(v)).sort((a,b)=>a-b);return a.length? (a[Math.floor((a.length-1)/2)]+a[Math.floor(a.length/2)])/2:NaN};
+function parseCsv(t){const lines=t.trim().split(/\r?\n/);const keys=lines.shift().split(",");return lines.map(line=>{const cols=line.split(",");const x={};keys.forEach((k,i)=>x[k]=cols[i]??"");return x})}
+async function prep(){
+try {const response=await fetch("data/sports_center_members_demo.csv");if(!response.ok)throw Error("CSV "+response.status);
+const raw=parseCsv(await response.text());const seen=new Set(),clean=[];
+for(const row of raw){if(seen.has(row.member_id))continue;seen.add(row.member_id);const x={...row};x.visits_per_month=Number(x.visits_per_month)<0?"":x.visits_per_month;clean.push(x)}
+const body=document.getElementById("sample-rows");body.replaceChildren();
+raw.slice(0,6).forEach(r=>{const tr=document.createElement("tr");["member_id","program","months_active","monthly_fee_krw_1000","visits_per_month"].forEach(k=>{const td=document.createElement("td");td.textContent=r[k]||"결측";tr.append(td)});body.append(tr)});
+const update=()=>{const mode=document.getElementById("missing-mode").value;const cols=["monthly_fee_krw_1000","visits_per_month","satisfaction_1to5"];const med=Object.fromEntries(cols.map(k=>[k,median(clean.map(r=>r[k]===""?NaN:Number(r[k])))]));let list=clean.map(r=>({...r}));if(mode==="drop")list=list.filter(r=>cols.every(k=>r[k]!==""));else list=list.map(r=>{for(const k of cols)if(r[k]==="")r[k]=String(med[k]);return r});const avg=key=>{const a=list.filter(r=>r.program===key);return a.reduce((s,r)=>s+Number(r.visits_per_month),0)/a.length};document.getElementById("clean-result").textContent="원본 "+raw.length+"행 → 중복 제거 "+clean.length+"명 → "+(mode==="drop"?"결측 행 삭제 "+list.length+"명":"중앙값 대치 "+list.length+"명")+" · A 월평균 "+avg("A").toFixed(2)+"회 / B "+avg("B").toFixed(2)+"회";};
+document.getElementById("missing-mode").addEventListener("change",update);update();
+}catch(e){document.getElementById("clean-result").textContent="CSV 불러오기 실패: GitHub Pages 공개 주소에서 다시 열어 주세요."}}
+const elbow={"2":85.9904,"3":60.9121,"4":44.9616,"5":34.8542,"6":30.4426};
+const kControl=document.getElementById("k-choice");
+function showK(){document.getElementById("elbow-result").textContent="k="+kControl.value+" · SSE="+elbow[kControl.value].toFixed(4)+(kControl.value==="3"?" · 시연 군집 14/16/18명":" · 선택 모델 결과는 미표시");}
+kControl.addEventListener("change",showK);showK();
+async function movieDemo(){
+try{const r=await fetch("data/movie_ratings_demo.csv");if(!r.ok)throw Error("movie csv");const rows=parseCsv(await r.text());const toVec=row=>["viewer1","viewer2","viewer3","viewer4","viewer5"].map(k=>Number(row[k]));const similarity=(a,b)=>{const dot=a.reduce((s,x,i)=>s+x*b[i],0),aa=Math.sqrt(a.reduce((s,x)=>s+x*x,0)),bb=Math.sqrt(b.reduce((s,x)=>s+x*x,0));return aa&&bb?dot/(aa*bb):0};const c=document.getElementById("movie-choice"),out=document.getElementById("movie-result");const show=()=>{const ref=rows.find(x=>x.movie===c.value),vec=toVec(ref);const others=rows.filter(x=>x.movie!==c.value).map(x=>({movie:x.movie,similarity:similarity(vec,toVec(x))})).sort((a,b)=>b.similarity-a.similarity).slice(0,3);out.textContent=c.value+"와 유사: "+others.map(x=>x.movie+" "+x.similarity.toFixed(3)).join(" · ")};c.addEventListener("change",show);show();}catch(e){document.getElementById("movie-result").textContent="CSV 로드 실패 — GitHub Pages로 열어 주세요."}}
+prep();movieDemo();
+</script>
+</body>
+</html>
