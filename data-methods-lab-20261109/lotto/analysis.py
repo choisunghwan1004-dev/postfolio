@@ -261,7 +261,7 @@ result={
              "at_least_one_consecutive_pct":round(100*np.mean(np.array(consecutive)>0),3),
              "theory_consecutive_pct":round(100*consecutive_theory,3),
              "last_digit_counts":end_digits.tolist(),
-             "top_pairs":[{"pair":list(k),"count":int(v)} for k,v in pair_counter.most_common(8)]},
+             "top_pairs":[{"pair":[int(n) for n in k],"count":int(v)} for k,v in pair_counter.most_common(8)]},
  "probability":{"combination_total":comb(45,6),"first_prize_probability":1/comb(45,6),
                 "expected_matches":6*6/45,"match_distribution":theory,
                 "mc_stat":round(obs_chi,4),"monte_carlo_simulations":600,
