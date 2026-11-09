@@ -44,3 +44,10 @@ Notion은 소유자의 비공개 자료 페이지입니다. 공개 사이트의 
 - [실제 데이터 실행 과제 ZIP 다운로드 (차트 7장)](https://drive.google.com/file/d/1QcId4pkSIB51OMdgqctqUupA46JQeauL/view?usp=drivesdk)
 - [실습 노트북 1개](mbc-kpop-olist-20261109/KPOP_Olist_데이터분석_실습.ipynb) · [실제 PNG 차트 7장](mbc-kpop-olist-20261109/charts/) · [데이터와 소스](mbc-kpop-olist-20261109/)
 - 웹주소(해당 저장소의 GitHub Pages가 활성화된 경우): https://choisunghwan1004-dev.github.io/postfolio/mbc-kpop-olist-20261109/
+
+
+## 통합수업일지 데이터 분석기법 실습관 (2026-11-09)
+
+- [Pandas·전처리·상관·검정·회귀·표준화·군집·추천 **9종 인터랙티브 실습 화면**](https://choisunghwan1004-dev.github.io/postfolio/data-methods-lab-20261109/)
+- [GitHub 예제 데이터·Python·노트북·SVG 차트](data-methods-lab-20261109/README.md)
+- **교육용 가상 데이터만 사용.** 기존 K-pop/Olist 과제와 별도 실습입니다.
