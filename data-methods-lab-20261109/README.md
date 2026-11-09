@@ -33,6 +33,7 @@
 - [analysis_results.json](data/analysis_results.json) — pandas, SciPy, scikit-learn 실제 계산 결과
 - [통합일지_분석기법_예제실습.ipynb](통합일지_분석기법_예제실습.ipynb) — 복습용 Jupyter 노트북, 파일 내 코드 셀을 직접 실행하는 형태
 - [analysis.py](analysis.py) — 가상 CSV를 읽어 모든 통계·모델·요약 JSON을 재생성
+- [검수기록.md](검수기록.md) — 실제 계산 결과·실행 범위·모형 성능 한계
 - [figures/](figures/) — GitHub Pages에 표시하는 SVG 차트 5개
 
 ## Windows 11 + Python 실행
