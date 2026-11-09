@@ -28,7 +28,7 @@
 - [Olist 출처별 사실표](data/olist_verified_facts.csv)
 - [Olist 차트 4개 재생성 Python 코드](generate_charts.py) · [Spotify 차트 3개 재생성 Python 코드](generate_spotify_charts.py) · [Streamlit 감성분석 소스](streamlit_app.py)
 - [모델 다운로드 코드](다운로드_모델.py) · [검증 코드](실제예측_검증.py) · [설치 목록](requirements_tensorflow.txt)
-- [실제 데이터 분석 결과 보고서](Kpop_실제데이터_분석결과.md) · [과제 제출 안내·최종 검수](README_과제제출.md)
+- [실제 데이터 분석 결과 보고서](Kpop_실제데이터_분석결과.md) · [과제 제출 안내·최종 검수](README_과제제출.md) · [재실행·오류 검수 기록](실행검증_기록.md)
 
 ### 차트 미리보기
 
