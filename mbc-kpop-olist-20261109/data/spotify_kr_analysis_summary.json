@@ -1,0 +1,24 @@
+{
+  "source": "https://www.kworb.net/spotify/country/kr_weekly.html",
+  "chart_week_end": "2026-11-05",
+  "scope": "Spotify South Korea weekly chart, positions 1–20, all genres",
+  "rows": 20,
+  "new_entries_without_change": 1,
+  "top20_total_weekly_streams": 8380754,
+  "top5_total_weekly_streams": 3404755,
+  "top5_share_within_top20_pct": 40.6259,
+  "median_weekly_streams": 355140.5,
+  "comparable_rows": 19,
+  "week_over_week_positive": 8,
+  "week_over_week_negative": 11,
+  "largest_wow_increase": {
+    "artist": "ILLIT",
+    "song": "You’re Under Arrest",
+    "pct": 147.15
+  },
+  "largest_wow_decrease": {
+    "artist": "Jung Kook",
+    "song": "Seven (w/ Latto)",
+    "pct": -37.89
+  }
+}

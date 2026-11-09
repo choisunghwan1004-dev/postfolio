@@ -1,0 +1,7 @@
+# Isolated Windows Python 3.12 environment; CPU inference.
+# TensorFlow 2.18 uses Keras 3, supports the native .keras model format.
+tensorflow==2.18.1
+numpy>=1.26,<2.1
+streamlit>=1.40,<2
+pandas>=2,<3
+h5py>=3.11
