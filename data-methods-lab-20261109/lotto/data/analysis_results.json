@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "source": "사용자가 제공한 cashlogy-lotto-all.csv 부분 추출",
+    "sample_draws": 300,
+    "first_draw": 949,
+    "last_draw": 1248,
+    "last_date": "2026-10-31",
+    "not_latest": true,
+    "disclaimer": "과거 통계 실습이며 미래 로또 번호에 대한 예측력·확률 향상이 검증된 결과가 아님"
+  },
+  "frequency": {
+    "all": [
+      39,
+      33,
+      45,
+      35,
+      26,
+      48,
+      46,
+      31,
+      40,
+      31,
+      40,
+      45,
+      49,
+      40,
+      42,
+      49,
+      34,
+      42,
+      40,
+      39,
+      43,
+      41,
+      37,
+      45,
+      32,
+      41,
+      43,
+      42,
+      42,
+      43,
+      43,
+      37,
+      43,
+      40,
+      47,
+      40,
+      45,
+      47,
+      32,
+      39,
+      36,
+      38,
+      27,
+      40,
+      43
+    ],
+    "last60": [
+      10,
+      7,
+      7,
+      8,
+      5,
+      6,
+      7,
+      7,
+      9,
+      7,
+      6,
+      6,
+      11,
+      4,
+      11,
+      12,
+      5,
+      10,
+      9,
+      8,
+      5,
+      8,
+      8,
+      11,
+      7,
+      7,
+      12,
+      11,
+      7,
+      7,
+      11,
+      8,
+      7,
+      7,
+      7,
+      9,
+      7,
+      13,
+      7,
+      6,
+      8,
+      10,
+      6,
+      8,
+      8
+    ],
+    "top6": [
+      13,
+      16,
+      6,
+      35,
+      38,
+      7
+    ],
+    "bottom6": [
+      5,
+      43,
+      8,
+      10,
+      25,
+      39
+    ],
+    "expected_per_number": 40
+  },
+  "patterns": {
+    "mean_sum": 138.3933,
+    "odd_mean": 3.0467,
+    "low_1_22_mean": 2.9267,
+    "multiples3_mean": 2.1067,
+    "at_least_one_consecutive_count": 154,
+    "at_least_one_consecutive_pct": 51.3333,
+    "theory_consecutive_pct": 52.8747,
+    "last_digit_counts": [
+      152,
+      201,
+      194,
+      201,
+      200,
+      190,
+      178,
+      168,
+      162,
+      154
+    ],
+    "top_pairs": [
+      {
+        "pair": [
+          27,
+          38
+        ],
+        "count": 13
+      },
+      {
+        "pair": [
+          30,
+          31
+        ],
+        "count": 12
+      },
+      {
+        "pair": [
+          16,
+          23
+        ],
+        "count": 11
+      },
+      {
+        "pair": [
+          16,
+          24
+        ],
+        "count": 11
+      },
+      {
+        "pair": [
+          31,
+          41
+        ],
+        "count": 11
+      },
+      {
+        "pair": [
+          37,
+          40
+        ],
+        "count": 11
+      },
+      {
+        "pair": [
+          11,
+          21
+        ],
+        "count": 10
+      },
+      {
+        "pair": [
+          13,
+          18
+        ],
+        "count": 10
+      }
+    ]
+  },
+  "probability": {
+    "combination_total": 8145060,
+    "first_prize_probability": 1.2277380399898834e-7,
+    "expected_matches": 0.8,
+    "match_distribution": {
+      "0": 0.40056463672459136,
+      "1": 0.4241272624142732,
+      "2": 0.15147402229081186,
+      "3": 0.02244059589493509,
+      "4": 0.0013646308314487555,
+      "5": 0.00002872907013576327,
+      "6": 1.2277380399898834e-7
+    },
+    "mc_stat": 33.45,
+    "monte_carlo_simulations": 600,
+    "mc_pvalue": 0.73877
+  },
+  "backtest": {
+    "train_min": 150,
+    "test_first_draw": 1099,
+    "test_last_draw": 1248,
+    "window": 60,
+    "strategies": {
+      "recent_frequency": {
+        "draws": 150,
+        "mean_matches": 0.773333,
+        "hits_ge_3": 4,
+        "hits_6": 0,
+        "hist": {
+          "0": 63,
+          "1": 62,
+          "2": 21,
+          "3": 4,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "exp_weighted": {
+        "draws": 150,
+        "mean_matches": 0.706667,
+        "hits_ge_3": 3,
+        "hits_6": 0,
+        "hist": {
+          "0": 65,
+          "1": 67,
+          "2": 15,
+          "3": 3,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      },
+      "uniform_random": {
+        "draws": 150,
+        "mean_matches": 0.913333,
+        "hits_ge_3": 6,
+        "hits_6": 0,
+        "hist": {
+          "0": 51,
+          "1": 67,
+          "2": 26,
+          "3": 6,
+          "4": 0,
+          "5": 0,
+          "6": 0
+        }
+      }
+    }
+  },
+  "sample_tickets": {
+    "candidate_count": 100,
+    "fixed_core": [
+      13,
+      16,
+      6,
+      35
+    ],
+    "tickets": [
+      {
+        "type": "핵심3",
+        "numbers": [
+          6,
+          13,
+          16,
+          36,
+          37,
+          40
+        ]
+      },
+      {
+        "type": "핵심3",
+        "numbers": [
+          6,
+          13,
+          16,
+          19,
+          25,
+          29
+        ]
+      },
+      {
+        "type": "핵심3",
+        "numbers": [
+          6,
+          13,
+          16,
+          26,
+          27,
+          42
+        ]
+      },
+      {
+        "type": "핵심3",
+        "numbers": [
+          6,
+          7,
+          13,
+          16,
+          23,
+          24
+        ]
+      },
+      {
+        "type": "핵심4",
+        "numbers": [
+          6,
+          7,
+          8,
+          13,
+          16,
+          35
+        ]
+      },
+      {
+        "type": "핵심4",
+        "numbers": [
+          6,
+          13,
+          16,
+          25,
+          35,
+          39
+        ]
+      },
+      {
+        "type": "일부",
+        "numbers": [
+          6,
+          11,
+          13,
+          16,
+          36,
+          38
+        ]
+      },
+      {
+        "type": "일부",
+        "numbers": [
+          6,
+          9,
+          15,
+          16,
+          36,
+          41
+        ]
+      },
+      {
+        "type": "비고정",
+        "numbers": [
+          13,
+          14,
+          24,
+          26,
+          37,
+          38
+        ]
+      },
+      {
+        "type": "비고정",
+        "numbers": [
+          18,
+          21,
+          22,
+          23,
+          37,
+          38
+        ]
+      }
+    ],
+    "not_prediction": true
+  },
+  "pdf_extra10": {
+    "log_vs_scaler": {
+      "standardized_means": [
+        0,
+        0
+      ],
+      "minmax_range": [
+        0,
+        1
+      ],
+      "purpose": "로그축=눈금, log1p=값, StandardScaler=모델용 표준화"
+    },
+    "iqr_prize": {
+      "q1": 1700749578.5,
+      "q3": 2673219426.25,
+      "lower": 242044806.875,
+      "upper": 4131924197.875,
+      "candidate_count": 10
+    },
+    "welch_prize_first150_vs_last150": {
+      "t": 2.9779,
+      "p": 0.003205,
+      "not_causal": true
+    },
+    "moving_average": {
+      "window_draws": 12,
+      "last12_mean_sales": 121020034166.66667
+    },
+    "monthly_yoy": {
+      "latest_month": "2026-10",
+      "pct_vs_same_month_last_year": -0.7605,
+      "latest_month_mean_sales": 121997697800
+    },
+    "rate_per100k_synthetic": [
+      {
+        "region": "가상 A시",
+        "event_count": 50,
+        "population": 10000000,
+        "per_100k": 0.5
+      },
+      {
+        "region": "가상 B시",
+        "event_count": 10,
+        "population": 1000000,
+        "per_100k": 1
+      },
+      {
+        "region": "가상 C시",
+        "event_count": 15,
+        "population": 2000000,
+        "per_100k": 0.75
+      },
+      {
+        "region": "가상 D시",
+        "event_count": 4,
+        "population": 600000,
+        "per_100k": 0.6666667
+      }
+    ],
+    "rfm_synthetic": {
+      "customers": 30,
+      "orders": 60,
+      "one_purchase_customers": 10
+    },
+    "cohort_synthetic": {
+      "cohorts": 4,
+      "month_0_retention": 1
+    },
+    "tfidf_synthetic": {
+      "documents": 12,
+      "negative_distinctive": [
+        {
+          "term": "오류",
+          "score": 0.3252
+        },
+        {
+          "term": "불편",
+          "score": 0.2727
+        },
+        {
+          "term": "멈춤",
+          "score": 0.2348
+        },
+        {
+          "term": "느림",
+          "score": 0.221
+        },
+        {
+          "term": "접속",
+          "score": 0.1515
+        },
+        {
+          "term": "지연",
+          "score": 0.1515
+        }
+      ]
+    },
+    "plotly": "plotly_interactive.html; external CDN JS required"
+  }
+}
