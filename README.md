@@ -36,3 +36,10 @@ Notion은 소유자의 비공개 자료 페이지입니다. 공개 사이트의 
 
 
 [기획서 Word](docs/오늘프로젝트_기획서_최종본.docx) · [분석서 Word](docs/오늘프로젝트_분석서_최종본.docx)
+
+## MBC 데이터 분석 · K-pop × Olist 과제 포트폴리오
+
+- [차트·비교 분석 웹페이지 코드](mbc-kpop-olist-20261109/index.html)
+- [과제 설명 및 원본 출처](mbc-kpop-olist-20261109/README.md)
+- [과제 제출 ZIP 다운로드](https://drive.google.com/file/d/1gORcec-W3NF6R7m894lCxQ_TqMIr97RB/view?usp=drivesdk)
+- 웹주소(해당 저장소의 GitHub Pages가 활성화된 경우): https://choisunghwan1004-dev.github.io/postfolio/mbc-kpop-olist-20261109/
