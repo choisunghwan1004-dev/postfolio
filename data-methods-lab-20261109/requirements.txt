@@ -1,0 +1,7 @@
+pandas>=2.0,<3
+numpy>=1.26,<3
+scipy>=1.11,<2
+scikit-learn>=1.4,<2
+matplotlib>=3.7,<4
+notebook>=7,<9
+ipykernel>=6,<8
