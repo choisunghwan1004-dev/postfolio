@@ -1,0 +1,108 @@
+{
+  "data_kind": "교육용 가상 데이터 (실제 회원·운영 통계 아님)",
+  "source_csv": "../data-methods-lab-20261109/data/sports_center_members_demo.csv",
+  "random_seed": 20261109,
+  "repetitions": 10000,
+  "cleaning": {
+    "raw_rows": 50,
+    "duplicate_ids": 2,
+    "invalid_negative_visits": 1,
+    "imputed_missing_before_fill": {
+      "visits_per_month": 1,
+      "satisfaction_1to5": 2
+    },
+    "clean_rows": 48
+  },
+  "group_visit_mean": {
+    "A": 8.541667,
+    "B": 10.416667
+  },
+  "bootstrap_difference_B_minus_A": {
+    "observed": 1.875,
+    "percentile_95_interval": [
+      0.333333,
+      3.458333
+    ]
+  },
+  "permutation_two_sided": {
+    "p_value": 0.031597,
+    "exceedances": 315,
+    "p_formula": "(extreme_count+1)/(repetitions+1)"
+  },
+  "chi_square_program_vs_district": {
+    "statistic": 0,
+    "p_value": 1,
+    "degrees_of_freedom": 2,
+    "min_expected_count": 8,
+    "expected_all_at_least_5": true,
+    "interpretation": "Only use asymptotic p-value if expected-count assumption is acceptable"
+  },
+  "district_entropy": {
+    "counts": {
+      "동부": 16,
+      "서부": 16,
+      "중부": 16
+    },
+    "entropy_bits": 1.584963,
+    "max_bits": 1.584963,
+    "normalized": 1
+  },
+  "conditional_probability_satisfied_given_program": {
+    "A": 0.208333,
+    "B": 0.5
+  },
+  "bayesian_beta_binomial": {
+    "A": {
+      "successes": 5,
+      "n": 24,
+      "empirical_rate": 0.208333,
+      "beta_prior": [
+        1,
+        1
+      ],
+      "beta_posterior": [
+        6,
+        20
+      ],
+      "posterior_mean": 0.230769
+    },
+    "B": {
+      "successes": 12,
+      "n": 24,
+      "empirical_rate": 0.5,
+      "beta_prior": [
+        1,
+        1
+      ],
+      "beta_posterior": [
+        13,
+        13
+      ],
+      "posterior_mean": 0.5
+    }
+  },
+  "iqr_outlier_flags": {
+    "lower": 1,
+    "upper": 17,
+    "flagged_member_ids": [],
+    "note": "Exploratory flag, not grounds to delete observations"
+  },
+  "multiple_comparisons_BH": {
+    "raw_p": {
+      "permutation_visit_difference": 0.031597,
+      "chi_square_program_district": 1
+    },
+    "adjusted_p": {
+      "chi_square_program_district": 1,
+      "permutation_visit_difference": 0.063194
+    },
+    "m": 2
+  },
+  "limitations": [
+    "수업용 가상 자료",
+    "프로그램 배정이 무작위가 아니므로 인과관계 불가",
+    "순서가 시간축이 아니므로 자기상관·시계열 모델 적용하지 않음",
+    "기계학습 예측 성능은 이 분석에서 평가하지 않음",
+    "결측 대치의 영향과 다중검정·모델 가정 검토 필요"
+  ]
+}
