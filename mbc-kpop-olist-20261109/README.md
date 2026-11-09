@@ -24,7 +24,7 @@
 
 ## 분석 프로젝트
 
-- [K-pop DATA LAB](https://github.com/dominickim77-ui/mbc-kpop-data) — 2026-11-09 재접속 시 API 404: 최신 데이터 재검증 불가. 웹페이지에는 실측 K-pop 통계 없음.
+- **K-pop DATA LAB (과거 분석 자료 확인 가능)** — [2026-11-06 K-pop × Olist 발표자료](https://docs.google.com/presentation/d/1hm6ltewG0AlyjkrerB3e1jDjrKCcMj75/edit?usp=drivesdk)에는 이전에 확인한 5곡 비교 스냅샷(Spotify 2026-10-01 주간 / YouTube 2026-10-07 수집)과 분석기법이 수록되어 있습니다. **현재 최신 데이터가 아니라 과거 수집 자료**입니다. [원본 GitHub](https://github.com/dominickim77-ui/mbc-kpop-data)는 2026-11-09 재접속 시 404로, 비공개 전환·이동·삭제 여부는 확인되지 않았습니다. 원본 CSV를 다시 확보하기 전까지 최신값으로 업데이트하지 않습니다.
 - [Olist Data Analysis](https://github.com/journal-izm/Olist-Data-Analysis) — README, F01~F35 사실표, 감성분석 Gradio 노트북과 모델 파일 목록을 검토.
 - [Olist 딥러닝 모델 예제](https://github.com/journal-izm/Olist-Data-Analysis/blob/main/STEP2_Model_Serving/01_sentiment_demo_gradio.ipynb) — Keras 감성분석/Tokenizer, 입력 길이 50, post padding 및 truncating.
 
