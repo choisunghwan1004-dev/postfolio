@@ -1,0 +1,4 @@
+MBC K-pop × Olist portfolio publication check.
+Published folder: mbc-kpop-olist-20261109/
+This text file is a safe static deployment trigger, added after GitHub Pages was configured to publish from main /(root).
+No existing page or project code was modified.
