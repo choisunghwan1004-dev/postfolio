@@ -1,0 +1,78 @@
+{
+  "dataset": "가상 스포츠센터 회원·가상 영화 평점",
+  "not_real_data": true,
+  "raw_rows": 50,
+  "duplicates": 2,
+  "clean_rows": 48,
+  "invalid_visits": 1,
+  "missing_counts": {
+    "monthly_fee_krw_1000": 3,
+    "visits_per_month": 1,
+    "satisfaction_1to5": 2
+  },
+  "group_stats": [
+    {
+      "program": "A",
+      "name": "일반반",
+      "n": 24,
+      "mean_visits": 8.5417
+    },
+    {
+      "program": "B",
+      "name": "활동반",
+      "n": 24,
+      "mean_visits": 10.4167
+    }
+  ],
+  "corr": 0.6374,
+  "welch_t": -2.3224,
+  "welch_p": 0.025388,
+  "regression": {
+    "train": 36,
+    "test": 12,
+    "mae": 2.3875,
+    "r2": -0.2779
+  },
+  "kmeans": {
+    "k": 3,
+    "silhouette": 0.309,
+    "elbow": {
+      "2": 85.9904,
+      "3": 60.9121,
+      "4": 44.9616,
+      "5": 34.8542,
+      "6": 30.4426
+    },
+    "clusters": [
+      {
+        "cluster": 0,
+        "n": 14,
+        "avg_visits": 6.79
+      },
+      {
+        "cluster": 1,
+        "n": 16,
+        "avg_visits": 9.06
+      },
+      {
+        "cluster": 2,
+        "n": 18,
+        "avg_visits": 11.94
+      }
+    ]
+  },
+  "movieA_neighbors": [
+    {
+      "movie": "영화B",
+      "similarity": 0.974
+    },
+    {
+      "movie": "영화E",
+      "similarity": 0.838
+    },
+    {
+      "movie": "영화F",
+      "similarity": 0.4174
+    }
+  ]
+}
