@@ -41,5 +41,6 @@ Notion은 소유자의 비공개 자료 페이지입니다. 공개 사이트의 
 
 - [차트·비교 분석 웹페이지 코드](mbc-kpop-olist-20261109/index.html)
 - [과제 설명 및 원본 출처](mbc-kpop-olist-20261109/README.md)
-- [과제 제출 ZIP 다운로드](https://drive.google.com/file/d/1gORcec-W3NF6R7m894lCxQ_TqMIr97RB/view?usp=drivesdk)
+- [실제 데이터 실행 과제 ZIP 다운로드 (차트 7장)](https://drive.google.com/file/d/1QcId4pkSIB51OMdgqctqUupA46JQeauL/view?usp=drivesdk)
+- [실습 노트북 1개](mbc-kpop-olist-20261109/KPOP_Olist_데이터분석_실습.ipynb) · [실제 PNG 차트 7장](mbc-kpop-olist-20261109/charts/) · [데이터와 소스](mbc-kpop-olist-20261109/)
 - 웹주소(해당 저장소의 GitHub Pages가 활성화된 경우): https://choisunghwan1004-dev.github.io/postfolio/mbc-kpop-olist-20261109/
