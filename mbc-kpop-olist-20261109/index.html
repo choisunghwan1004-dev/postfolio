@@ -20,8 +20,8 @@
 <section class="hero wrap">
   <div class="eyebrow">AI 데이터 저널리스트 · 2026.11.09 제출 과제</div>
   <h1>숫자로 설명하고,<br><em>근거로 검증하다.</em></h1>
-  <p>K-pop과 Olist GitHub 프로젝트를 분석하고, 시각화와 머신러닝의 차이를 설명합니다. Olist의 공개 사실표에서 출처가 확인된 숫자를 재구성해 차트 4개로 보여줍니다.</p>
-  <div class="actions"><a class="btn primary" href="#charts">차트 4장 보기</a><a class="btn" href="https://drive.google.com/file/d/1gORcec-W3NF6R7m894lCxQ_TqMIr97RB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">과제 ZIP 받기 ↗</a><a class="btn" href="https://github.com/choisunghwan1004-dev/postfolio/tree/main/mbc-kpop-olist-20261109" target="_blank" rel="noopener noreferrer">GitHub 소스 ↗</a></div>
+  <p>K-pop과 Olist GitHub 프로젝트를 분석하고, 시각화와 머신러닝의 차이를 설명합니다. Olist 원본 사실표를 재시각화한 4개 차트와 Spotify 한국 주간 실측 데이터를 분석한 3개 차트를 합쳐 총 7개를 보여줍니다.</p>
+  <div class="actions"><a class="btn primary" href="#charts">차트 7장 보기</a><a class="btn" href="https://drive.google.com/file/d/1QcId4pkSIB51OMdgqctqUupA46JQeauL/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">과제 ZIP 받기 ↗</a><a class="btn" href="https://github.com/choisunghwan1004-dev/postfolio/tree/main/mbc-kpop-olist-20261109" target="_blank" rel="noopener noreferrer">GitHub 소스 ↗</a></div>
   <p style="margin-top:20px"><span class="pill">Olist 숫자 출처 확인</span> <span class="pill neutral">K-pop 최신 저장소 접속 보류</span> <span class="pill neutral">모델 예측값 별도 검증 필요</span></p>
 </section>
 <div class="wrap stats" aria-label="검증된 Olist 통계 요약">
@@ -115,7 +115,7 @@
  </details>
  </section>
 <section id="methods" class="section wrap">
-  <div class="eyebrow">02 / METHODS</div><h2>왜 로그축이지? 표준화가 아니라?</h2>
+  <div class="eyebrow">03 / METHODS</div><h2>왜 로그축이지? 표준화가 아니라?</h2>
   <p class="sub">그래프의 눈금을 바꾸는 일과 머신러닝의 입력값을 가공하는 일은 목적이 다릅니다.</p>
   <div class="methods">
    <div class="method"><strong>① 로그축 (Log Scale)</strong><code>axis: "logarithmic"</code><p class="mini">숫자의 크기 차이가 매우 클 때 눈금 간격을 압축해 보여주는 방식. 원래 숫자는 그대로입니다.</p></div>
@@ -132,18 +132,18 @@
   </div>
 </section>
 <section id="evidence" class="section wrap">
- <div class="eyebrow">03 / VERIFICATION</div><h2>확인한 사실과 남은 검증</h2>
+ <div class="eyebrow">04 / VERIFICATION</div><h2>확인한 사실과 남은 검증</h2>
  <p class="sub">분석 결과를 과장하지 않고, 검증 단계별 상태를 분리했습니다.</p>
  <div class="checks">
   <div class="check"><div class="state">✓ 확인</div><strong>Olist 사실표 F08·F14·F23~F25·F27</strong><p class="mini">저장소의 집계표를 확인하고 동일한 숫자로 4개의 차트를 재구성.</p></div>
   <div class="check"><div class="state">✓ 확인</div><strong>Python 3.12 / TensorFlow 2.18.1 / Streamlit 1.67.0</strong><p class="mini">사용자가 제공한 Windows 실행 화면에서 버전 확인.</p></div>
-  <div class="check pending"><div class="state">△ 추가 검증</div><strong>K-pop 저장소 원본 재열람</strong><p class="mini">재접속 시 404. 실제 곡별 수치 그래프 대신 방법론 설명을 수록.</p></div>
+  <div class="check pending"><div class="state">△ 추가 검증</div><strong>K-pop 저장소 원본 재열람</strong><p class="mini">원본 5곡 Spotify/YouTube CSV는 404로 재확인 불가. 대신 별도 출처인 Kworb 한국 Spotify TOP20 실측 차트 3개를 실행·표시했습니다.</p></div>
   <div class="check pending"><div class="state">△ 추가 검증</div><strong>감성분석 모델의 실제 예측 결과</strong><p class="mini">별도의 Streamlit 실행 코드가 있으나 예측 확률 CSV·성공 로그는 제출받지 못함. 웹페이지는 정적 포트폴리오로 AI 추론을 실행하지 않습니다.</p></div>
  </div>
 </section>
 <section id="resources" class="section wrap">
- <div class="eyebrow">04 / LINKS</div><h2>실습 자료와 출처</h2>
- <p class="sub">원본 모델 파일과 민감한 API 키는 재배포하지 않습니다.</p>
+ <div class="eyebrow">05 / LINKS</div><h2>실습 자료와 출처</h2>
+ <p class="sub">원본 모델 파일과 민감한 API 키는 재배포하지 않습니다. 과제 제출 내용은 <a href="https://github.com/choisunghwan1004-dev/postfolio/blob/main/mbc-kpop-olist-20261109/README_%EA%B3%BC%EC%A0%9C%EC%A0%9C%EC%B6%9C.md" target="_blank" rel="noopener noreferrer">최종 제출·검수 문서</a>에서 확인할 수 있습니다.</p>
  <div class="sources">
   <div class="source-row">📦 <a href="https://drive.google.com/file/d/1QcId4pkSIB51OMdgqctqUupA46JQeauL/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>실제 데이터 실행 과제 ZIP</strong></a> · 노트북 1개, PNG 7장, 분석보고서, Streamlit 코드</div>
   <div class="source-row">📊 <a href="https://github.com/journal-izm/Olist-Data-Analysis" target="_blank" rel="noopener noreferrer"><strong>Olist 분석 원본 GitHub</strong></a> · <a href="https://github.com/journal-izm/Olist-Data-Analysis/blob/main/rag/olist_facts.csv" target="_blank" rel="noopener noreferrer">분석 사실표 F01~F35</a></div>
