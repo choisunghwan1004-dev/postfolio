@@ -181,8 +181,8 @@ reviews.to_csv(DATA/"synthetic_comments.csv",index=False,encoding="utf-8-sig")
 vec=TfidfVectorizer(token_pattern=r"(?u)\b\w+\b")
 tf=vec.fit_transform(reviews.text)
 terms=np.asarray(vec.get_feature_names_out())
-scores=np.asarray(tf[reviews.label.eq("불편")].mean(axis=0)).ravel()-np.asarray(
-    tf[reviews.label.eq("긍정")].mean(axis=0)).ravel()
+scores=np.asarray(tf[reviews.label.eq("불편").to_numpy()].mean(axis=0)).ravel()-np.asarray(
+    tf[reviews.label.eq("긍정").to_numpy()].mean(axis=0)).ravel()
 top_idx=np.argsort(-scores)[:6]
 top_terms=[{"term":str(terms[i]),"score":round(float(scores[i]),4)} for i in top_idx]
 
