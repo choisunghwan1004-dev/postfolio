@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="MBC AI 데이터저널리즘 실습 포트폴리오: K-pop·Olist GitHub 분석, 통계 차트 4개, 로그축과 표준화 비교 및 검증 기록.">
+<title>MBC 데이터 분석 포트폴리오 | K-pop × Olist</title>
+<style>
+:root{--bg:#f7faf9;--surface:#fff;--ink:#20343a;--muted:#617780;--line:#deebe8;--mint:#0f8e82;--mint2:#dff4ed;--blue:#4e7eb4;--peach:#fff0e4;--orange:#cb6e45;--shadow:0 12px 38px rgba(17,65,58,.065);font-family:"Pretendard","Noto Sans KR","Malgun Gothic",system-ui,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px}a{color:var(--mint);text-decoration:none}a:hover{text-decoration:underline}a:focus-visible,button:focus-visible{outline:3px solid #edb652;outline-offset:4px}
+.wrap{width:min(1140px,calc(100% - 36px));margin:0 auto}header{border-bottom:1px solid var(--line);background:#ffffffdc;position:sticky;top:0;z-index:10;backdrop-filter:blur(12px)}.nav{min-height:68px;display:flex;align-items:center;gap:25px;justify-content:space-between}.brand{font-weight:900;letter-spacing:-.035em;white-space:nowrap;color:var(--ink)}.brand span{color:var(--mint)}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:#48646c;font-size:14px;font-weight:700}.hero{padding:70px 0 48px}.eyebrow{color:var(--mint);font-weight:900;font-size:13px;letter-spacing:.12em;text-transform:uppercase}.hero h1{font-size:clamp(35px,5.3vw,66px);line-height:1.15;letter-spacing:-.065em;margin:13px 0 19px;max-width:850px}.hero h1 em{font-style:normal;color:var(--mint)}.hero p{max-width:750px;color:var(--muted);font-size:17px;margin:0}.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:12px 19px;border-radius:13px;font-weight:800;font-size:14px;border:1px solid var(--line);background:white;color:var(--ink);box-shadow:0 4px 12px #dce9e752}.btn.primary{background:var(--mint);color:white;border-color:var(--mint)}.pill{display:inline-block;background:var(--mint2);border-radius:100px;color:#0c7b70;font-weight:800;font-size:12px;padding:5px 11px}.pill.neutral{background:#eef2f5;color:#506d79}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:20px 0 58px}.stat{background:white;border:1px solid var(--line);border-radius:19px;padding:19px 22px;box-shadow:var(--shadow)}.stat .n{font-size:clamp(23px,2.9vw,39px);line-height:1.15;font-weight:900;letter-spacing:-.04em}.stat .k{font-size:13px;color:var(--muted);margin-top:9px}.section{padding:42px 0}.section h2{font-size:clamp(25px,3.5vw,38px);letter-spacing:-.05em;margin:6px 0 12px;line-height:1.3}.section .sub{color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:19px}.card{background:var(--surface);border:1px solid var(--line);border-radius:23px;padding:25px;box-shadow:var(--shadow)}.card h3{font-size:20px;margin:0 0 12px;letter-spacing:-.025em}.card p{color:var(--muted);margin:8px 0}.source{font-size:12px;color:var(--muted);border-top:1px solid var(--line);margin-top:18px;padding-top:11px}.question{margin:10px 0 15px;font-weight:800}.conclusion{background:#f0f9f6;padding:12px 14px;border-radius:12px;font-size:14px}.plot{display:grid;gap:12px;margin:22px 0}.barrow{display:grid;grid-template-columns:minmax(82px,115px) minmax(0,1fr) 76px;gap:11px;align-items:center}.barrow .label{font-size:12px;font-weight:700;line-height:1.3}.track{height:23px;background:#eaf2f1;border-left:2px solid #8ca7a1;position:relative;border-radius:0 6px 6px 0;overflow:hidden}.fill{height:100%;width:0;border-radius:0 6px 6px 0;background:var(--mint);transition:width .35s ease}.fill.blue{background:#729cc8}.fill.orange{background:#dea074}.fill.gray{background:#9eafb7}.mark{position:absolute;top:6px;height:13px;width:13px;border-radius:50%;background:var(--mint);border:2px solid white;box-shadow:0 0 0 2px var(--mint);transform:translateX(-50%)}.mark.orange{background:var(--orange);box-shadow:0 0 0 2px var(--orange)}.value{font-size:13px;font-weight:900;text-align:right;white-space:nowrap}.axis{color:#738a8d;font-size:11px;display:flex;justify-content:space-between;margin-left:128px}.mini{font-size:13px;color:var(--muted)}.methods{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.method{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.method strong{font-size:17px}.method code{display:block;background:#f2f7f6;border-radius:8px;padding:9px;margin:10px 0;white-space:normal;font-size:13px}.compare{background:#fff;border:1px solid var(--line);padding:25px;border-radius:23px}.switch{display:inline-flex;gap:4px;border:1px solid var(--line);padding:4px;border-radius:12px;background:#f2f7f6}.switch button{border:0;background:transparent;border-radius:8px;padding:8px 13px;font-size:13px;font-weight:800;cursor:pointer;color:var(--ink)}.switch button[aria-pressed="true"]{background:var(--mint);color:#fff}.warning{background:#fff9f1;border-left:4px solid #dda65b;border-radius:8px;padding:13px 15px;margin:17px 0;font-size:14px}.checks{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.check{background:#fff;border:1px solid var(--line);padding:16px 18px;border-radius:16px}.check .state{font-size:12px;color:var(--mint);font-weight:900}.check.pending .state{color:#b37a49}.sources{display:grid;gap:9px}.source-row{border:1px solid var(--line);padding:14px 16px;background:#fff;border-radius:14px;overflow-wrap:anywhere}.footer{padding:45px 0 65px;color:var(--muted);font-size:13px}.footer .wrap{border-top:1px solid var(--line);padding-top:23px}.notice{margin-top:10px;color:#7a4d2e}code{font-family:Consolas,monospace}
+@media(max-width:800px){.stats{grid-template-columns:repeat(2,1fr)}.grid,.methods{grid-template-columns:1fr}.hero{padding-top:42px}.card{padding:19px}.nav{gap:10px}nav{gap:12px}}
+@media(max-width:490px){nav a{font-size:12px}.brand{font-size:14px}.stats{gap:8px}.stat{padding:15px}.barrow{grid-template-columns:76px minmax(0,1fr) 61px;gap:7px}.axis{margin-left:83px}.value{font-size:12px}.barrow .label{font-size:11px}.hero p{font-size:15px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.fill{transition:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a href="#top" class="brand">MBC <span>DATA LAB</span></a><nav aria-label="목차"><a href="#charts">분석 차트</a><a href="#methods">추가 기법</a><a href="#evidence">검증</a><a href="#resources">제출 자료</a></nav></div></header>
+<main id="top">
+<section class="hero wrap">
+  <div class="eyebrow">AI 데이터 저널리스트 · 2026.11.09 제출 과제</div>
+  <h1>숫자로 설명하고,<br><em>근거로 검증하다.</em></h1>
+  <p>K-pop과 Olist GitHub 프로젝트를 분석하고, 시각화와 머신러닝의 차이를 설명합니다. Olist의 공개 사실표에서 출처가 확인된 숫자를 재구성해 차트 4개로 보여줍니다.</p>
+  <div class="actions"><a class="btn primary" href="#charts">차트 4장 보기</a><a class="btn" href="https://drive.google.com/file/d/1gORcec-W3NF6R7m894lCxQ_TqMIr97RB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">과제 ZIP 받기 ↗</a><a class="btn" href="https://github.com/choisunghwan1004-dev/postfolio/tree/main/mbc-kpop-olist-20261109" target="_blank" rel="noopener noreferrer">GitHub 소스 ↗</a></div>
+  <p style="margin-top:20px"><span class="pill">Olist 숫자 출처 확인</span> <span class="pill neutral">K-pop 최신 저장소 접속 보류</span> <span class="pill neutral">모델 예측값 별도 검증 필요</span></p>
+</section>
+<div class="wrap stats" aria-label="검증된 Olist 통계 요약">
+  <div class="stat"><div class="n">4.30점</div><div class="k">제때 도착 주문의 평균 리뷰 · F14</div></div>
+  <div class="stat"><div class="n">2.57점</div><div class="k">늦게 도착한 주문의 평균 리뷰 · F14</div></div>
+  <div class="stat"><div class="n">92.6%</div><div class="k">Bigram 머신러닝 정확도 · F24</div></div>
+  <div class="stat"><div class="n">66.6%</div><div class="k">SP·RJ·MG 주문 비중 합계 · F08</div></div>
+</div>
+<section id="charts" class="section wrap">
+  <div class="eyebrow">01 / ANALYSIS</div><h2>질문이 먼저, 차트는 그다음</h2>
+  <p class="sub">총 4장 · 막대축은 0부터 시작 · 값과 단위, 사실ID를 함께 표시합니다. 아래 차트는 원본의 집계 수치를 재시각화한 결과이며 신규 통계 검정은 아닙니다.</p>
+  <div class="grid">
+    <article class="card"><span class="pill">F14 · 배송 / 리뷰</span><h3>배송 지연과 리뷰 점수</h3><div class="question">Q. 늦게 도착한 주문의 평점은 얼마나 다른가?</div><div class="plot" data-chart="delivery" role="img" aria-label="제때 도착 4.30점, 지연 도착 2.57점"></div><p class="conclusion"><strong>한 줄 결과</strong> · 배송 지연 주문의 평균 리뷰 점수는 제때 도착 주문보다 <strong>1.73점 낮았습니다.</strong></p><div class="source">원자료 분석 사실표 F14 · 리뷰 평점 5점 만점 · 배송 완료 주문 기준</div></article>
+    <article class="card"><span class="pill">F23–F25 · 감성분석</span><h3>머신러닝과 딥러닝 비교</h3><div class="question">Q. 딥러닝이 항상 더 정확할까?</div><div class="plot" data-chart="sentiment" role="img" aria-label="모두 긍정 71.0%, TF-IDF 머신러닝 91.7%, Bigram 머신러닝 92.6%, Embedding 딥러닝 92.4%"></div><p class="conclusion"><strong>한 줄 결과</strong> · Bigram 머신러닝 92.6%, 딥러닝 92.4%로 <strong>0.2%p 차이</strong>였습니다.</p><div class="source">기존 모델 실습 사실표 F23·F24·F25 · 정확도(%) · 원본의 평가 조건 확인 필요</div></article>
+    <article class="card"><span class="pill">F08 · 지역별 분포</span><h3>지역별 주문 비중</h3><div class="question">Q. 주문은 어떤 지역에 집중돼 있을까?</div><div class="plot" data-chart="region" role="img" aria-label="SP 42.0%, RJ 12.8%, MG 11.8%, 그 외 33.4%"></div><p class="conclusion"><strong>한 줄 결과</strong> · SP·RJ·MG 상위 3개 주가 전체 주문 비중의 <strong>66.6%</strong>를 차지했습니다.</p><div class="source">사실표 F08 · 고객 주(state) 기준 · '그 외'는 100 − 66.6으로 계산</div></article>
+    <article class="card"><span class="pill">F27 · 판매자 군집</span><h3>판매자 유형별 규모</h3><div class="question">Q. 어떤 판매자 집단이 가장 클까?</div><div class="plot" data-chart="seller" role="img" aria-label="신규 성장 947명, 핵심 우량 876명, 휴면 461명, 저평점 위험 218명"></div><p class="conclusion"><strong>한 줄 결과</strong> · 판매자 2,502명 중 <strong>신규 성장 집단 947명</strong>이 가장 컸습니다.</p><div class="source">사실표 F27 · 기준일 이전 판매 기록의 K-Means 분류 결과 · 합계 2,502명</div></article>
+  </div>
+</section>
+<section id="methods" class="section wrap">
+  <div class="eyebrow">02 / METHODS</div><h2>왜 로그축이지? 표준화가 아니라?</h2>
+  <p class="sub">그래프의 눈금을 바꾸는 일과 머신러닝의 입력값을 가공하는 일은 목적이 다릅니다.</p>
+  <div class="methods">
+   <div class="method"><strong>① 로그축 (Log Scale)</strong><code>axis: "logarithmic"</code><p class="mini">숫자의 크기 차이가 매우 클 때 눈금 간격을 압축해 보여주는 방식. 원래 숫자는 그대로입니다.</p></div>
+   <div class="method"><strong>② 로그변환 (log1p)</strong><code>np.log1p(x)</code><p class="mini">실제 입력 숫자를 변환합니다. 비음수 데이터의 큰 값 쏠림을 줄이는 전처리로 활용합니다.</p></div>
+   <div class="method"><strong>③ 표준화 (StandardScaler)</strong><code>(x − 학습 평균) / 학습 표준편차</code><p class="mini">모델에 넣을 변수들의 스케일을 맞춥니다. 테스트 데이터로 평균·표준편차를 학습하지 않습니다.</p></div>
+  </div>
+  <div class="compare" style="margin-top:18px">
+    <h3 style="margin:0 0 8px">직접 비교 · 선형축과 로그축</h3>
+    <p class="mini">아래 <strong>100·1,000·10,000</strong>은 방법 이해를 위한 <strong>가상 수치</strong>입니다. 실제 K-pop 조회수나 스트리밍 수치가 아닙니다.</p>
+    <div class="switch" role="group" aria-label="축 방식 선택"><button id="linear" type="button" aria-pressed="true">선형축</button><button id="logscale" type="button" aria-pressed="false">로그축</button></div>
+    <div class="plot" id="example-plot" role="img" aria-label="가상의 세 수치 100, 1000, 10000을 선형축과 로그축으로 비교"></div>
+    <p class="mini" id="scale-note" aria-live="polite">선형축: 큰 값 10,000에 비해 작은 값 100의 막대는 거의 보이지 않습니다.</p>
+    <div class="warning"><strong>비교 주의</strong> · Spotify 주간 스트리밍과 YouTube 누적 조회수는 측정 기간과 지표가 달라 두 값을 그대로 비교해 인기도를 단정할 수 없습니다. K-pop 저장소 최신 코드 접근은 404로 보류했습니다.</div>
+  </div>
+</section>
+<section id="evidence" class="section wrap">
+ <div class="eyebrow">03 / VERIFICATION</div><h2>확인한 사실과 남은 검증</h2>
+ <p class="sub">분석 결과를 과장하지 않고, 검증 단계별 상태를 분리했습니다.</p>
+ <div class="checks">
+  <div class="check"><div class="state">✓ 확인</div><strong>Olist 사실표 F08·F14·F23~F25·F27</strong><p class="mini">저장소의 집계표를 확인하고 동일한 숫자로 4개의 차트를 재구성.</p></div>
+  <div class="check"><div class="state">✓ 확인</div><strong>Python 3.12 / TensorFlow 2.18.1 / Streamlit 1.67.0</strong><p class="mini">사용자가 제공한 Windows 실행 화면에서 버전 확인.</p></div>
+  <div class="check pending"><div class="state">△ 추가 검증</div><strong>K-pop 저장소 원본 재열람</strong><p class="mini">재접속 시 404. 실제 곡별 수치 그래프 대신 방법론 설명을 수록.</p></div>
+  <div class="check pending"><div class="state">△ 추가 검증</div><strong>감성분석 모델의 실제 예측 결과</strong><p class="mini">별도의 Streamlit 실행 코드가 있으나 예측 확률 CSV·성공 로그는 제출받지 못함. 웹페이지는 정적 포트폴리오로 AI 추론을 실행하지 않습니다.</p></div>
+ </div>
+</section>
+<section id="resources" class="section wrap">
+ <div class="eyebrow">04 / LINKS</div><h2>실습 자료와 출처</h2>
+ <p class="sub">원본 모델 파일과 민감한 API 키는 재배포하지 않습니다.</p>
+ <div class="sources">
+  <div class="source-row">📦 <a href="https://drive.google.com/file/d/1gORcec-W3NF6R7m894lCxQ_TqMIr97RB/view?usp=drivesdk" target="_blank" rel="noopener noreferrer"><strong>과제 제출용 ZIP</strong></a> · 노트북 1개, PNG 4장, 분석보고서, Streamlit 코드</div>
+  <div class="source-row">📊 <a href="https://github.com/journal-izm/Olist-Data-Analysis" target="_blank" rel="noopener noreferrer"><strong>Olist 분석 원본 GitHub</strong></a> · <a href="https://github.com/journal-izm/Olist-Data-Analysis/blob/main/rag/olist_facts.csv" target="_blank" rel="noopener noreferrer">분석 사실표 F01~F35</a></div>
+  <div class="source-row">🎵 <a href="https://github.com/dominickim77-ui/mbc-kpop-data" target="_blank" rel="noopener noreferrer"><strong>K-pop DATA LAB 원본 GitHub</strong></a> · 마지막 접근 상태 404, 자료 재확인 필요</div>
+  <div class="source-row">🧠 <a href="https://github.com/journal-izm/Olist-Data-Analysis/blob/main/STEP2_Model_Serving/01_sentiment_demo_gradio.ipynb" target="_blank" rel="noopener noreferrer"><strong>Olist 딥러닝 감성분석 로딩 예제</strong></a> · Keras/Tokenizer 입력 길이 50, post padding</div>
+  <div class="source-row">📁 <a href="https://drive.google.com/drive/folders/1qCloI4HiTNBCypiVgafhlMQNpVIimIx8" target="_blank" rel="noopener noreferrer"><strong>MBC 과제 제출 폴더</strong></a> · 수업 결과물</div>
+ </div>
+</section>
+</main>
+<footer class="footer"><div class="wrap"><strong>MBC AI 데이터저널리즘 학습 포트폴리오</strong> · 2026.11.09<br>출처 확인과 최종 공개 책임은 작성자에게 있으며, 본 페이지는 강의 실습 결과를 요약한 정적 자료입니다.<div class="notice">기존 분석 사실표의 값이지 실시간 Olist 또는 K-pop 통계가 아닙니다. 모델 추론 결과나 실존 인물 음성·이미지를 생성·표시하지 않습니다.</div></div></footer>
+<script>
+"use strict";
+const charts={
+ delivery:{max:5,rows:[["제때 도착",4.30,"4.30점",""],["지연 도착",2.57,"2.57점","orange"]]},
+ sentiment:{max:100,rows:[["전부 긍정",71.0,"71.0%","gray"],["TF-IDF",91.7,"91.7%","blue"],["Bigram",92.6,"92.6%",""],["딥러닝",92.4,"92.4%","orange"]]},
+ region:{max:100,rows:[["SP",42.0,"42.0%",""],["RJ",12.8,"12.8%","blue"],["MG",11.8,"11.8%","orange"],["그 외",33.4,"33.4%","gray"]]},
+ seller:{max:1000,rows:[["신규 성장",947,"947명",""],["핵심 우량",876,"876명","blue"],["휴면",461,"461명","gray"],["저평점 위험",218,"218명","orange"]]}
+};
+function barChart(target,rows,max){target.replaceChildren();for(const [label,n,text,color] of rows){const row=document.createElement("div");row.className="barrow";const t=document.createElement("span");t.className="label";t.textContent=label;const track=document.createElement("div");track.className="track";const fill=document.createElement("div");fill.className="fill "+(color||"");fill.style.width=Math.max(0,Math.min(100,n/max*100))+"%";track.append(fill);const value=document.createElement("span");value.className="value";value.textContent=text;row.append(t,track,value);target.append(row);}const axis=document.createElement("div");axis.className="axis";axis.innerHTML="<span>0</span><span>"+max.toLocaleString("ko-KR")+"</span>";target.append(axis)}
+document.querySelectorAll("[data-chart]").forEach(el=>{const c=charts[el.dataset.chart];if(c)barChart(el,c.rows,c.max)});
+const ex=document.getElementById("example-plot"),note=document.getElementById("scale-note");
+function setMode(log){const raw=[100,1000,10000];ex.replaceChildren();for(let i=0;i<raw.length;i++){const v=raw[i],r=document.createElement("div");r.className="barrow";const label=document.createElement("span");label.className="label";label.textContent="가상 "+(i+1);const track=document.createElement("div");track.className="track";const mark=document.createElement("span");mark.className="mark"+(i===2?" orange":"");mark.style.left=(log?Math.log10(v/100)/2*100:(v-100)/9900*100)+"%";track.append(mark);const value=document.createElement("span");value.className="value";value.textContent=v.toLocaleString("ko-KR");r.append(label,track,value);ex.append(r);}const axis=document.createElement("div");axis.className="axis";axis.innerHTML=log?"<span>100 (10²)</span><span>1,000 (10³)</span><span>10,000 (10⁴)</span>":"<span>100</span><span>10,000</span>";ex.append(axis);note.textContent=log?"로그축: 100 → 1,000 → 10,000은 각각 10배씩 증가하므로 점들이 같은 간격으로 표시됩니다. 오른쪽 값은 변하지 않습니다.":"선형축: 100과 1,000은 왼쪽에 가깝고, 10,000만 오른쪽 끝에 놓입니다. 실제 값은 변하지 않습니다.";document.getElementById("linear").setAttribute("aria-pressed",String(!log));document.getElementById("logscale").setAttribute("aria-pressed",String(log))}
+document.getElementById("linear").addEventListener("click",()=>setMode(false));document.getElementById("logscale").addEventListener("click",()=>setMode(true));setMode(false);
+</script>
+</body>
+</html>
