@@ -1,0 +1,72 @@
+{
+  "lotto_rows": 300,
+  "lotto_first": 949,
+  "lotto_last": 1248,
+  "lotto_last_date": "2026-10-31",
+  "recent60_top4": {
+    "38": 13,
+    "16": 12,
+    "27": 12,
+    "13": 11
+  },
+  "backtest_means": {
+    "최근 60회 빈도": 0.7733,
+    "지수가중 빈도": 0.7067,
+    "무작위 기준선": 0.9133
+  },
+  "theory_mean_matches": 0.8,
+  "synthetic_days": 85,
+  "synthetic_news_article_rows": 425,
+  "synthetic_zero_news_days": 4,
+  "synthetic_corr_news_pm10": -0.164901,
+  "synthetic_lowpm_highnews": [
+    {
+      "day": "2026-10-08",
+      "pm10_ug_m3": 18,
+      "news_count": 52
+    },
+    {
+      "day": "2026-09-11",
+      "pm10_ug_m3": 21,
+      "news_count": 47
+    },
+    {
+      "day": "2026-09-06",
+      "pm10_ug_m3": 33,
+      "news_count": 8
+    },
+    {
+      "day": "2026-10-09",
+      "pm10_ug_m3": 27,
+      "news_count": 8
+    }
+  ],
+  "synthetic_highpm_lownews": [
+    {
+      "day": "2026-09-28",
+      "pm10_ug_m3": 127,
+      "news_count": 2
+    },
+    {
+      "day": "2026-10-12",
+      "pm10_ug_m3": 116,
+      "news_count": 1
+    }
+  ],
+  "synthetic_pm10_iqr_upper": 75.0,
+  "pdf_techniques_source": "데이터 분석 기법 더하기.pdf 14p / existing Lotto methods",
+  "chart_rules_source": "빅데이터와 저널리즘 · 기사용 차트 문법 20p / 데이터 시각화 한눈에 보기 12p",
+  "ai_disclosure": "AI 작성·수정 보조. 언론 보도에 사용 전 원래 출처를 기자가 확인",
+  "is_synthetic_news": true,
+  "is_synthetic_pm10": true,
+  "charts": [
+    "01_after_zero_axis.png",
+    "01_before_truncated_axis.png",
+    "02_after_shared_dates.png",
+    "02_before_dual_axis.png",
+    "03_after_one_highlight.png",
+    "03_before_unfocused.png",
+    "04_scatter_relationship.png",
+    "05_heatmap_lotto.png"
+  ]
+}
