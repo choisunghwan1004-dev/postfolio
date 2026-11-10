@@ -5,7 +5,7 @@
 
 ZIP SHA-256: `e436e867a913d341a369329147fd4080c780336a309d25cfa139d3c972df869a`
 ZIP 무결성 테스트 완료, Python unittest **6/6 PASS**.
-현재 GitHub에는 개발 개요·REA 분석 작업지시를 등록하며, **실행 가능한 전체 소스는 위 ZIP 원본에 보관**합니다. GitHub에 전 소스가 복제되었다고 주장하지 않습니다.
+GitHub에는 ZIP의 17개 파일에 해당하는 소스·설명·샘플·테스트 기록을 같은 폴더에 동기화했습니다. 기존 README는 프로젝트 개요용으로 별도 유지하며, **최종 복원 기준은 manifest와 SHA-256이 기록된 Drive ZIP**입니다.
 
 ## 구현된 내용
 - `engine.py`: CSV 500행 제한 표본 읽기, 열·결측·형식 힌트, 통계기법 후보·필수조건·주의점 추천, RAM/목적별 pandas/Polars/Dask/Ray/PySpark 엔진 제안
