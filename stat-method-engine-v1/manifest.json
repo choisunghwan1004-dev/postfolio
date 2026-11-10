@@ -1,0 +1,88 @@
+{
+  "project": "통계기법 AI · 데이터 조건 추천 엔진",
+  "version": "1.0-prototype",
+  "built_utc": "2026-11-10T22:00:00Z",
+  "status": "local CLI tested; Dask Polars Ray PySpark not tested",
+  "files": [
+    {
+      "path": "ARCHITECTURE.md",
+      "sha256": "6e13ca143b828224f5116b99dab600ff65a25c5507fc4824c86df8e5d21f1e3f",
+      "bytes": 2531
+    },
+    {
+      "path": "METHOD_CATALOG.md",
+      "sha256": "7877b53485bf086cf15eb0eddf2c29cff4b5f0ebbf9b03c6fe4db144218c2c45",
+      "bytes": 5713
+    },
+    {
+      "path": "README.md",
+      "sha256": "19970da5eeec9fb4cf87ec0726a8121e8326c1ab1ff2982eb9dc6b59d327777e",
+      "bytes": 4202
+    },
+    {
+      "path": "REA_TASK.md",
+      "sha256": "9834ecd6ee64627a15e5f86845c686cad2b67c43652c2a646c9f1a902176be91",
+      "bytes": 2518
+    },
+    {
+      "path": "VALIDATION.md",
+      "sha256": "fb8c39d8dafe73429003e90509f09f6fb6cfceb20955924fb91c413d88424cea",
+      "bytes": 1151
+    },
+    {
+      "path": "app_streamlit.py",
+      "sha256": "285e5a944625aae23c20df45ecdb70c0fcd2a79fee1af348c4f8ade803ecfdf6",
+      "bytes": 3198
+    },
+    {
+      "path": "engine.py",
+      "sha256": "70d3922afe1a6ab726c922fbfca44e17e5cd6011571ffb65ac023a36b6096342",
+      "bytes": 9451
+    },
+    {
+      "path": "examples/real_air_profile_sample.json",
+      "sha256": "d70348f48b9fd8b8eb64fc915c77434e3d5ff6be5b88bd03dce3131a158f8e71",
+      "bytes": 3984
+    },
+    {
+      "path": "examples/recommendation_example.json",
+      "sha256": "791068b690dada891a791ff29ac5a8ff700193aa38d79c03b387392a697f52e1",
+      "bytes": 2838
+    },
+    {
+      "path": "examples/result_example.json",
+      "sha256": "ae942989646df710efe0191bcfbb5061f98a5da4bc73ccd44b87373e1675fa68",
+      "bytes": 205
+    },
+    {
+      "path": "examples/sample_air.csv",
+      "sha256": "ac38a4c71aa30c1d7f1a947f82cf3ebb32445ffcb7035f33b8252fa2da4be430",
+      "bytes": 95
+    },
+    {
+      "path": "requirements-base.txt",
+      "sha256": "35bc75810a6dd8763627dcbacab6d56d44e5f56b328697c27303a11f2a7e4b77",
+      "bytes": 15
+    },
+    {
+      "path": "requirements-optional.txt",
+      "sha256": "d548b958e52c3545a03bfe486961d9dfa203784d85b67cfcc4a7159660808052",
+      "bytes": 224
+    },
+    {
+      "path": "run_group.py",
+      "sha256": "39445c37ff1f54fdca7ba1e26fe9df2948082143b8dcb515e569bbd0aa567ac1",
+      "bytes": 2436
+    },
+    {
+      "path": "tests/test_engine.py",
+      "sha256": "0065a8dd8cae01baa4acfa1bec4e9ffcd3ac06c3289e3debbd67d399d7d58182",
+      "bytes": 1717
+    },
+    {
+      "path": "tests/test_execution_log.txt",
+      "sha256": "0fa48b94ca0d96152b90b63503ee54948629b52a63e013d28b73cf872ea5ea81",
+      "bytes": 496
+    }
+  ]
+}
