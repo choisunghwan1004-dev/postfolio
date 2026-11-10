@@ -66,3 +66,9 @@ py -3.12 -m venv .venv
 - [실제 분석 웹페이지](https://choisunghwan1004-dev.github.io/postfolio/data-methods-lab-20261109/lotto/)
 - [로또 분석 자료·노트북·CSV·시각화·검수기록](lotto/README.md)
 - 사용자 제공 CSV 949~1248회 300회차 분석. **미래 로또 당첨을 예측하거나 당첨확률을 높인다는 주장 아님.** PDF의 RFM·지역·TF-IDF는 별도 가상 자료 사용.
+
+## 추가 과제: 데이터 저널리즘 · 기사용 차트 6규칙 · 시각화
+
+- [실제 과제 화면](https://choisunghwan1004-dev.github.io/postfolio/data-methods-lab-20261109/chart-journalism/)
+- [GitHub 데이터/노트북/수정 전후 차트 3쌍](chart-journalism/README.md)
+- 두 업로드 PDF의 탐사보도 6단계, 6가지 정직한 차트 규칙, 비교·관계·분포 시각화 기법을 로또 과거 300회차와 **가상 PM10·기사 85일 자료**에 적용한 교육용 실습입니다.
