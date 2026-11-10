@@ -45,3 +45,8 @@ py -3.12 -m venv .venv
 
 ## 배포 체크리스트
 [DEPLOYMENT_CHECKLIST.md](DEPLOYMENT_CHECKLIST.md) 참조.
+
+## 추가4 · 크롤링 및 VS Code (2026-11-10)
+- [크롤링→정제→사람 검수→JSONL 실습](dataset_pipeline/README.md) — 사이트를 자동으로 수집하지 않으며, 제공받은 허용 CSV를 로컬에서 정제
+- [VS Code 실행·커널·GPU·오류 해결](VS_CODE_EXECUTION_GUIDE.md) — 컴퓨터별 장치·설치 상태 확인
+- 실제 외부 크롤링·AI API 초안 생성·100쌍 확보·파인튜닝은 **미실행·미검증**.
