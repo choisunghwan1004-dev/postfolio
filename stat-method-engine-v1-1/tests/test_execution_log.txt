@@ -1,0 +1,11 @@
+test_backend_big (test_engine.EngineTest.test_backend_big) ... ok
+test_catalog (test_engine.EngineTest.test_catalog) ... ok
+test_distributed (test_engine.EngineTest.test_distributed) ... ok
+test_inspect_and_advice (test_engine.EngineTest.test_inspect_and_advice) ... ok
+test_invalid (test_engine.EngineTest.test_invalid) ... ok
+test_pandas_result (test_engine.EngineTest.test_pandas_result) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.009s
+
+OK
