@@ -1,0 +1,5 @@
+# Install selectively, not together by default. Validate platform Python/Java/GPU versions before installation.
+# pip install 'dask[dataframe]'
+# pip install polars
+# pip install 'ray[data,train,tune]'
+# pip install pyspark
