@@ -64,3 +64,11 @@ Notion은 소유자의 비공개 자료 페이지입니다. 공개 사이트의 
 - [실제 과제 화면](https://choisunghwan1004-dev.github.io/postfolio/data-methods-lab-20261109/chart-journalism/)
 - [GitHub 데이터/노트북/수정 전후 차트 3쌍](data-methods-lab-20261109/chart-journalism/README.md)
 - 두 업로드 PDF의 탐사보도 6단계, 6가지 정직한 차트 규칙, 비교·관계·분포 시각화 기법을 로또 과거 300회차와 **가상 PM10·기사 85일 자료**에 적용한 교육용 실습입니다.
+
+
+## PyTorch · TensorFlow · 통계 모델 비교 (학습 추가3)
+
+- [별도 비교 실습 화면](data-methods-lab-20261109/deep-learning-comparison/index.html) — 실제 결과 JSON이 없으면 '미실행·미검증' 표시
+- [실습 코드·재현 방법](data-methods-lab-20261109/deep-learning-comparison/README.md) · [배포 및 보안 점검표](data-methods-lab-20261109/deep-learning-comparison/DEPLOYMENT_CHECKLIST.md)
+- 교육용 가상 이진분류 데이터를 이용하는 LogisticRegression / PyTorch / TensorFlow 비교. 현재 학습 결과와 Streamlit 실배포는 **검증 전**입니다.
+- 기존 포트폴리오 및 K-pop/Olist·로또·차트 실습의 기능과 소스는 유지합니다.
