@@ -26,3 +26,10 @@ wandb/
 runs/
 tensorboard/
 *.log
+
+# 학습 추가4: 수집 원문/검수 전후 개인정보·저작권 보호
+data-methods-lab-20261109/deep-learning-comparison/dataset_pipeline/output/
+data-methods-lab-20261109/deep-learning-comparison/dataset_pipeline/press_raw.csv
+data-methods-lab-20261109/deep-learning-comparison/dataset_pipeline/press_clean.csv
+data-methods-lab-20261109/deep-learning-comparison/dataset_pipeline/review_queue.csv
+data-methods-lab-20261109/deep-learning-comparison/dataset_pipeline/lead_approved.jsonl
