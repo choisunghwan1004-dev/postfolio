@@ -44,3 +44,7 @@ py -3.12 -m unittest test_evidence_qa_demo.py -v
 - [자료 출처·보류 항목](SOURCE_INDEX.md)
 - [검증 절차](VALIDATION_CHECKLIST.md)
 - [5차 팩트체킹 Python 코드](../assignments/2026-11-10-factcheck-assessment/verify_air_facts.py)
+
+## 강의 원본 노트북 보존본
+- [11_olist_rag_chatbot_source.ipynb](11_olist_rag_chatbot_source.ipynb): Google Drive 강의 파일에서 코드/Markdown 셀 20개를 읽어 구조를 보존하고 실행 출력은 제거한 보존본. **Colab 전용 Drive 경로·API 연동 코드는 그대로 있으므로 VS Code에서 바로 동작한다고 주장하지 않습니다.**
+- 사용 전 키와 실행 경로를 확인하고 수업 관련 자료 파일을 합법적으로 확보해야 합니다. 사용한 LLM 모델 식별자·패키지 API 호환성은 실행 시점 공식 문서에서 확인하십시오.
