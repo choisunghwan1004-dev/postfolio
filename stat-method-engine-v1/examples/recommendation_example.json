@@ -1,0 +1,106 @@
+{
+  "input": {
+    "file": "sample_air.csv",
+    "size_bytes": 95,
+    "sampled_rows": 4,
+    "total_rows": "not_counted",
+    "encoding": "utf-8-sig",
+    "columns": [
+      {
+        "column": "day",
+        "inferred_type": "text_or_mixed",
+        "date_name_hint": true,
+        "missing_in_sample": 0,
+        "distinct_in_sample_up_to_1000": 2
+      },
+      {
+        "column": "site",
+        "inferred_type": "text_or_mixed",
+        "date_name_hint": false,
+        "missing_in_sample": 0,
+        "distinct_in_sample_up_to_1000": 2
+      },
+      {
+        "column": "pm10",
+        "inferred_type": "numeric",
+        "date_name_hint": false,
+        "missing_in_sample": 0,
+        "distinct_in_sample_up_to_1000": 4
+      },
+      {
+        "column": "pm25",
+        "inferred_type": "numeric",
+        "date_name_hint": false,
+        "missing_in_sample": 0,
+        "distinct_in_sample_up_to_1000": 4
+      }
+    ],
+    "inspection": "sample_only; no full-file materialization"
+  },
+  "goal": "trend",
+  "goal_label": "시간 변화",
+  "method_candidates": [
+    {
+      "id": "quality",
+      "name": "결측·중복·자료형 진단",
+      "goals": [
+        "quality",
+        "any"
+      ],
+      "required": "식별할 열·원본 행 수",
+      "caution": "표본 결과와 전체 결과 구분",
+      "example": "미세먼지 관측값이 비어 있는 날짜 확인"
+    },
+    {
+      "id": "summary",
+      "name": "기술통계·분포·사분위수",
+      "goals": [
+        "summary",
+        "any"
+      ],
+      "required": "숫자형 변수, 단위, 모집단 범위",
+      "caution": "극단값·가중치·결측 처리",
+      "example": "종로구 PM10 일평균·중앙값"
+    },
+    {
+      "id": "timeseries",
+      "name": "시계열 추세·이동평균·계절성",
+      "goals": [
+        "trend"
+      ],
+      "required": "날짜·측정값·시간 간격",
+      "caution": "누락 날짜·시계열 분할·계절 효과",
+      "example": "월별 PM10 추세"
+    }
+  ],
+  "backend": {
+    "recommended": "pandas",
+    "alternatives": [
+      "Polars",
+      "Dask",
+      "Ray",
+      "PySpark"
+    ],
+    "file_to_ram_ratio": 0.0,
+    "heuristic_only": true,
+    "reasons": [
+      "소규모 자료에는 간단한 pandas 우선"
+    ]
+  },
+  "suggested_numeric_columns": [
+    "pm10",
+    "pm25"
+  ],
+  "date_name_hints": [
+    "day"
+  ],
+  "questions_to_confirm": [
+    "분석 질문과 정답/결과 열은 무엇인가?",
+    "관측 단위·기간·대상·원본 출처는 무엇인가?",
+    "결측·중복·이상치·개인정보를 어떻게 처리할 것인가?",
+    "표본 결과를 전체 결과로 오해하지 않는가?",
+    "반복/시간순 분할과 검증 지표는 무엇인가?"
+  ],
+  "warnings": [],
+  "status": "recommendation_only; not trained"
+}
