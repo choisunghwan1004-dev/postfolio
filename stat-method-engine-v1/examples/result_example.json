@@ -1,0 +1,16 @@
+{
+  "status": "executed",
+  "backend": "pandas",
+  "result": [
+    {
+      "site": "A",
+      "count": 2,
+      "mean": 22.5
+    },
+    {
+      "site": "B",
+      "count": 2,
+      "mean": 30.0
+    }
+  ]
+}
