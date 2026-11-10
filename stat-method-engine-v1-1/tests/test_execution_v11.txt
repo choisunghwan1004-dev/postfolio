@@ -1,0 +1,23 @@
+test_backend_big (test_engine.EngineTest.test_backend_big) ... ok
+test_catalog (test_engine.EngineTest.test_catalog) ... ok
+test_distributed (test_engine.EngineTest.test_distributed) ... ok
+test_inspect_and_advice (test_engine.EngineTest.test_inspect_and_advice) ... ok
+test_invalid (test_engine.EngineTest.test_invalid) ... ok
+test_pandas_result (test_engine.EngineTest.test_pandas_result) ... ok
+test_actual_air_csv_profile (test_v11_regression.RegressionV11.test_actual_air_csv_profile) ... ok
+test_bad_column (test_v11_regression.RegressionV11.test_bad_column) ... ok
+test_bad_csv_shape (test_v11_regression.RegressionV11.test_bad_csv_shape) ... ok
+test_cp949_read_and_no_mutation (test_v11_regression.RegressionV11.test_cp949_read_and_no_mutation) ... ok
+test_duplicate_header (test_v11_regression.RegressionV11.test_duplicate_header) ... ok
+test_invalid_ram_nan (test_v11_regression.RegressionV11.test_invalid_ram_nan) ... ok
+test_max_groups (test_v11_regression.RegressionV11.test_max_groups) ... ok
+test_missing_file (test_v11_regression.RegressionV11.test_missing_file) ... ok
+test_null_and_non_numeric (test_v11_regression.RegressionV11.test_null_and_non_numeric) ... ok
+test_optional_backend_not_installed (test_v11_regression.RegressionV11.test_optional_backend_not_installed) ... ok
+test_reject_lossy_conversion (test_v11_regression.RegressionV11.test_reject_lossy_conversion) ... ok
+test_unknown_goal (test_v11_regression.RegressionV11.test_unknown_goal) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.029s
+
+OK
