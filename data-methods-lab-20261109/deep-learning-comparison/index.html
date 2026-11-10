@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PyTorch · TensorFlow 비교 실습</title>
+<style>
+:root{color-scheme:light}body{font-family:system-ui,'Malgun Gothic',sans-serif;background:#f7f8f6;color:#202b30;margin:0;padding:20px;line-height:1.6}
+main{max-width:940px;margin:auto}h1{font-size:clamp(24px,4vw,36px)}.card{background:white;border:1px solid #dedfd8;border-radius:18px;padding:20px;margin:16px 0}
+small,.muted{color:#57666a}.tablewrap{overflow-x:auto}table{width:100%;border-collapse:collapse;min-width:480px}th,td{padding:12px;border-bottom:1px solid #e2e5e5;text-align:left}th{background:#edf1ee}
+button,a{color:#205c58}button{border:1px solid #9cad9f;border-radius:9px;background:#f1f6f2;padding:8px;cursor:pointer}
+code{overflow-wrap:anywhere}img{max-width:100%;height:auto}#status{font-weight:700}
+</style></head><body><main>
+<h1>PyTorch · TensorFlow · 통계 모델 비교</h1>
+<p>교육용 가상 데이터 · 기존 UI와 분리된 추가 실습 화면</p>
+<section class="card"><div id="status" role="status">결과 확인 중…</div>
+<p>이 화면은 저장된 결과 파일을 보여주는 <strong>정적 페이지</strong>입니다. 브라우저에서 모델을 학습하거나 예측하지 않습니다.</p>
+<div id="meta" class="muted"></div></section>
+<section class="card"><h2>동일 테스트 데이터 성능 비교</h2><div class="tablewrap"><table><thead><tr><th>모델</th><th>Accuracy</th><th>F1</th><th>ROC AUC</th></tr></thead><tbody id="metrics"><tr><td colspan="4">실행 결과 없음</td></tr></tbody></table></div>
+<p class="muted">F1 점수가 높다고 실제 현장에서 더 좋은 모델이라는 뜻은 아닙니다.</p><img id="chart" hidden alt="모델별 테스트 F1 점수 차트"></section>
+<section class="card"><h2>데이터와 검증 제한</h2><p>scikit-learn 합성 이진 분류 1,200행 · 학습 960행 · 시험 240행. 실제 뉴스·로또 예측 자료가 아닙니다.</p>
+<p>학습/시험 분리 후 학습 데이터에서만 표준화합니다. 같은 평가 데이터라도 모델 초기값과 학습 방식은 다르므로 단일 실행 점수만으로 우열을 확정하지 않습니다.</p>
+<p><a href="README.md">실행 방법·검증 원칙</a> · <a href="DEPLOYMENT_CHECKLIST.md">배포 점검표</a></p></section>
+</main><script>
+(async()=>{
+const status=document.getElementById("status"),metrics=document.getElementById("metrics");
+try{
+ const response=await fetch("./results/metrics.json",{cache:"no-store"});
+ if(!response.ok)throw new Error("결과 파일 없음");
+ const data=await response.json();
+ if(!data.metrics||!data.executed_at_utc||!data.versions)throw new Error("결과 파일 형식 오류");
+ status.textContent="로컬 실행 결과 표시 (독립 검증 전)";
+ document.getElementById("meta").textContent="실행(UTC): "+data.executed_at_utc+" · Python "+data.versions.python+" · seed "+data.seed+" · 시험 "+data.n_test+"행";
+ metrics.replaceChildren();
+ for(const [name,score] of Object.entries(data.metrics)){
+ const tr=document.createElement("tr");
+ for(const value of [name,score.accuracy,score.f1,score.roc_auc]){
+ const td=document.createElement("td");td.textContent=String(value);tr.appendChild(td);
+ }metrics.appendChild(tr);
+ }
+ const img=document.getElementById("chart");
+ img.src="./results/compare.svg";img.hidden=false;img.onerror=()=>{img.hidden=true;};
+}catch(e){status.textContent="미실행·미검증 — 학습 결과 파일이 아직 없습니다";metrics.innerHTML='<tr><td colspan="4">실제 학습 후 results/metrics.json 파일을 등록해야 지표가 표시됩니다.</td></tr>';}
+})();
+</script></body></html>
