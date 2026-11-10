@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="597.6pt" height="359.360938pt" viewBox="0 0 597.6 359.360938" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-10T01:14:49.261961</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 359.360938 
+L 597.6 359.360938 
+L 597.6 0 
+L -0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 81.72 309.3125 
+L 583.92 309.3125 
+L 583.92 32.1125 
+L 81.72 32.1125 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 104.547273 309.3125 
+L 234.988831 309.3125 
+L 234.988831 114.4409 
+L 104.547273 114.4409 
+z
+" clip-path="url(#pbb426ebb1c)" style="fill: #b1bec5"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 267.599221 309.3125 
+L 398.040779 309.3125 
+L 398.040779 131.2241 
+L 267.599221 131.2241 
+z
+" clip-path="url(#pbb426ebb1c)" style="fill: #b1bec5"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 430.651169 309.3125 
+L 561.092727 309.3125 
+L 561.092727 79.1609 
+L 430.651169 79.1609 
+z
+" clip-path="url(#pbb426ebb1c)" style="fill: #df8c4a"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m4cc11c84b3" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m4cc11c84b3" x="169.768052" y="309.3125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="169.768052" y="324.859844" transform="rotate(-0 169.768052 324.859844)">최근 60회 빈도</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m4cc11c84b3" x="332.82" y="309.3125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="332.82" y="324.859844" transform="rotate(-0 332.82 324.859844)">지수가중 빈도</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m4cc11c84b3" x="495.871948" y="309.3125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="495.871948" y="324.859844" transform="rotate(-0 495.871948 324.859844)">무작위 기준선</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_4">
+      <defs>
+       <path id="maa0f20128f" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#maa0f20128f" x="81.72" y="309.3125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="313.586172" transform="rotate(-0 74.72 313.586172)">0.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#maa0f20128f" x="81.72" y="258.9125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="263.186172" transform="rotate(-0 74.72 263.186172)">0.2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#maa0f20128f" x="81.72" y="208.5125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="212.786172" transform="rotate(-0 74.72 212.786172)">0.4</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#maa0f20128f" x="81.72" y="158.1125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="162.386172" transform="rotate(-0 74.72 162.386172)">0.6</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#maa0f20128f" x="81.72" y="107.7125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="111.986172" transform="rotate(-0 74.72 111.986172)">0.8</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#maa0f20128f" x="81.72" y="57.3125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="61.586172" transform="rotate(-0 74.72 61.586172)">1.0</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="51.537031" y="170.7125" transform="rotate(-90 51.537031 170.7125)">회차별 평균 일치 번호 수 (개)</text>
+    </g>
+   </g>
+   <g id="line2d_10">
+    <path d="M 81.72 107.7125 
+L 583.92 107.7125 
+" clip-path="url(#pbb426ebb1c)" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #5682be; stroke-width: 1.5"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 81.72 309.3125 
+L 81.72 32.1125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 583.92 309.3125 
+L 583.92 32.1125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 81.72 309.3125 
+L 583.92 309.3125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 81.72 32.1125 
+L 583.92 32.1125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 12px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="169.768052" y="105.6209" transform="rotate(-0 169.768052 105.6209)">0.773개</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 12px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="332.82" y="122.4041" transform="rotate(-0 332.82 122.4041)">0.707개</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 12px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="495.871948" y="70.3409" transform="rotate(-0 495.871948 70.3409)">0.913개</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 16px; font-family: 'NanumBarunGothic'; text-anchor: start" x="81.72" y="26.1125" transform="rotate(-0 81.72 26.1125)">이번 150회 시험에서는 무작위 기준선의 평균 일치수가 더 컸다</text>
+   </g>
+   <g id="legend_1">
+    <g id="patch_10">
+     <path d="M 429.222188 58.050156 
+L 576.22 58.050156 
+Q 578.42 58.050156 578.42 55.850156 
+L 578.42 39.8125 
+Q 578.42 37.6125 576.22 37.6125 
+L 429.222188 37.6125 
+Q 427.022188 37.6125 427.022188 39.8125 
+L 427.022188 55.850156 
+Q 427.022188 58.050156 429.222188 58.050156 
+z
+" style="fill: #ffffff; opacity: 0.8; stroke: #cccccc; stroke-linejoin: miter"/>
+    </g>
+    <g id="line2d_11">
+     <path d="M 431.422188 46.709844 
+L 442.422188 46.709844 
+L 453.422188 46.709844 
+" style="fill: none; stroke-dasharray: 5.55,2.4; stroke-dashoffset: 0; stroke: #5682be; stroke-width: 1.5"/>
+    </g>
+    <g id="text_15">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="462.222188" y="50.559844" transform="rotate(-0 462.222188 50.559844)">균등추첨 이론 기대 0.8개</text>
+    </g>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-size: 9px; font-family: 'NanumBarunGothic'; text-anchor: start; fill: #526c70" x="13.68" y="343.1525" transform="rotate(-0 13.68 343.1525)">수정 후 / 실제 과거 데이터  |  사용자 로또 기록 1099~1248회 / 과거60회 학습 · 기준선 1게임/회차 · 미래 예측 아님  |  출처·기간·단위 표기 확인</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbb426ebb1c">
+   <rect x="81.72" y="32.1125" width="502.2" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>
