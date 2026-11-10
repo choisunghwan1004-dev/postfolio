@@ -1,0 +1,25 @@
+{
+  "status": "transcribed_from_user_uploaded_draft_not_independently_rerun",
+  "dataset": "pandas air_quality_long.csv (2019)",
+  "facts": [
+    {
+      "id": "F-1",
+      "claim": "전체 관측 행",
+      "value": 5272,
+      "unit": "건"
+    },
+    {
+      "id": "F-2",
+      "claim": "PM2.5 관측",
+      "value": 1825,
+      "unit": "건"
+    },
+    {
+      "id": "F-3",
+      "claim": "런던 PM2.5 평균",
+      "value": 13.44,
+      "unit": "µg/m³",
+      "observations": 1648
+    }
+  ]
+}
