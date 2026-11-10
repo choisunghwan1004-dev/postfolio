@@ -51,3 +51,10 @@ Notion은 소유자의 비공개 자료 페이지입니다. 공개 사이트의 
 - [Pandas·전처리·상관·검정·회귀·표준화·군집·추천 **9종 인터랙티브 실습 화면**](https://choisunghwan1004-dev.github.io/postfolio/data-methods-lab-20261109/)
 - [GitHub 예제 데이터·Python·노트북·SVG 차트](data-methods-lab-20261109/README.md)
 - **교육용 가상 데이터만 사용.** 기존 K-pop/Olist 과제와 별도 실습입니다.
+
+
+## 추가 과제: 로또 6/45 통계 + 분석 기법 더하기 PDF 10종
+
+- [실제 분석 웹페이지](https://choisunghwan1004-dev.github.io/postfolio/data-methods-lab-20261109/lotto/)
+- [로또 분석 자료·노트북·CSV·시각화·검수기록](data-methods-lab-20261109/lotto/README.md)
+- 사용자 제공 CSV 949~1248회 300회차 분석. **미래 로또 당첨을 예측하거나 당첨확률을 높인다는 주장 아님.** PDF의 RFM·지역·TF-IDF는 별도 가상 자료 사용.
