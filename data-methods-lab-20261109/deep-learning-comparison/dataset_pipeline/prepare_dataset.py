@@ -20,7 +20,7 @@ def main():
     initial = len(df)
     df = df[COLUMNS].copy()
     for col in COLUMNS:
-        df[col] = df[col].fillna("").map(lambda x: re.sub(r"\\s+", " ", x).strip())
+        df[col] = df[col].fillna("").map(lambda x: re.sub(r"\s+", " ", x).strip())
     df = df[(df["제목"] != "") & (df["본문"] != "")]
     nonempty = len(df)
     df = df.drop_duplicates(subset=["본문"])
