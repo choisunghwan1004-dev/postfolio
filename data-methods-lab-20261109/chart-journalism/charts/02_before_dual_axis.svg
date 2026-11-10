@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="702.835625pt" height="374.620724pt" viewBox="0 0 702.835625 374.620724" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-10T01:14:48.279263</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 374.620724 
+L 702.835625 374.620724 
+L 702.835625 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 89.28 310.089531 
+L 647.28 310.089531 
+L 647.28 32.889531 
+L 89.28 32.889531 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m83c6297841" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m83c6297841" x="114.643636" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(88.898325 358.319991) rotate(-32)">2026-08-01</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m83c6297841" x="199.189091" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(173.443779 358.319991) rotate(-32)">2026-08-15</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m83c6297841" x="283.734545" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(257.989234 358.319991) rotate(-32)">2026-08-29</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m83c6297841" x="368.28" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(342.534688 358.319991) rotate(-32)">2026-09-12</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#m83c6297841" x="452.825455" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(427.080143 358.319991) rotate(-32)">2026-09-26</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m83c6297841" x="537.370909" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(511.625597 358.319991) rotate(-32)">2026-10-10</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m83c6297841" x="621.916364" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'" transform="translate(596.171052 358.319991) rotate(-32)">2026-10-24</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_8">
+      <defs>
+       <path id="m4ebcb109c3" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m4ebcb109c3" x="89.28" y="297.489531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="82.28" y="301.763203" transform="rotate(-0 82.28 301.763203)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m4ebcb109c3" x="89.28" y="249.027993" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="82.28" y="253.301665" transform="rotate(-0 82.28 253.301665)">10</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m4ebcb109c3" x="89.28" y="200.566454" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="82.28" y="204.840126" transform="rotate(-0 82.28 204.840126)">20</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m4ebcb109c3" x="89.28" y="152.104916" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="82.28" y="156.378588" transform="rotate(-0 82.28 156.378588)">30</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m4ebcb109c3" x="89.28" y="103.643377" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="82.28" y="107.917049" transform="rotate(-0 82.28 107.917049)">40</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m4ebcb109c3" x="89.28" y="55.181839" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="82.28" y="59.455511" transform="rotate(-0 82.28 59.455511)">50</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="62.364375" y="171.489531" transform="rotate(-90 62.364375 171.489531)">기사 수(건)</text>
+    </g>
+   </g>
+   <g id="line2d_14">
+    <path d="M 114.643636 263.566454 
+L 120.682597 282.95107 
+L 126.721558 273.258762 
+L 132.760519 278.104916 
+L 138.799481 263.566454 
+L 144.838442 297.489531 
+L 150.877403 282.95107 
+L 156.916364 292.643377 
+L 162.955325 292.643377 
+L 168.994286 292.643377 
+L 175.033247 273.258762 
+L 181.072208 273.258762 
+L 187.111169 263.566454 
+L 193.15013 282.95107 
+L 199.189091 297.489531 
+L 205.228052 268.412608 
+L 211.267013 282.95107 
+L 217.305974 278.104916 
+L 223.344935 273.258762 
+L 229.383896 282.95107 
+L 235.422857 278.104916 
+L 241.461818 287.797224 
+L 247.500779 292.643377 
+L 253.53974 268.412608 
+L 259.578701 263.566454 
+L 265.617662 282.95107 
+L 271.656623 278.104916 
+L 277.695584 297.489531 
+L 283.734545 263.566454 
+L 289.773506 278.104916 
+L 295.812468 282.95107 
+L 301.851429 273.258762 
+L 307.89039 273.258762 
+L 313.929351 282.95107 
+L 319.968312 282.95107 
+L 326.007273 282.95107 
+L 332.046234 258.7203 
+L 338.085195 278.104916 
+L 344.124156 268.412608 
+L 350.163117 273.258762 
+L 356.202078 258.7203 
+L 362.241039 69.7203 
+L 368.28 297.489531 
+L 374.318961 278.104916 
+L 380.357922 282.95107 
+L 386.396883 268.412608 
+L 392.435844 292.643377 
+L 398.474805 282.95107 
+L 404.513766 263.566454 
+L 410.552727 287.797224 
+L 416.591688 278.104916 
+L 422.630649 273.258762 
+L 428.66961 268.412608 
+L 434.708571 273.258762 
+L 440.747532 278.104916 
+L 446.786494 282.95107 
+L 452.825455 273.258762 
+L 458.864416 273.258762 
+L 464.903377 287.797224 
+L 470.942338 273.258762 
+L 476.981299 292.643377 
+L 483.02026 278.104916 
+L 489.059221 282.95107 
+L 495.098182 278.104916 
+L 501.137143 268.412608 
+L 507.176104 263.566454 
+L 513.215065 282.95107 
+L 519.254026 292.643377 
+L 525.292987 45.489531 
+L 531.331948 258.7203 
+L 537.370909 263.566454 
+L 543.40987 282.95107 
+L 549.448831 292.643377 
+L 555.487792 278.104916 
+L 561.526753 287.797224 
+L 567.565714 282.95107 
+L 573.604675 287.797224 
+L 579.643636 292.643377 
+L 585.682597 253.874147 
+L 591.721558 273.258762 
+L 597.760519 287.797224 
+L 603.799481 278.104916 
+L 609.838442 278.104916 
+L 615.877403 273.258762 
+L 621.916364 282.95107 
+" clip-path="url(#p6b90c5424b)" style="fill: none; stroke: #df8c4a; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 89.28 310.089531 
+L 89.28 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 647.28 310.089531 
+L 647.28 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 89.28 310.089531 
+L 647.28 310.089531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 89.28 32.889531 
+L 647.28 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 17px; font-family: 'NanumBarunGothic'; text-anchor: start" x="89.28" y="26.889531" transform="rotate(-0 89.28 26.889531)">수업용 잘못된 차트: 이중축 겹침은 착시를 유발</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="matplotlib.axis_3">
+    <g id="ytick_7">
+     <g id="line2d_15">
+      <defs>
+       <path id="mc3b68787d4" d="M 0 0 
+L 3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mc3b68787d4" x="647.28" y="273.998006" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_16">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="654.28" y="278.271678" transform="rotate(-0 654.28 278.271678)">20</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#mc3b68787d4" x="647.28" y="231.286141" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_17">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="654.28" y="235.559813" transform="rotate(-0 654.28 235.559813)">40</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_17">
+      <g>
+       <use xlink:href="#mc3b68787d4" x="647.28" y="188.574277" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_18">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="654.28" y="192.847949" transform="rotate(-0 654.28 192.847949)">60</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#mc3b68787d4" x="647.28" y="145.862413" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_19">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="654.28" y="150.136084" transform="rotate(-0 654.28 150.136084)">80</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_19">
+      <g>
+       <use xlink:href="#mc3b68787d4" x="647.28" y="103.150548" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_20">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="654.28" y="107.42422" transform="rotate(-0 654.28 107.42422)">100</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_20">
+      <g>
+       <use xlink:href="#mc3b68787d4" x="647.28" y="60.438684" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_21">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: start" x="654.28" y="64.712356" transform="rotate(-0 654.28 64.712356)">120</text>
+     </g>
+    </g>
+    <g id="text_22">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="686.065313" y="171.489531" transform="rotate(-90 686.065313 171.489531)">PM10(㎍/㎥)</text>
+    </g>
+   </g>
+   <g id="line2d_21">
+    <path d="M 114.643636 218.472582 
+L 120.682597 271.862413 
+L 126.721558 256.91326 
+L 132.760519 175.760718 
+L 138.799481 214.201396 
+L 144.838442 241.964108 
+L 150.877403 244.099701 
+L 156.916364 237.692921 
+L 162.955325 237.692921 
+L 168.994286 209.930209 
+L 175.033247 182.167497 
+L 181.072208 250.50648 
+L 187.111169 267.591226 
+L 193.15013 229.150548 
+L 199.189091 248.370887 
+L 205.228052 241.964108 
+L 211.267013 276.133599 
+L 217.305974 250.50648 
+L 223.344935 214.201396 
+L 229.383896 261.184447 
+L 235.422857 263.32004 
+L 241.461818 237.692921 
+L 247.500779 252.642074 
+L 253.53974 201.387836 
+L 259.578701 188.574277 
+L 265.617662 248.370887 
+L 271.656623 256.91326 
+L 277.695584 233.421735 
+L 283.734545 203.52343 
+L 289.773506 297.489531 
+L 295.812468 216.336989 
+L 301.851429 203.52343 
+L 307.89039 201.387836 
+L 313.929351 273.998006 
+L 319.968312 256.91326 
+L 326.007273 241.964108 
+L 332.046234 246.235294 
+L 338.085195 212.065802 
+L 344.124156 239.828514 
+L 350.163117 227.014955 
+L 356.202078 205.659023 
+L 362.241039 271.862413 
+L 368.28 224.879362 
+L 374.318961 229.150548 
+L 380.357922 214.201396 
+L 386.396883 259.048853 
+L 392.435844 241.964108 
+L 398.474805 229.150548 
+L 404.513766 197.11665 
+L 410.552727 190.70987 
+L 416.591688 214.201396 
+L 422.630649 265.455633 
+L 428.66961 205.659023 
+L 434.708571 241.964108 
+L 440.747532 248.370887 
+L 446.786494 282.540379 
+L 452.825455 184.303091 
+L 458.864416 269.726819 
+L 464.903377 45.489531 
+L 470.942338 224.879362 
+L 476.981299 244.099701 
+L 483.02026 246.235294 
+L 489.059221 231.286141 
+L 495.098182 252.642074 
+L 501.137143 205.659023 
+L 507.176104 209.930209 
+L 513.215065 224.879362 
+L 519.254026 214.201396 
+L 525.292987 278.269192 
+L 531.331948 259.048853 
+L 537.370909 259.048853 
+L 543.40987 235.557328 
+L 549.448831 68.981057 
+L 555.487792 222.743769 
+L 561.526753 246.235294 
+L 567.565714 273.998006 
+L 573.604675 246.235294 
+L 579.643636 205.659023 
+L 585.682597 190.70987 
+L 591.721558 271.862413 
+L 597.760519 248.370887 
+L 603.799481 295.353938 
+L 609.838442 246.235294 
+L 615.877403 186.438684 
+L 621.916364 248.370887 
+" clip-path="url(#p6b90c5424b)" style="fill: none; stroke: #5682be; stroke-width: 1.8; stroke-linecap: square"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 89.28 310.089531 
+L 89.28 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 647.28 310.089531 
+L 647.28 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 89.28 310.089531 
+L 647.28 310.089531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 89.28 32.889531 
+L 647.28 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+  </g>
+  <g id="text_23">
+   <text style="font-size: 9px; font-family: 'NanumBarunGothic'; text-anchor: start; fill: #526c70" x="13.68" y="343.929531" transform="rotate(-0 13.68 343.929531)">수정 전 / 가상 데이터  |  가상 뉴스/PM10 2026-08-01~2026-10-24 · 양쪽 축은 임의 배율  |  출처·기간·단위 표기 확인</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6b90c5424b">
+   <rect x="89.28" y="32.889531" width="558" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>
