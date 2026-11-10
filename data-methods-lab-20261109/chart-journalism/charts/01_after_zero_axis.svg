@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="597.6pt" height="360.137969pt" viewBox="0 0 597.6 360.137969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-10T01:14:47.825359</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 360.137969 
+L 597.6 360.137969 
+L 597.6 0 
+L -0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 81.72 310.089531 
+L 583.92 310.089531 
+L 583.92 32.889531 
+L 81.72 32.889531 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 104.547273 310.089531 
+L 200.662105 310.089531 
+L 200.662105 82.876416 
+L 104.547273 82.876416 
+z
+" clip-path="url(#p8e166d6021)" style="fill: #df8c4a"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 224.690813 310.089531 
+L 320.805646 310.089531 
+L 320.805646 100.354348 
+L 224.690813 100.354348 
+z
+" clip-path="url(#p8e166d6021)" style="fill: #b1bec5"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 344.834354 310.089531 
+L 440.949187 310.089531 
+L 440.949187 100.354348 
+L 344.834354 100.354348 
+z
+" clip-path="url(#p8e166d6021)" style="fill: #b1bec5"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 464.977895 310.089531 
+L 561.092727 310.089531 
+L 561.092727 117.83228 
+L 464.977895 117.83228 
+z
+" clip-path="url(#p8e166d6021)" style="fill: #b1bec5"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m2174281889" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m2174281889" x="152.604689" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="152.604689" y="325.636875" transform="rotate(-0 152.604689 325.636875)">38번</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m2174281889" x="272.74823" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="272.74823" y="325.636875" transform="rotate(-0 272.74823 325.636875)">16번</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m2174281889" x="392.89177" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="392.89177" y="325.636875" transform="rotate(-0 392.89177 325.636875)">27번</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m2174281889" x="513.035311" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="513.035311" y="325.636875" transform="rotate(-0 513.035311 325.636875)">13번</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="332.82" y="341.274531" transform="rotate(-0 332.82 341.274531)">로또 번호</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m75124ac585" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="314.363203" transform="rotate(-0 74.72 314.363203)">0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="275.133667" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="279.407339" transform="rotate(-0 74.72 279.407339)">2</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="240.177804" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="244.451476" transform="rotate(-0 74.72 244.451476)">4</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="205.22194" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="209.495612" transform="rotate(-0 74.72 209.495612)">6</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="170.266076" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="174.539748" transform="rotate(-0 74.72 174.539748)">8</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="135.310212" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="139.583884" transform="rotate(-0 74.72 139.583884)">10</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="100.354348" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="104.62802" transform="rotate(-0 74.72 104.62802)">12</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m75124ac585" x="81.72" y="65.398485" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="69.672156" transform="rotate(-0 74.72 69.672156)">14</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="54.804375" y="171.489531" transform="rotate(-90 54.804375 171.489531)">등장 횟수 (회)</text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 81.72 310.089531 
+L 81.72 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 583.92 310.089531 
+L 583.92 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 81.72 310.089531 
+L 583.92 310.089531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 81.72 32.889531 
+L 583.92 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="152.604689" y="80.779065" transform="rotate(-0 152.604689 80.779065)">13</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="272.74823" y="98.256997" transform="rotate(-0 272.74823 98.256997)">12</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="392.89177" y="98.256997" transform="rotate(-0 392.89177 98.256997)">12</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="513.035311" y="115.734928" transform="rotate(-0 513.035311 115.734928)">11</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 17px; font-family: 'NanumBarunGothic'; text-anchor: start" x="81.72" y="26.889531" transform="rotate(-0 81.72 26.889531)">최근 60회에는 38번이 13회로 가장 많았다</text>
+   </g>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 9px; font-family: 'NanumBarunGothic'; text-anchor: start; fill: #526c70" x="13.68" y="343.929531" transform="rotate(-0 13.68 343.929531)">수정 후 / 실제 과거 데이터  |  사용자 제공 로또 기록 1189~1248회 · 단위 회 · 당첨확률 변화 아님  |  출처·기간·단위 표기 확인</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p8e166d6021">
+   <rect x="81.72" y="32.889531" width="502.2" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>
