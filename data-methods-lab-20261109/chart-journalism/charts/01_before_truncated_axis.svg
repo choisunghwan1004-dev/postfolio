@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="597.6pt" height="360.137969pt" viewBox="0 0 597.6 360.137969" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-10T01:14:47.530692</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M -0 360.137969 
+L 597.6 360.137969 
+L 597.6 0 
+L -0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 81.72 310.089531 
+L 583.92 310.089531 
+L 583.92 32.889531 
+L 81.72 32.889531 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 104.547273 1003.089531 
+L 200.662105 1003.089531 
+L 200.662105 102.189531 
+L 104.547273 102.189531 
+z
+" clip-path="url(#p88b0b17ee0)" style="fill: #df8c4a"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 224.690813 1003.089531 
+L 320.805646 1003.089531 
+L 320.805646 171.489531 
+L 224.690813 171.489531 
+z
+" clip-path="url(#p88b0b17ee0)" style="fill: #5682be"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 344.834354 1003.089531 
+L 440.949187 1003.089531 
+L 440.949187 171.489531 
+L 344.834354 171.489531 
+z
+" clip-path="url(#p88b0b17ee0)" style="fill: #43a891"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 464.977895 1003.089531 
+L 561.092727 1003.089531 
+L 561.092727 240.789531 
+L 464.977895 240.789531 
+z
+" clip-path="url(#p88b0b17ee0)" style="fill: #8560ae"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m39f8352338" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m39f8352338" x="152.604689" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="152.604689" y="325.636875" transform="rotate(-0 152.604689 325.636875)">38번</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m39f8352338" x="272.74823" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="272.74823" y="325.636875" transform="rotate(-0 272.74823 325.636875)">16번</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m39f8352338" x="392.89177" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="392.89177" y="325.636875" transform="rotate(-0 392.89177 325.636875)">27번</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m39f8352338" x="513.035311" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="513.035311" y="325.636875" transform="rotate(-0 513.035311 325.636875)">13번</text>
+     </g>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5">
+      <defs>
+       <path id="m6a7337249a" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="310.089531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="314.363203" transform="rotate(-0 74.72 314.363203)">10.0</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="275.439531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="279.713203" transform="rotate(-0 74.72 279.713203)">10.5</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_7">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="240.789531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="245.063203" transform="rotate(-0 74.72 245.063203)">11.0</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="206.139531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="210.413203" transform="rotate(-0 74.72 210.413203)">11.5</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="171.489531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="175.763203" transform="rotate(-0 74.72 175.763203)">12.0</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="136.839531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="141.113203" transform="rotate(-0 74.72 141.113203)">12.5</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_11">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="102.189531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="106.463203" transform="rotate(-0 74.72 106.463203)">13.0</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="67.539531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_12">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="71.813203" transform="rotate(-0 74.72 71.813203)">13.5</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_13">
+      <g>
+       <use xlink:href="#m6a7337249a" x="81.72" y="32.889531" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_13">
+      <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: end" x="74.72" y="37.163203" transform="rotate(-0 74.72 37.163203)">14.0</text>
+     </g>
+    </g>
+    <g id="text_14">
+     <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="45.124375" y="171.489531" transform="rotate(-90 45.124375 171.489531)">등장 횟수 (회)</text>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 81.72 310.089531 
+L 81.72 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 583.92 310.089531 
+L 583.92 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 81.72 310.089531 
+L 583.92 310.089531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 81.72 32.889531 
+L 583.92 32.889531 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="152.604689" y="97.338531" transform="rotate(-0 152.604689 97.338531)">13</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="272.74823" y="166.638531" transform="rotate(-0 272.74823 166.638531)">12</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="392.89177" y="166.638531" transform="rotate(-0 392.89177 166.638531)">12</text>
+   </g>
+   <g id="text_18">
+    <text style="font-size: 11px; font-family: 'NanumBarunGothic'; text-anchor: middle" x="513.035311" y="235.938531" transform="rotate(-0 513.035311 235.938531)">11</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 17px; font-family: 'NanumBarunGothic'; text-anchor: start" x="81.72" y="26.889531" transform="rotate(-0 81.72 26.889531)">수업용 잘못된 차트: 0에서 시작하지 않는 막대</text>
+   </g>
+  </g>
+  <g id="text_20">
+   <text style="font-size: 9px; font-family: 'NanumBarunGothic'; text-anchor: start; fill: #526c70" x="13.68" y="343.929531" transform="rotate(-0 13.68 343.929531)">수정 전 / 실제 과거 데이터  |  로또 6/45 1189~1248회 · 60회차 · 위 사례는 의도된 과장  |  출처·기간·단위 표기 확인</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p88b0b17ee0">
+   <rect x="81.72" y="32.889531" width="502.2" height="277.2"/>
+  </clipPath>
+ </defs>
+</svg>
