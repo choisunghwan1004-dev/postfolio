@@ -1,0 +1,20 @@
+[
+  {
+    "asset": "control_room_cg.jpg",
+    "sha256": "2f2aa978cefa6f107eb6acde1f953b5281cb2185ce27a097233783b75bc8d32c",
+    "source": "자체 제작 (Pillow)",
+    "mode": "educational_simulation"
+  },
+  {
+    "asset": "regional_graphics_cg.jpg",
+    "sha256": "73ad69a582e5ddb31733710d27bd1394fbf413736c2c52ac50a7026ef119afef",
+    "source": "자체 제작 (Pillow)",
+    "mode": "educational_simulation"
+  },
+  {
+    "asset": "studio_photo.jpg",
+    "sha256": "43330491325607d5c7cf1c2efb6b5bbb79f2e0ad300fcb91be7b74c62cd56232",
+    "source": "OpenAI 이미지 생성 도구",
+    "mode": "educational_simulation"
+  }
+]

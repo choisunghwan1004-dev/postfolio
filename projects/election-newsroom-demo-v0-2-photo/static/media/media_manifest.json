@@ -1,0 +1,35 @@
+[
+  {
+    "id": "PHOTO-01",
+    "filename": "studio_photo.jpg",
+    "kind": "photo",
+    "title": "가상 앵커 스튜디오",
+    "caption": "AI가 생성한 가상의 진행자 이미지 · 실제 인물이 아님",
+    "source": "OpenAI 이미지 생성 도구",
+    "rights": "생성 이미지 · AI 표시 필수",
+    "approved_for": "교육용 모의 방송",
+    "ai_generated": true
+  },
+  {
+    "id": "CG-01",
+    "filename": "control_room_cg.jpg",
+    "kind": "image",
+    "title": "개표상황실 CG",
+    "caption": "직접 제작한 교육용 가상 상황실 그래픽",
+    "source": "자체 제작 (Pillow)",
+    "rights": "원본 제작",
+    "approved_for": "교육용 모의 방송",
+    "ai_generated": false
+  },
+  {
+    "id": "CG-02",
+    "filename": "regional_graphics_cg.jpg",
+    "kind": "image",
+    "title": "지역별 현황 CG",
+    "caption": "표본 수치로 그린 모의 그래픽 · 실제 개표 데이터 없음",
+    "source": "자체 제작 (Pillow)",
+    "rights": "원본 제작",
+    "approved_for": "교육용 모의 방송",
+    "ai_generated": false
+  }
+]

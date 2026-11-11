@@ -1,0 +1,4 @@
+﻿ID,파일명,유형,출처/제작자,사용 승인 범위,권리/주의,AI 생성 여부,SHA-256,배포 상태
+PHOTO-01,studio_photo.jpg,photo,OpenAI 이미지 생성 도구,교육용 모의 방송,생성 이미지 · AI 표시 필수,예,43330491325607d5c7cf1c2efb6b5bbb79f2e0ad300fcb91be7b74c62cd56232,교육용 패키지에 포함
+CG-01,control_room_cg.jpg,image,자체 제작 (Pillow),교육용 모의 방송,원본 제작,아니오,2f2aa978cefa6f107eb6acde1f953b5281cb2185ce27a097233783b75bc8d32c,교육용 패키지에 포함
+CG-02,regional_graphics_cg.jpg,image,자체 제작 (Pillow),교육용 모의 방송,원본 제작,아니오,73ad69a582e5ddb31733710d27bd1394fbf413736c2c52ac50a7026ef119afef,교육용 패키지에 포함
