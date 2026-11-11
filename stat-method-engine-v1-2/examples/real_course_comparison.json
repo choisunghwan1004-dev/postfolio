@@ -1,0 +1,3560 @@
+{
+  "count": 6,
+  "scenarios": [
+    {
+      "status": "executed_locally",
+      "backend": "pandas",
+      "source": "data_air_2022.csv",
+      "input_rows": 673,
+      "filtered_rows": 673,
+      "scenario": {
+        "name": "전체 평균",
+        "method": "summary",
+        "value_col": "pm10",
+        "second_col": null,
+        "group_col": null,
+        "date_col": null,
+        "start_date": null,
+        "end_date": null,
+        "filter_col": null,
+        "filter_equals": null,
+        "min_value": null,
+        "max_value": null,
+        "window": 7,
+        "missing_policy": "drop"
+      },
+      "result": {
+        "count": 673,
+        "mean": 33.09806835066865,
+        "median": 28.0,
+        "std": 22.972794711536874,
+        "min": 4.0,
+        "max": 267.0
+      },
+      "limits": "본 도구 결과는 교육용 기술통계이며 대표성/인과관계 미보증"
+    },
+    {
+      "status": "executed_locally",
+      "backend": "pandas",
+      "source": "data_air_2022.csv",
+      "input_rows": 673,
+      "filtered_rows": 221,
+      "scenario": {
+        "name": "PM10 35 이상",
+        "method": "summary",
+        "value_col": "pm10",
+        "second_col": null,
+        "group_col": null,
+        "date_col": null,
+        "start_date": null,
+        "end_date": null,
+        "filter_col": null,
+        "filter_equals": null,
+        "min_value": 35,
+        "max_value": null,
+        "window": 7,
+        "missing_policy": "drop"
+      },
+      "result": {
+        "count": 221,
+        "mean": 55.914027149321264,
+        "median": 48.0,
+        "std": 26.733309705295746,
+        "min": 35.0,
+        "max": 267.0
+      },
+      "limits": "본 도구 결과는 교육용 기술통계이며 대표성/인과관계 미보증"
+    },
+    {
+      "status": "executed_locally",
+      "backend": "pandas",
+      "source": "data_air_2022.csv",
+      "input_rows": 673,
+      "filtered_rows": 92,
+      "scenario": {
+        "name": "여름 6~8월",
+        "method": "summary",
+        "value_col": "pm10",
+        "second_col": null,
+        "group_col": null,
+        "date_col": "day",
+        "start_date": "2022-06-01",
+        "end_date": "2022-08-31",
+        "filter_col": null,
+        "filter_equals": null,
+        "min_value": null,
+        "max_value": null,
+        "window": 7,
+        "missing_policy": "drop"
+      },
+      "result": {
+        "count": 92,
+        "mean": 21.358695652173914,
+        "median": 22.5,
+        "std": 8.04053128436958,
+        "min": 4.0,
+        "max": 42.0
+      },
+      "limits": "본 도구 결과는 교육용 기술통계이며 대표성/인과관계 미보증"
+    },
+    {
+      "status": "executed_locally",
+      "backend": "pandas",
+      "source": "data_air_2022.csv",
+      "input_rows": 673,
+      "filtered_rows": 673,
+      "scenario": {
+        "name": "7일 이동평균",
+        "method": "timeseries",
+        "value_col": "pm10",
+        "second_col": null,
+        "group_col": null,
+        "date_col": "day",
+        "start_date": null,
+        "end_date": null,
+        "filter_col": null,
+        "filter_equals": null,
+        "min_value": null,
+        "max_value": null,
+        "window": 7,
+        "missing_policy": "drop"
+      },
+      "result": {
+        "window": 7,
+        "series": [
+          {
+            "date": "2022-04-01",
+            "value": 15.0,
+            "moving_average": null
+          },
+          {
+            "date": "2022-04-02",
+            "value": 30.0,
+            "moving_average": null
+          },
+          {
+            "date": "2022-04-03",
+            "value": 43.0,
+            "moving_average": null
+          },
+          {
+            "date": "2022-04-04",
+            "value": 57.0,
+            "moving_average": null
+          },
+          {
+            "date": "2022-04-05",
+            "value": 43.0,
+            "moving_average": null
+          },
+          {
+            "date": "2022-04-06",
+            "value": 49.0,
+            "moving_average": null
+          },
+          {
+            "date": "2022-04-07",
+            "value": 34.0,
+            "moving_average": 38.714285714285715
+          },
+          {
+            "date": "2022-04-08",
+            "value": 46.0,
+            "moving_average": 43.142857142857146
+          },
+          {
+            "date": "2022-04-09",
+            "value": 51.0,
+            "moving_average": 46.142857142857146
+          },
+          {
+            "date": "2022-04-10",
+            "value": 40.0,
+            "moving_average": 45.714285714285715
+          },
+          {
+            "date": "2022-04-11",
+            "value": 34.0,
+            "moving_average": 42.42857142857143
+          },
+          {
+            "date": "2022-04-12",
+            "value": 26.0,
+            "moving_average": 40.0
+          },
+          {
+            "date": "2022-04-13",
+            "value": 13.0,
+            "moving_average": 34.857142857142854
+          },
+          {
+            "date": "2022-04-14",
+            "value": 10.0,
+            "moving_average": 31.428571428571427
+          },
+          {
+            "date": "2022-04-15",
+            "value": 18.0,
+            "moving_average": 27.428571428571427
+          },
+          {
+            "date": "2022-04-16",
+            "value": 33.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-04-17",
+            "value": 51.0,
+            "moving_average": 26.428571428571427
+          },
+          {
+            "date": "2022-04-18",
+            "value": 55.0,
+            "moving_average": 29.428571428571427
+          },
+          {
+            "date": "2022-04-19",
+            "value": 65.0,
+            "moving_average": 35.0
+          },
+          {
+            "date": "2022-04-20",
+            "value": 69.0,
+            "moving_average": 43.0
+          },
+          {
+            "date": "2022-04-21",
+            "value": 49.0,
+            "moving_average": 48.57142857142857
+          },
+          {
+            "date": "2022-04-22",
+            "value": 52.0,
+            "moving_average": 53.42857142857143
+          },
+          {
+            "date": "2022-04-23",
+            "value": 49.0,
+            "moving_average": 55.714285714285715
+          },
+          {
+            "date": "2022-04-24",
+            "value": 48.0,
+            "moving_average": 55.285714285714285
+          },
+          {
+            "date": "2022-04-25",
+            "value": 46.0,
+            "moving_average": 54.0
+          },
+          {
+            "date": "2022-04-26",
+            "value": 42.0,
+            "moving_average": 50.714285714285715
+          },
+          {
+            "date": "2022-04-27",
+            "value": 142.0,
+            "moving_average": 61.142857142857146
+          },
+          {
+            "date": "2022-04-28",
+            "value": 67.0,
+            "moving_average": 63.714285714285715
+          },
+          {
+            "date": "2022-04-29",
+            "value": 8.0,
+            "moving_average": 57.42857142857143
+          },
+          {
+            "date": "2022-04-30",
+            "value": 17.0,
+            "moving_average": 52.857142857142854
+          },
+          {
+            "date": "2022-05-01",
+            "value": 41.0,
+            "moving_average": 51.857142857142854
+          },
+          {
+            "date": "2022-05-02",
+            "value": 44.0,
+            "moving_average": 51.57142857142857
+          },
+          {
+            "date": "2022-05-03",
+            "value": 34.0,
+            "moving_average": 50.42857142857143
+          },
+          {
+            "date": "2022-05-04",
+            "value": 36.0,
+            "moving_average": 35.285714285714285
+          },
+          {
+            "date": "2022-05-05",
+            "value": 32.0,
+            "moving_average": 30.285714285714285
+          },
+          {
+            "date": "2022-05-06",
+            "value": 35.0,
+            "moving_average": 34.142857142857146
+          },
+          {
+            "date": "2022-05-07",
+            "value": 28.0,
+            "moving_average": 35.714285714285715
+          },
+          {
+            "date": "2022-05-08",
+            "value": 16.0,
+            "moving_average": 32.142857142857146
+          },
+          {
+            "date": "2022-05-09",
+            "value": 15.0,
+            "moving_average": 28.0
+          },
+          {
+            "date": "2022-05-10",
+            "value": 23.0,
+            "moving_average": 26.428571428571427
+          },
+          {
+            "date": "2022-05-11",
+            "value": 28.0,
+            "moving_average": 25.285714285714285
+          },
+          {
+            "date": "2022-05-12",
+            "value": 30.0,
+            "moving_average": 25.0
+          },
+          {
+            "date": "2022-05-13",
+            "value": 26.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2022-05-14",
+            "value": 30.0,
+            "moving_average": 24.0
+          },
+          {
+            "date": "2022-05-15",
+            "value": 22.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-05-16",
+            "value": 32.0,
+            "moving_average": 27.285714285714285
+          },
+          {
+            "date": "2022-05-17",
+            "value": 50.0,
+            "moving_average": 31.142857142857142
+          },
+          {
+            "date": "2022-05-18",
+            "value": 56.0,
+            "moving_average": 35.142857142857146
+          },
+          {
+            "date": "2022-05-19",
+            "value": 44.0,
+            "moving_average": 37.142857142857146
+          },
+          {
+            "date": "2022-05-20",
+            "value": 33.0,
+            "moving_average": 38.142857142857146
+          },
+          {
+            "date": "2022-05-21",
+            "value": 34.0,
+            "moving_average": 38.714285714285715
+          },
+          {
+            "date": "2022-05-22",
+            "value": 36.0,
+            "moving_average": 40.714285714285715
+          },
+          {
+            "date": "2022-05-23",
+            "value": 61.0,
+            "moving_average": 44.857142857142854
+          },
+          {
+            "date": "2022-05-24",
+            "value": 30.0,
+            "moving_average": 42.0
+          },
+          {
+            "date": "2022-05-25",
+            "value": 22.0,
+            "moving_average": 37.142857142857146
+          },
+          {
+            "date": "2022-05-26",
+            "value": 22.0,
+            "moving_average": 34.0
+          },
+          {
+            "date": "2022-05-27",
+            "value": 23.0,
+            "moving_average": 32.57142857142857
+          },
+          {
+            "date": "2022-05-28",
+            "value": 31.0,
+            "moving_average": 32.142857142857146
+          },
+          {
+            "date": "2022-05-29",
+            "value": 27.0,
+            "moving_average": 30.857142857142858
+          },
+          {
+            "date": "2022-05-30",
+            "value": 25.0,
+            "moving_average": 25.714285714285715
+          },
+          {
+            "date": "2022-05-31",
+            "value": 24.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-06-01",
+            "value": 22.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-06-02",
+            "value": 27.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2022-06-03",
+            "value": 36.0,
+            "moving_average": 27.428571428571427
+          },
+          {
+            "date": "2022-06-04",
+            "value": 33.0,
+            "moving_average": 27.714285714285715
+          },
+          {
+            "date": "2022-06-05",
+            "value": 22.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2022-06-06",
+            "value": 7.0,
+            "moving_average": 24.428571428571427
+          },
+          {
+            "date": "2022-06-07",
+            "value": 5.0,
+            "moving_average": 21.714285714285715
+          },
+          {
+            "date": "2022-06-08",
+            "value": 14.0,
+            "moving_average": 20.571428571428573
+          },
+          {
+            "date": "2022-06-09",
+            "value": 23.0,
+            "moving_average": 20.0
+          },
+          {
+            "date": "2022-06-10",
+            "value": 25.0,
+            "moving_average": 18.428571428571427
+          },
+          {
+            "date": "2022-06-11",
+            "value": 20.0,
+            "moving_average": 16.571428571428573
+          },
+          {
+            "date": "2022-06-12",
+            "value": 21.0,
+            "moving_average": 16.428571428571427
+          },
+          {
+            "date": "2022-06-13",
+            "value": 20.0,
+            "moving_average": 18.285714285714285
+          },
+          {
+            "date": "2022-06-14",
+            "value": 11.0,
+            "moving_average": 19.142857142857142
+          },
+          {
+            "date": "2022-06-15",
+            "value": 9.0,
+            "moving_average": 18.428571428571427
+          },
+          {
+            "date": "2022-06-16",
+            "value": 13.0,
+            "moving_average": 17.0
+          },
+          {
+            "date": "2022-06-17",
+            "value": 36.0,
+            "moving_average": 18.571428571428573
+          },
+          {
+            "date": "2022-06-18",
+            "value": 22.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2022-06-19",
+            "value": 25.0,
+            "moving_average": 19.428571428571427
+          },
+          {
+            "date": "2022-06-20",
+            "value": 24.0,
+            "moving_average": 20.0
+          },
+          {
+            "date": "2022-06-21",
+            "value": 23.0,
+            "moving_average": 21.714285714285715
+          },
+          {
+            "date": "2022-06-22",
+            "value": 24.0,
+            "moving_average": 23.857142857142858
+          },
+          {
+            "date": "2022-06-23",
+            "value": 25.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2022-06-24",
+            "value": 20.0,
+            "moving_average": 23.285714285714285
+          },
+          {
+            "date": "2022-06-25",
+            "value": 42.0,
+            "moving_average": 26.142857142857142
+          },
+          {
+            "date": "2022-06-26",
+            "value": 22.0,
+            "moving_average": 25.714285714285715
+          },
+          {
+            "date": "2022-06-27",
+            "value": 10.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2022-06-28",
+            "value": 15.0,
+            "moving_average": 22.571428571428573
+          },
+          {
+            "date": "2022-06-29",
+            "value": 12.0,
+            "moving_average": 20.857142857142858
+          },
+          {
+            "date": "2022-06-30",
+            "value": 4.0,
+            "moving_average": 17.857142857142858
+          },
+          {
+            "date": "2022-07-01",
+            "value": 17.0,
+            "moving_average": 17.428571428571427
+          },
+          {
+            "date": "2022-07-02",
+            "value": 25.0,
+            "moving_average": 15.0
+          },
+          {
+            "date": "2022-07-03",
+            "value": 32.0,
+            "moving_average": 16.428571428571427
+          },
+          {
+            "date": "2022-07-04",
+            "value": 32.0,
+            "moving_average": 19.571428571428573
+          },
+          {
+            "date": "2022-07-05",
+            "value": 29.0,
+            "moving_average": 21.571428571428573
+          },
+          {
+            "date": "2022-07-06",
+            "value": 26.0,
+            "moving_average": 23.571428571428573
+          },
+          {
+            "date": "2022-07-07",
+            "value": 20.0,
+            "moving_average": 25.857142857142858
+          },
+          {
+            "date": "2022-07-08",
+            "value": 25.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2022-07-09",
+            "value": 21.0,
+            "moving_average": 26.428571428571427
+          },
+          {
+            "date": "2022-07-10",
+            "value": 38.0,
+            "moving_average": 27.285714285714285
+          },
+          {
+            "date": "2022-07-11",
+            "value": 22.0,
+            "moving_average": 25.857142857142858
+          },
+          {
+            "date": "2022-07-12",
+            "value": 10.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2022-07-13",
+            "value": 16.0,
+            "moving_average": 21.714285714285715
+          },
+          {
+            "date": "2022-07-14",
+            "value": 11.0,
+            "moving_average": 20.428571428571427
+          },
+          {
+            "date": "2022-07-15",
+            "value": 23.0,
+            "moving_average": 20.142857142857142
+          },
+          {
+            "date": "2022-07-16",
+            "value": 28.0,
+            "moving_average": 21.142857142857142
+          },
+          {
+            "date": "2022-07-17",
+            "value": 24.0,
+            "moving_average": 19.142857142857142
+          },
+          {
+            "date": "2022-07-18",
+            "value": 24.0,
+            "moving_average": 19.428571428571427
+          },
+          {
+            "date": "2022-07-19",
+            "value": 31.0,
+            "moving_average": 22.428571428571427
+          },
+          {
+            "date": "2022-07-20",
+            "value": 32.0,
+            "moving_average": 24.714285714285715
+          },
+          {
+            "date": "2022-07-21",
+            "value": 12.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-07-22",
+            "value": 25.0,
+            "moving_average": 25.142857142857142
+          },
+          {
+            "date": "2022-07-23",
+            "value": 33.0,
+            "moving_average": 25.857142857142858
+          },
+          {
+            "date": "2022-07-24",
+            "value": 16.0,
+            "moving_average": 24.714285714285715
+          },
+          {
+            "date": "2022-07-25",
+            "value": 19.0,
+            "moving_average": 24.0
+          },
+          {
+            "date": "2022-07-26",
+            "value": 31.0,
+            "moving_average": 24.0
+          },
+          {
+            "date": "2022-07-27",
+            "value": 30.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2022-07-28",
+            "value": 24.0,
+            "moving_average": 25.428571428571427
+          },
+          {
+            "date": "2022-07-29",
+            "value": 23.0,
+            "moving_average": 25.142857142857142
+          },
+          {
+            "date": "2022-07-30",
+            "value": 16.0,
+            "moving_average": 22.714285714285715
+          },
+          {
+            "date": "2022-07-31",
+            "value": 10.0,
+            "moving_average": 21.857142857142858
+          },
+          {
+            "date": "2022-08-01",
+            "value": 14.0,
+            "moving_average": 21.142857142857142
+          },
+          {
+            "date": "2022-08-02",
+            "value": 11.0,
+            "moving_average": 18.285714285714285
+          },
+          {
+            "date": "2022-08-03",
+            "value": 23.0,
+            "moving_average": 17.285714285714285
+          },
+          {
+            "date": "2022-08-04",
+            "value": 17.0,
+            "moving_average": 16.285714285714285
+          },
+          {
+            "date": "2022-08-05",
+            "value": 20.0,
+            "moving_average": 15.857142857142858
+          },
+          {
+            "date": "2022-08-06",
+            "value": 37.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2022-08-07",
+            "value": 29.0,
+            "moving_average": 21.571428571428573
+          },
+          {
+            "date": "2022-08-08",
+            "value": 23.0,
+            "moving_average": 22.857142857142858
+          },
+          {
+            "date": "2022-08-09",
+            "value": 11.0,
+            "moving_average": 22.857142857142858
+          },
+          {
+            "date": "2022-08-10",
+            "value": 13.0,
+            "moving_average": 21.428571428571427
+          },
+          {
+            "date": "2022-08-11",
+            "value": 13.0,
+            "moving_average": 20.857142857142858
+          },
+          {
+            "date": "2022-08-12",
+            "value": 24.0,
+            "moving_average": 21.428571428571427
+          },
+          {
+            "date": "2022-08-13",
+            "value": 28.0,
+            "moving_average": 20.142857142857142
+          },
+          {
+            "date": "2022-08-14",
+            "value": 24.0,
+            "moving_average": 19.428571428571427
+          },
+          {
+            "date": "2022-08-15",
+            "value": 28.0,
+            "moving_average": 20.142857142857142
+          },
+          {
+            "date": "2022-08-16",
+            "value": 26.0,
+            "moving_average": 22.285714285714285
+          },
+          {
+            "date": "2022-08-17",
+            "value": 22.0,
+            "moving_average": 23.571428571428573
+          },
+          {
+            "date": "2022-08-18",
+            "value": 23.0,
+            "moving_average": 25.0
+          },
+          {
+            "date": "2022-08-19",
+            "value": 26.0,
+            "moving_average": 25.285714285714285
+          },
+          {
+            "date": "2022-08-20",
+            "value": 24.0,
+            "moving_average": 24.714285714285715
+          },
+          {
+            "date": "2022-08-21",
+            "value": 24.0,
+            "moving_average": 24.714285714285715
+          },
+          {
+            "date": "2022-08-22",
+            "value": 25.0,
+            "moving_average": 24.285714285714285
+          },
+          {
+            "date": "2022-08-23",
+            "value": 17.0,
+            "moving_average": 23.0
+          },
+          {
+            "date": "2022-08-24",
+            "value": 16.0,
+            "moving_average": 22.142857142857142
+          },
+          {
+            "date": "2022-08-25",
+            "value": 18.0,
+            "moving_average": 21.428571428571427
+          },
+          {
+            "date": "2022-08-26",
+            "value": 32.0,
+            "moving_average": 22.285714285714285
+          },
+          {
+            "date": "2022-08-27",
+            "value": 18.0,
+            "moving_average": 21.428571428571427
+          },
+          {
+            "date": "2022-08-28",
+            "value": 15.0,
+            "moving_average": 20.142857142857142
+          },
+          {
+            "date": "2022-08-29",
+            "value": 12.0,
+            "moving_average": 18.285714285714285
+          },
+          {
+            "date": "2022-08-30",
+            "value": 7.0,
+            "moving_average": 16.857142857142858
+          },
+          {
+            "date": "2022-08-31",
+            "value": 8.0,
+            "moving_average": 15.714285714285714
+          },
+          {
+            "date": "2022-09-01",
+            "value": 17.0,
+            "moving_average": 15.571428571428571
+          },
+          {
+            "date": "2022-09-02",
+            "value": 14.0,
+            "moving_average": 13.0
+          },
+          {
+            "date": "2022-09-03",
+            "value": 12.0,
+            "moving_average": 12.142857142857142
+          },
+          {
+            "date": "2022-09-04",
+            "value": 9.0,
+            "moving_average": 11.285714285714286
+          },
+          {
+            "date": "2022-09-05",
+            "value": 5.0,
+            "moving_average": 10.285714285714286
+          },
+          {
+            "date": "2022-09-06",
+            "value": 14.0,
+            "moving_average": 11.285714285714286
+          },
+          {
+            "date": "2022-09-07",
+            "value": 29.0,
+            "moving_average": 14.285714285714286
+          },
+          {
+            "date": "2022-09-08",
+            "value": 27.0,
+            "moving_average": 15.714285714285714
+          },
+          {
+            "date": "2022-09-09",
+            "value": 18.0,
+            "moving_average": 16.285714285714285
+          },
+          {
+            "date": "2022-09-10",
+            "value": 10.0,
+            "moving_average": 16.0
+          },
+          {
+            "date": "2022-09-11",
+            "value": 19.0,
+            "moving_average": 17.428571428571427
+          },
+          {
+            "date": "2022-09-12",
+            "value": 20.0,
+            "moving_average": 19.571428571428573
+          },
+          {
+            "date": "2022-09-13",
+            "value": 20.0,
+            "moving_average": 20.428571428571427
+          },
+          {
+            "date": "2022-09-14",
+            "value": 18.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2022-09-15",
+            "value": 19.0,
+            "moving_average": 17.714285714285715
+          },
+          {
+            "date": "2022-09-16",
+            "value": 25.0,
+            "moving_average": 18.714285714285715
+          },
+          {
+            "date": "2022-09-17",
+            "value": 21.0,
+            "moving_average": 20.285714285714285
+          },
+          {
+            "date": "2022-09-18",
+            "value": 19.0,
+            "moving_average": 20.285714285714285
+          },
+          {
+            "date": "2022-09-19",
+            "value": 18.0,
+            "moving_average": 20.0
+          },
+          {
+            "date": "2022-09-20",
+            "value": 26.0,
+            "moving_average": 20.857142857142858
+          },
+          {
+            "date": "2022-09-21",
+            "value": 28.0,
+            "moving_average": 22.285714285714285
+          },
+          {
+            "date": "2022-09-22",
+            "value": 21.0,
+            "moving_average": 22.571428571428573
+          },
+          {
+            "date": "2022-09-23",
+            "value": 23.0,
+            "moving_average": 22.285714285714285
+          },
+          {
+            "date": "2022-09-24",
+            "value": 18.0,
+            "moving_average": 21.857142857142858
+          },
+          {
+            "date": "2022-09-25",
+            "value": 21.0,
+            "moving_average": 22.142857142857142
+          },
+          {
+            "date": "2022-09-26",
+            "value": 21.0,
+            "moving_average": 22.571428571428573
+          },
+          {
+            "date": "2022-09-27",
+            "value": 25.0,
+            "moving_average": 22.428571428571427
+          },
+          {
+            "date": "2022-09-28",
+            "value": 31.0,
+            "moving_average": 22.857142857142858
+          },
+          {
+            "date": "2022-09-29",
+            "value": 53.0,
+            "moving_average": 27.428571428571427
+          },
+          {
+            "date": "2022-09-30",
+            "value": 45.0,
+            "moving_average": 30.571428571428573
+          },
+          {
+            "date": "2022-10-01",
+            "value": 43.0,
+            "moving_average": 34.142857142857146
+          },
+          {
+            "date": "2022-10-02",
+            "value": 27.0,
+            "moving_average": 35.0
+          },
+          {
+            "date": "2022-10-03",
+            "value": 14.0,
+            "moving_average": 34.0
+          },
+          {
+            "date": "2022-10-04",
+            "value": 13.0,
+            "moving_average": 32.285714285714285
+          },
+          {
+            "date": "2022-10-05",
+            "value": 13.0,
+            "moving_average": 29.714285714285715
+          },
+          {
+            "date": "2022-10-06",
+            "value": 6.0,
+            "moving_average": 23.0
+          },
+          {
+            "date": "2022-10-07",
+            "value": 9.0,
+            "moving_average": 17.857142857142858
+          },
+          {
+            "date": "2022-10-08",
+            "value": 8.0,
+            "moving_average": 12.857142857142858
+          },
+          {
+            "date": "2022-10-09",
+            "value": 7.0,
+            "moving_average": 10.0
+          },
+          {
+            "date": "2022-10-10",
+            "value": 7.0,
+            "moving_average": 9.0
+          },
+          {
+            "date": "2022-10-11",
+            "value": 15.0,
+            "moving_average": 9.285714285714286
+          },
+          {
+            "date": "2022-10-12",
+            "value": 22.0,
+            "moving_average": 10.571428571428571
+          },
+          {
+            "date": "2022-10-13",
+            "value": 20.0,
+            "moving_average": 12.571428571428571
+          },
+          {
+            "date": "2022-10-14",
+            "value": 26.0,
+            "moving_average": 15.0
+          },
+          {
+            "date": "2022-10-15",
+            "value": 30.0,
+            "moving_average": 18.142857142857142
+          },
+          {
+            "date": "2022-10-16",
+            "value": 33.0,
+            "moving_average": 21.857142857142858
+          },
+          {
+            "date": "2022-10-17",
+            "value": 26.0,
+            "moving_average": 24.571428571428573
+          },
+          {
+            "date": "2022-10-18",
+            "value": 21.0,
+            "moving_average": 25.428571428571427
+          },
+          {
+            "date": "2022-10-19",
+            "value": 23.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2022-10-20",
+            "value": 34.0,
+            "moving_average": 27.571428571428573
+          },
+          {
+            "date": "2022-10-21",
+            "value": 48.0,
+            "moving_average": 30.714285714285715
+          },
+          {
+            "date": "2022-10-22",
+            "value": 39.0,
+            "moving_average": 32.0
+          },
+          {
+            "date": "2022-10-23",
+            "value": 34.0,
+            "moving_average": 32.142857142857146
+          },
+          {
+            "date": "2022-10-24",
+            "value": 25.0,
+            "moving_average": 32.0
+          },
+          {
+            "date": "2022-10-25",
+            "value": 14.0,
+            "moving_average": 31.0
+          },
+          {
+            "date": "2022-10-26",
+            "value": 17.0,
+            "moving_average": 30.142857142857142
+          },
+          {
+            "date": "2022-10-27",
+            "value": 31.0,
+            "moving_average": 29.714285714285715
+          },
+          {
+            "date": "2022-10-28",
+            "value": 39.0,
+            "moving_average": 28.428571428571427
+          },
+          {
+            "date": "2022-10-29",
+            "value": 25.0,
+            "moving_average": 26.428571428571427
+          },
+          {
+            "date": "2022-10-30",
+            "value": 23.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-10-31",
+            "value": 25.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2022-11-01",
+            "value": 47.0,
+            "moving_average": 29.571428571428573
+          },
+          {
+            "date": "2022-11-02",
+            "value": 29.0,
+            "moving_average": 31.285714285714285
+          },
+          {
+            "date": "2022-11-03",
+            "value": 31.0,
+            "moving_average": 31.285714285714285
+          },
+          {
+            "date": "2022-11-04",
+            "value": 27.0,
+            "moving_average": 29.571428571428573
+          },
+          {
+            "date": "2022-11-05",
+            "value": 28.0,
+            "moving_average": 30.0
+          },
+          {
+            "date": "2022-11-06",
+            "value": 26.0,
+            "moving_average": 30.428571428571427
+          },
+          {
+            "date": "2022-11-07",
+            "value": 35.0,
+            "moving_average": 31.857142857142858
+          },
+          {
+            "date": "2022-11-08",
+            "value": 50.0,
+            "moving_average": 32.285714285714285
+          },
+          {
+            "date": "2022-11-09",
+            "value": 72.0,
+            "moving_average": 38.42857142857143
+          },
+          {
+            "date": "2022-11-10",
+            "value": 83.0,
+            "moving_average": 45.857142857142854
+          },
+          {
+            "date": "2022-11-11",
+            "value": 55.0,
+            "moving_average": 49.857142857142854
+          },
+          {
+            "date": "2022-11-12",
+            "value": 46.0,
+            "moving_average": 52.42857142857143
+          },
+          {
+            "date": "2022-11-13",
+            "value": 18.0,
+            "moving_average": 51.285714285714285
+          },
+          {
+            "date": "2022-11-14",
+            "value": 23.0,
+            "moving_average": 49.57142857142857
+          },
+          {
+            "date": "2022-11-15",
+            "value": 28.0,
+            "moving_average": 46.42857142857143
+          },
+          {
+            "date": "2022-11-16",
+            "value": 31.0,
+            "moving_average": 40.57142857142857
+          },
+          {
+            "date": "2022-11-17",
+            "value": 39.0,
+            "moving_average": 34.285714285714285
+          },
+          {
+            "date": "2022-11-18",
+            "value": 46.0,
+            "moving_average": 33.0
+          },
+          {
+            "date": "2022-11-19",
+            "value": 32.0,
+            "moving_average": 31.0
+          },
+          {
+            "date": "2022-11-20",
+            "value": 28.0,
+            "moving_average": 32.42857142857143
+          },
+          {
+            "date": "2022-11-21",
+            "value": 37.0,
+            "moving_average": 34.42857142857143
+          },
+          {
+            "date": "2022-11-22",
+            "value": 51.0,
+            "moving_average": 37.714285714285715
+          },
+          {
+            "date": "2022-11-23",
+            "value": 40.0,
+            "moving_average": 39.0
+          },
+          {
+            "date": "2022-11-24",
+            "value": 48.0,
+            "moving_average": 40.285714285714285
+          },
+          {
+            "date": "2022-11-25",
+            "value": 56.0,
+            "moving_average": 41.714285714285715
+          },
+          {
+            "date": "2022-11-26",
+            "value": 58.0,
+            "moving_average": 45.42857142857143
+          },
+          {
+            "date": "2022-11-27",
+            "value": 19.0,
+            "moving_average": 44.142857142857146
+          },
+          {
+            "date": "2022-11-28",
+            "value": 25.0,
+            "moving_average": 42.42857142857143
+          },
+          {
+            "date": "2022-11-29",
+            "value": 21.0,
+            "moving_average": 38.142857142857146
+          },
+          {
+            "date": "2022-11-30",
+            "value": 24.0,
+            "moving_average": 35.857142857142854
+          },
+          {
+            "date": "2022-12-01",
+            "value": 21.0,
+            "moving_average": 32.0
+          },
+          {
+            "date": "2022-12-02",
+            "value": 21.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2022-12-03",
+            "value": 35.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2022-12-04",
+            "value": 17.0,
+            "moving_average": 23.428571428571427
+          },
+          {
+            "date": "2022-12-05",
+            "value": 20.0,
+            "moving_average": 22.714285714285715
+          },
+          {
+            "date": "2022-12-06",
+            "value": 26.0,
+            "moving_average": 23.428571428571427
+          },
+          {
+            "date": "2022-12-07",
+            "value": 36.0,
+            "moving_average": 25.142857142857142
+          },
+          {
+            "date": "2022-12-08",
+            "value": 27.0,
+            "moving_average": 26.0
+          },
+          {
+            "date": "2022-12-09",
+            "value": 41.0,
+            "moving_average": 28.857142857142858
+          },
+          {
+            "date": "2022-12-10",
+            "value": 37.0,
+            "moving_average": 29.142857142857142
+          },
+          {
+            "date": "2022-12-11",
+            "value": 41.0,
+            "moving_average": 32.57142857142857
+          },
+          {
+            "date": "2022-12-12",
+            "value": 32.0,
+            "moving_average": 34.285714285714285
+          },
+          {
+            "date": "2022-12-13",
+            "value": 201.0,
+            "moving_average": 59.285714285714285
+          },
+          {
+            "date": "2022-12-14",
+            "value": 47.0,
+            "moving_average": 60.857142857142854
+          },
+          {
+            "date": "2022-12-15",
+            "value": 33.0,
+            "moving_average": 61.714285714285715
+          },
+          {
+            "date": "2022-12-16",
+            "value": 31.0,
+            "moving_average": 60.285714285714285
+          },
+          {
+            "date": "2022-12-17",
+            "value": 24.0,
+            "moving_average": 58.42857142857143
+          },
+          {
+            "date": "2022-12-18",
+            "value": 18.0,
+            "moving_average": 55.142857142857146
+          },
+          {
+            "date": "2022-12-19",
+            "value": 21.0,
+            "moving_average": 53.57142857142857
+          },
+          {
+            "date": "2022-12-20",
+            "value": 32.0,
+            "moving_average": 29.428571428571427
+          },
+          {
+            "date": "2022-12-21",
+            "value": 45.0,
+            "moving_average": 29.142857142857142
+          },
+          {
+            "date": "2022-12-22",
+            "value": 30.0,
+            "moving_average": 28.714285714285715
+          },
+          {
+            "date": "2022-12-23",
+            "value": 20.0,
+            "moving_average": 27.142857142857142
+          },
+          {
+            "date": "2022-12-24",
+            "value": 29.0,
+            "moving_average": 27.857142857142858
+          },
+          {
+            "date": "2022-12-25",
+            "value": 38.0,
+            "moving_average": 30.714285714285715
+          },
+          {
+            "date": "2022-12-26",
+            "value": 46.0,
+            "moving_average": 34.285714285714285
+          },
+          {
+            "date": "2022-12-27",
+            "value": 51.0,
+            "moving_average": 37.0
+          },
+          {
+            "date": "2022-12-28",
+            "value": 33.0,
+            "moving_average": 35.285714285714285
+          },
+          {
+            "date": "2022-12-29",
+            "value": 29.0,
+            "moving_average": 35.142857142857146
+          },
+          {
+            "date": "2022-12-30",
+            "value": 37.0,
+            "moving_average": 37.57142857142857
+          },
+          {
+            "date": "2022-12-31",
+            "value": 51.0,
+            "moving_average": 40.714285714285715
+          },
+          {
+            "date": "2023-01-01",
+            "value": 53.0,
+            "moving_average": 42.857142857142854
+          },
+          {
+            "date": "2023-01-02",
+            "value": 25.0,
+            "moving_average": 39.857142857142854
+          },
+          {
+            "date": "2023-01-03",
+            "value": 29.0,
+            "moving_average": 36.714285714285715
+          },
+          {
+            "date": "2023-01-04",
+            "value": 34.0,
+            "moving_average": 36.857142857142854
+          },
+          {
+            "date": "2023-01-05",
+            "value": 49.0,
+            "moving_average": 39.714285714285715
+          },
+          {
+            "date": "2023-01-06",
+            "value": 73.0,
+            "moving_average": 44.857142857142854
+          },
+          {
+            "date": "2023-01-09",
+            "value": 92.0,
+            "moving_average": 50.714285714285715
+          },
+          {
+            "date": "2023-01-10",
+            "value": 59.0,
+            "moving_average": 51.57142857142857
+          },
+          {
+            "date": "2023-01-11",
+            "value": 69.0,
+            "moving_average": 57.857142857142854
+          },
+          {
+            "date": "2023-01-12",
+            "value": 53.0,
+            "moving_average": 61.285714285714285
+          },
+          {
+            "date": "2023-01-13",
+            "value": 19.0,
+            "moving_average": 59.142857142857146
+          },
+          {
+            "date": "2023-01-14",
+            "value": 11.0,
+            "moving_average": 53.714285714285715
+          },
+          {
+            "date": "2023-01-15",
+            "value": 16.0,
+            "moving_average": 45.57142857142857
+          },
+          {
+            "date": "2023-01-16",
+            "value": 21.0,
+            "moving_average": 35.42857142857143
+          },
+          {
+            "date": "2023-01-17",
+            "value": 31.0,
+            "moving_average": 31.428571428571427
+          },
+          {
+            "date": "2023-01-18",
+            "value": 52.0,
+            "moving_average": 29.0
+          },
+          {
+            "date": "2023-01-20",
+            "value": 62.0,
+            "moving_average": 30.285714285714285
+          },
+          {
+            "date": "2023-01-21",
+            "value": 24.0,
+            "moving_average": 31.0
+          },
+          {
+            "date": "2023-01-22",
+            "value": 27.0,
+            "moving_average": 33.285714285714285
+          },
+          {
+            "date": "2023-01-23",
+            "value": 55.0,
+            "moving_average": 38.857142857142854
+          },
+          {
+            "date": "2023-01-24",
+            "value": 29.0,
+            "moving_average": 40.0
+          },
+          {
+            "date": "2023-01-25",
+            "value": 19.0,
+            "moving_average": 38.285714285714285
+          },
+          {
+            "date": "2023-01-26",
+            "value": 30.0,
+            "moving_average": 35.142857142857146
+          },
+          {
+            "date": "2023-01-31",
+            "value": 38.0,
+            "moving_average": 31.714285714285715
+          },
+          {
+            "date": "2023-02-01",
+            "value": 62.0,
+            "moving_average": 37.142857142857146
+          },
+          {
+            "date": "2023-02-02",
+            "value": 40.0,
+            "moving_average": 39.0
+          },
+          {
+            "date": "2023-02-03",
+            "value": 37.0,
+            "moving_average": 36.42857142857143
+          },
+          {
+            "date": "2023-02-04",
+            "value": 37.0,
+            "moving_average": 37.57142857142857
+          },
+          {
+            "date": "2023-02-05",
+            "value": 65.0,
+            "moving_average": 44.142857142857146
+          },
+          {
+            "date": "2023-02-06",
+            "value": 78.0,
+            "moving_average": 51.0
+          },
+          {
+            "date": "2023-02-07",
+            "value": 76.0,
+            "moving_average": 56.42857142857143
+          },
+          {
+            "date": "2023-02-08",
+            "value": 64.0,
+            "moving_average": 56.714285714285715
+          },
+          {
+            "date": "2023-02-09",
+            "value": 33.0,
+            "moving_average": 55.714285714285715
+          },
+          {
+            "date": "2023-02-10",
+            "value": 21.0,
+            "moving_average": 53.42857142857143
+          },
+          {
+            "date": "2023-02-11",
+            "value": 42.0,
+            "moving_average": 54.142857142857146
+          },
+          {
+            "date": "2023-02-12",
+            "value": 68.0,
+            "moving_average": 54.57142857142857
+          },
+          {
+            "date": "2023-02-13",
+            "value": 31.0,
+            "moving_average": 47.857142857142854
+          },
+          {
+            "date": "2023-02-14",
+            "value": 36.0,
+            "moving_average": 42.142857142857146
+          },
+          {
+            "date": "2023-02-15",
+            "value": 16.0,
+            "moving_average": 35.285714285714285
+          },
+          {
+            "date": "2023-02-16",
+            "value": 27.0,
+            "moving_average": 34.42857142857143
+          },
+          {
+            "date": "2023-02-17",
+            "value": 48.0,
+            "moving_average": 38.285714285714285
+          },
+          {
+            "date": "2023-02-18",
+            "value": 84.0,
+            "moving_average": 44.285714285714285
+          },
+          {
+            "date": "2023-02-19",
+            "value": 45.0,
+            "moving_average": 41.0
+          },
+          {
+            "date": "2023-02-20",
+            "value": 38.0,
+            "moving_average": 42.0
+          },
+          {
+            "date": "2023-02-21",
+            "value": 30.0,
+            "moving_average": 41.142857142857146
+          },
+          {
+            "date": "2023-02-22",
+            "value": 39.0,
+            "moving_average": 44.42857142857143
+          },
+          {
+            "date": "2023-02-23",
+            "value": 39.0,
+            "moving_average": 46.142857142857146
+          },
+          {
+            "date": "2023-02-24",
+            "value": 45.0,
+            "moving_average": 45.714285714285715
+          },
+          {
+            "date": "2023-02-25",
+            "value": 36.0,
+            "moving_average": 38.857142857142854
+          },
+          {
+            "date": "2023-02-26",
+            "value": 34.0,
+            "moving_average": 37.285714285714285
+          },
+          {
+            "date": "2023-02-27",
+            "value": 45.0,
+            "moving_average": 38.285714285714285
+          },
+          {
+            "date": "2023-02-28",
+            "value": 37.0,
+            "moving_average": 39.285714285714285
+          },
+          {
+            "date": "2023-03-01",
+            "value": 32.0,
+            "moving_average": 38.285714285714285
+          },
+          {
+            "date": "2023-03-02",
+            "value": 50.0,
+            "moving_average": 39.857142857142854
+          },
+          {
+            "date": "2023-03-03",
+            "value": 39.0,
+            "moving_average": 39.0
+          },
+          {
+            "date": "2023-03-04",
+            "value": 71.0,
+            "moving_average": 44.0
+          },
+          {
+            "date": "2023-03-05",
+            "value": 71.0,
+            "moving_average": 49.285714285714285
+          },
+          {
+            "date": "2023-03-06",
+            "value": 53.0,
+            "moving_average": 50.42857142857143
+          },
+          {
+            "date": "2023-03-07",
+            "value": 62.0,
+            "moving_average": 54.0
+          },
+          {
+            "date": "2023-03-08",
+            "value": 65.0,
+            "moving_average": 58.714285714285715
+          },
+          {
+            "date": "2023-03-09",
+            "value": 66.0,
+            "moving_average": 61.0
+          },
+          {
+            "date": "2023-03-10",
+            "value": 95.0,
+            "moving_average": 69.0
+          },
+          {
+            "date": "2023-03-11",
+            "value": 98.0,
+            "moving_average": 72.85714285714286
+          },
+          {
+            "date": "2023-03-12",
+            "value": 53.0,
+            "moving_average": 70.28571428571429
+          },
+          {
+            "date": "2023-03-13",
+            "value": 31.0,
+            "moving_average": 67.14285714285714
+          },
+          {
+            "date": "2023-03-14",
+            "value": 38.0,
+            "moving_average": 63.714285714285715
+          },
+          {
+            "date": "2023-03-15",
+            "value": 47.0,
+            "moving_average": 61.142857142857146
+          },
+          {
+            "date": "2023-03-16",
+            "value": 57.0,
+            "moving_average": 59.857142857142854
+          },
+          {
+            "date": "2023-03-17",
+            "value": 39.0,
+            "moving_average": 51.857142857142854
+          },
+          {
+            "date": "2023-03-18",
+            "value": 56.0,
+            "moving_average": 45.857142857142854
+          },
+          {
+            "date": "2023-03-19",
+            "value": 95.0,
+            "moving_average": 51.857142857142854
+          },
+          {
+            "date": "2023-03-20",
+            "value": 84.0,
+            "moving_average": 59.42857142857143
+          },
+          {
+            "date": "2023-03-21",
+            "value": 53.0,
+            "moving_average": 61.57142857142857
+          },
+          {
+            "date": "2023-03-22",
+            "value": 57.0,
+            "moving_average": 63.0
+          },
+          {
+            "date": "2023-03-23",
+            "value": 105.0,
+            "moving_average": 69.85714285714286
+          },
+          {
+            "date": "2023-03-24",
+            "value": 136.0,
+            "moving_average": 83.71428571428571
+          },
+          {
+            "date": "2023-03-26",
+            "value": 59.0,
+            "moving_average": 84.14285714285714
+          },
+          {
+            "date": "2023-03-27",
+            "value": 44.0,
+            "moving_average": 76.85714285714286
+          },
+          {
+            "date": "2023-03-28",
+            "value": 64.0,
+            "moving_average": 74.0
+          },
+          {
+            "date": "2023-03-29",
+            "value": 77.0,
+            "moving_average": 77.42857142857143
+          },
+          {
+            "date": "2023-03-30",
+            "value": 77.0,
+            "moving_average": 80.28571428571429
+          },
+          {
+            "date": "2023-03-31",
+            "value": 94.0,
+            "moving_average": 78.71428571428571
+          },
+          {
+            "date": "2023-04-01",
+            "value": 78.0,
+            "moving_average": 70.42857142857143
+          },
+          {
+            "date": "2023-04-02",
+            "value": 44.0,
+            "moving_average": 68.28571428571429
+          },
+          {
+            "date": "2023-04-03",
+            "value": 42.0,
+            "moving_average": 68.0
+          },
+          {
+            "date": "2023-04-04",
+            "value": 32.0,
+            "moving_average": 63.42857142857143
+          },
+          {
+            "date": "2023-04-05",
+            "value": 15.0,
+            "moving_average": 54.57142857142857
+          },
+          {
+            "date": "2023-04-06",
+            "value": 61.0,
+            "moving_average": 52.285714285714285
+          },
+          {
+            "date": "2023-04-07",
+            "value": 72.0,
+            "moving_average": 49.142857142857146
+          },
+          {
+            "date": "2023-04-08",
+            "value": 36.0,
+            "moving_average": 43.142857142857146
+          },
+          {
+            "date": "2023-04-09",
+            "value": 57.0,
+            "moving_average": 45.0
+          },
+          {
+            "date": "2023-04-10",
+            "value": 43.0,
+            "moving_average": 45.142857142857146
+          },
+          {
+            "date": "2023-04-11",
+            "value": 65.0,
+            "moving_average": 49.857142857142854
+          },
+          {
+            "date": "2023-04-12",
+            "value": 267.0,
+            "moving_average": 85.85714285714286
+          },
+          {
+            "date": "2023-04-13",
+            "value": 188.0,
+            "moving_average": 104.0
+          },
+          {
+            "date": "2023-04-14",
+            "value": 89.0,
+            "moving_average": 106.42857142857143
+          },
+          {
+            "date": "2023-04-15",
+            "value": 57.0,
+            "moving_average": 109.42857142857143
+          },
+          {
+            "date": "2023-04-16",
+            "value": 102.0,
+            "moving_average": 115.85714285714286
+          },
+          {
+            "date": "2023-04-17",
+            "value": 97.0,
+            "moving_average": 123.57142857142857
+          },
+          {
+            "date": "2023-04-18",
+            "value": 40.0,
+            "moving_average": 120.0
+          },
+          {
+            "date": "2023-04-19",
+            "value": 33.0,
+            "moving_average": 86.57142857142857
+          },
+          {
+            "date": "2023-04-20",
+            "value": 20.0,
+            "moving_average": 62.57142857142857
+          },
+          {
+            "date": "2023-04-21",
+            "value": 48.0,
+            "moving_average": 56.714285714285715
+          },
+          {
+            "date": "2023-04-22",
+            "value": 50.0,
+            "moving_average": 55.714285714285715
+          },
+          {
+            "date": "2023-04-23",
+            "value": 48.0,
+            "moving_average": 48.0
+          },
+          {
+            "date": "2023-04-24",
+            "value": 47.0,
+            "moving_average": 40.857142857142854
+          },
+          {
+            "date": "2023-04-25",
+            "value": 30.0,
+            "moving_average": 39.42857142857143
+          },
+          {
+            "date": "2023-04-26",
+            "value": 25.0,
+            "moving_average": 38.285714285714285
+          },
+          {
+            "date": "2023-04-27",
+            "value": 35.0,
+            "moving_average": 40.42857142857143
+          },
+          {
+            "date": "2023-05-02",
+            "value": 28.0,
+            "moving_average": 37.57142857142857
+          },
+          {
+            "date": "2023-05-04",
+            "value": 40.0,
+            "moving_average": 36.142857142857146
+          },
+          {
+            "date": "2023-05-05",
+            "value": 9.0,
+            "moving_average": 30.571428571428573
+          },
+          {
+            "date": "2023-05-06",
+            "value": 11.0,
+            "moving_average": 25.428571428571427
+          },
+          {
+            "date": "2023-05-07",
+            "value": 28.0,
+            "moving_average": 25.142857142857142
+          },
+          {
+            "date": "2023-05-08",
+            "value": 33.0,
+            "moving_average": 26.285714285714285
+          },
+          {
+            "date": "2023-05-09",
+            "value": 48.0,
+            "moving_average": 28.142857142857142
+          },
+          {
+            "date": "2023-05-10",
+            "value": 51.0,
+            "moving_average": 31.428571428571427
+          },
+          {
+            "date": "2023-05-11",
+            "value": 47.0,
+            "moving_average": 32.42857142857143
+          },
+          {
+            "date": "2023-05-12",
+            "value": 51.0,
+            "moving_average": 38.42857142857143
+          },
+          {
+            "date": "2023-05-13",
+            "value": 39.0,
+            "moving_average": 42.42857142857143
+          },
+          {
+            "date": "2023-05-14",
+            "value": 20.0,
+            "moving_average": 41.285714285714285
+          },
+          {
+            "date": "2023-05-15",
+            "value": 34.0,
+            "moving_average": 41.42857142857143
+          },
+          {
+            "date": "2023-05-16",
+            "value": 54.0,
+            "moving_average": 42.285714285714285
+          },
+          {
+            "date": "2023-05-17",
+            "value": 32.0,
+            "moving_average": 39.57142857142857
+          },
+          {
+            "date": "2023-05-18",
+            "value": 32.0,
+            "moving_average": 37.42857142857143
+          },
+          {
+            "date": "2023-05-19",
+            "value": 20.0,
+            "moving_average": 33.0
+          },
+          {
+            "date": "2023-05-20",
+            "value": 22.0,
+            "moving_average": 30.571428571428573
+          },
+          {
+            "date": "2023-05-21",
+            "value": 75.0,
+            "moving_average": 38.42857142857143
+          },
+          {
+            "date": "2023-05-22",
+            "value": 124.0,
+            "moving_average": 51.285714285714285
+          },
+          {
+            "date": "2023-05-23",
+            "value": 59.0,
+            "moving_average": 52.0
+          },
+          {
+            "date": "2023-05-24",
+            "value": 36.0,
+            "moving_average": 52.57142857142857
+          },
+          {
+            "date": "2023-05-25",
+            "value": 31.0,
+            "moving_average": 52.42857142857143
+          },
+          {
+            "date": "2023-05-26",
+            "value": 29.0,
+            "moving_average": 53.714285714285715
+          },
+          {
+            "date": "2023-05-27",
+            "value": 26.0,
+            "moving_average": 54.285714285714285
+          },
+          {
+            "date": "2023-05-28",
+            "value": 7.0,
+            "moving_average": 44.57142857142857
+          },
+          {
+            "date": "2023-05-29",
+            "value": 12.0,
+            "moving_average": 28.571428571428573
+          },
+          {
+            "date": "2023-05-30",
+            "value": 31.0,
+            "moving_average": 24.571428571428573
+          },
+          {
+            "date": "2023-05-31",
+            "value": 25.0,
+            "moving_average": 23.0
+          },
+          {
+            "date": "2023-06-01",
+            "value": 33.0,
+            "moving_average": 23.285714285714285
+          },
+          {
+            "date": "2023-06-02",
+            "value": 28.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2023-06-03",
+            "value": 30.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2023-06-04",
+            "value": 34.0,
+            "moving_average": 27.571428571428573
+          },
+          {
+            "date": "2023-06-05",
+            "value": 28.0,
+            "moving_average": 29.857142857142858
+          },
+          {
+            "date": "2023-06-06",
+            "value": 18.0,
+            "moving_average": 28.0
+          },
+          {
+            "date": "2023-06-07",
+            "value": 30.0,
+            "moving_average": 28.714285714285715
+          },
+          {
+            "date": "2023-06-08",
+            "value": 18.0,
+            "moving_average": 26.571428571428573
+          },
+          {
+            "date": "2023-06-09",
+            "value": 22.0,
+            "moving_average": 25.714285714285715
+          },
+          {
+            "date": "2023-06-10",
+            "value": 31.0,
+            "moving_average": 25.857142857142858
+          },
+          {
+            "date": "2023-06-11",
+            "value": 17.0,
+            "moving_average": 23.428571428571427
+          },
+          {
+            "date": "2023-06-12",
+            "value": 26.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2023-06-13",
+            "value": 23.0,
+            "moving_average": 23.857142857142858
+          },
+          {
+            "date": "2023-06-14",
+            "value": 25.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2023-06-15",
+            "value": 25.0,
+            "moving_average": 24.142857142857142
+          },
+          {
+            "date": "2023-06-16",
+            "value": 23.0,
+            "moving_average": 24.285714285714285
+          },
+          {
+            "date": "2023-06-17",
+            "value": 18.0,
+            "moving_average": 22.428571428571427
+          },
+          {
+            "date": "2023-06-18",
+            "value": 23.0,
+            "moving_average": 23.285714285714285
+          },
+          {
+            "date": "2023-06-19",
+            "value": 42.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2023-06-20",
+            "value": 31.0,
+            "moving_average": 26.714285714285715
+          },
+          {
+            "date": "2023-06-21",
+            "value": 8.0,
+            "moving_average": 24.285714285714285
+          },
+          {
+            "date": "2023-06-22",
+            "value": 17.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2023-06-23",
+            "value": 30.0,
+            "moving_average": 24.142857142857142
+          },
+          {
+            "date": "2023-06-24",
+            "value": 35.0,
+            "moving_average": 26.571428571428573
+          },
+          {
+            "date": "2023-06-25",
+            "value": 29.0,
+            "moving_average": 27.428571428571427
+          },
+          {
+            "date": "2023-06-26",
+            "value": 15.0,
+            "moving_average": 23.571428571428573
+          },
+          {
+            "date": "2023-06-27",
+            "value": 18.0,
+            "moving_average": 21.714285714285715
+          },
+          {
+            "date": "2023-06-28",
+            "value": 29.0,
+            "moving_average": 24.714285714285715
+          },
+          {
+            "date": "2023-06-29",
+            "value": 32.0,
+            "moving_average": 26.857142857142858
+          },
+          {
+            "date": "2023-06-30",
+            "value": 33.0,
+            "moving_average": 27.285714285714285
+          },
+          {
+            "date": "2023-07-01",
+            "value": 24.0,
+            "moving_average": 25.714285714285715
+          },
+          {
+            "date": "2023-07-02",
+            "value": 18.0,
+            "moving_average": 24.142857142857142
+          },
+          {
+            "date": "2023-07-03",
+            "value": 29.0,
+            "moving_average": 26.142857142857142
+          },
+          {
+            "date": "2023-07-04",
+            "value": 30.0,
+            "moving_average": 27.857142857142858
+          },
+          {
+            "date": "2023-07-05",
+            "value": 24.0,
+            "moving_average": 27.142857142857142
+          },
+          {
+            "date": "2023-07-06",
+            "value": 44.0,
+            "moving_average": 28.857142857142858
+          },
+          {
+            "date": "2023-07-07",
+            "value": 39.0,
+            "moving_average": 29.714285714285715
+          },
+          {
+            "date": "2023-07-08",
+            "value": 10.0,
+            "moving_average": 27.714285714285715
+          },
+          {
+            "date": "2023-07-09",
+            "value": 13.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2023-07-10",
+            "value": 31.0,
+            "moving_average": 27.285714285714285
+          },
+          {
+            "date": "2023-07-11",
+            "value": 16.0,
+            "moving_average": 25.285714285714285
+          },
+          {
+            "date": "2023-07-12",
+            "value": 23.0,
+            "moving_average": 25.142857142857142
+          },
+          {
+            "date": "2023-07-13",
+            "value": 22.0,
+            "moving_average": 22.0
+          },
+          {
+            "date": "2023-07-14",
+            "value": 17.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2023-07-15",
+            "value": 23.0,
+            "moving_average": 20.714285714285715
+          },
+          {
+            "date": "2023-07-16",
+            "value": 29.0,
+            "moving_average": 23.0
+          },
+          {
+            "date": "2023-07-17",
+            "value": 24.0,
+            "moving_average": 22.0
+          },
+          {
+            "date": "2023-07-18",
+            "value": 15.0,
+            "moving_average": 21.857142857142858
+          },
+          {
+            "date": "2023-07-19",
+            "value": 28.0,
+            "moving_average": 22.571428571428573
+          },
+          {
+            "date": "2023-07-20",
+            "value": 53.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2023-07-21",
+            "value": 61.0,
+            "moving_average": 33.285714285714285
+          },
+          {
+            "date": "2023-07-22",
+            "value": 28.0,
+            "moving_average": 34.0
+          },
+          {
+            "date": "2023-07-23",
+            "value": 8.0,
+            "moving_average": 31.0
+          },
+          {
+            "date": "2023-07-24",
+            "value": 22.0,
+            "moving_average": 30.714285714285715
+          },
+          {
+            "date": "2023-07-25",
+            "value": 18.0,
+            "moving_average": 31.142857142857142
+          },
+          {
+            "date": "2023-07-26",
+            "value": 12.0,
+            "moving_average": 28.857142857142858
+          },
+          {
+            "date": "2023-07-27",
+            "value": 21.0,
+            "moving_average": 24.285714285714285
+          },
+          {
+            "date": "2023-07-28",
+            "value": 31.0,
+            "moving_average": 20.0
+          },
+          {
+            "date": "2023-07-29",
+            "value": 26.0,
+            "moving_average": 19.714285714285715
+          },
+          {
+            "date": "2023-07-30",
+            "value": 15.0,
+            "moving_average": 20.714285714285715
+          },
+          {
+            "date": "2023-07-31",
+            "value": 27.0,
+            "moving_average": 21.428571428571427
+          },
+          {
+            "date": "2023-08-01",
+            "value": 26.0,
+            "moving_average": 22.571428571428573
+          },
+          {
+            "date": "2023-08-02",
+            "value": 32.0,
+            "moving_average": 25.428571428571427
+          },
+          {
+            "date": "2023-08-03",
+            "value": 21.0,
+            "moving_average": 25.428571428571427
+          },
+          {
+            "date": "2023-08-04",
+            "value": 19.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2023-08-05",
+            "value": 18.0,
+            "moving_average": 22.571428571428573
+          },
+          {
+            "date": "2023-08-06",
+            "value": 20.0,
+            "moving_average": 23.285714285714285
+          },
+          {
+            "date": "2023-08-07",
+            "value": 9.0,
+            "moving_average": 20.714285714285715
+          },
+          {
+            "date": "2023-08-08",
+            "value": 7.0,
+            "moving_average": 18.0
+          },
+          {
+            "date": "2023-08-09",
+            "value": 6.0,
+            "moving_average": 14.285714285714286
+          },
+          {
+            "date": "2023-08-10",
+            "value": 4.0,
+            "moving_average": 11.857142857142858
+          },
+          {
+            "date": "2023-08-11",
+            "value": 16.0,
+            "moving_average": 11.428571428571429
+          },
+          {
+            "date": "2023-08-12",
+            "value": 18.0,
+            "moving_average": 11.428571428571429
+          },
+          {
+            "date": "2023-08-13",
+            "value": 26.0,
+            "moving_average": 12.285714285714286
+          },
+          {
+            "date": "2023-08-14",
+            "value": 39.0,
+            "moving_average": 16.571428571428573
+          },
+          {
+            "date": "2023-08-15",
+            "value": 23.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2023-08-16",
+            "value": 17.0,
+            "moving_average": 20.428571428571427
+          },
+          {
+            "date": "2023-08-17",
+            "value": 26.0,
+            "moving_average": 23.571428571428573
+          },
+          {
+            "date": "2023-08-18",
+            "value": 35.0,
+            "moving_average": 26.285714285714285
+          },
+          {
+            "date": "2023-08-19",
+            "value": 25.0,
+            "moving_average": 27.285714285714285
+          },
+          {
+            "date": "2023-08-20",
+            "value": 25.0,
+            "moving_average": 27.142857142857142
+          },
+          {
+            "date": "2023-08-21",
+            "value": 23.0,
+            "moving_average": 24.857142857142858
+          },
+          {
+            "date": "2023-08-22",
+            "value": 19.0,
+            "moving_average": 24.285714285714285
+          },
+          {
+            "date": "2023-08-23",
+            "value": 8.0,
+            "moving_average": 23.0
+          },
+          {
+            "date": "2023-08-24",
+            "value": 6.0,
+            "moving_average": 20.142857142857142
+          },
+          {
+            "date": "2023-08-25",
+            "value": 17.0,
+            "moving_average": 17.571428571428573
+          },
+          {
+            "date": "2023-08-26",
+            "value": 37.0,
+            "moving_average": 19.285714285714285
+          },
+          {
+            "date": "2023-08-27",
+            "value": 26.0,
+            "moving_average": 19.428571428571427
+          },
+          {
+            "date": "2023-08-28",
+            "value": 13.0,
+            "moving_average": 18.0
+          },
+          {
+            "date": "2023-08-29",
+            "value": 15.0,
+            "moving_average": 17.428571428571427
+          },
+          {
+            "date": "2023-08-30",
+            "value": 18.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2023-08-31",
+            "value": 20.0,
+            "moving_average": 20.857142857142858
+          },
+          {
+            "date": "2023-09-01",
+            "value": 25.0,
+            "moving_average": 22.0
+          },
+          {
+            "date": "2023-09-02",
+            "value": 27.0,
+            "moving_average": 20.571428571428573
+          },
+          {
+            "date": "2023-09-03",
+            "value": 16.0,
+            "moving_average": 19.142857142857142
+          },
+          {
+            "date": "2023-09-04",
+            "value": 16.0,
+            "moving_average": 19.571428571428573
+          },
+          {
+            "date": "2023-09-05",
+            "value": 16.0,
+            "moving_average": 19.714285714285715
+          },
+          {
+            "date": "2023-09-06",
+            "value": 15.0,
+            "moving_average": 19.285714285714285
+          },
+          {
+            "date": "2023-09-07",
+            "value": 16.0,
+            "moving_average": 18.714285714285715
+          },
+          {
+            "date": "2023-09-08",
+            "value": 16.0,
+            "moving_average": 17.428571428571427
+          },
+          {
+            "date": "2023-09-09",
+            "value": 28.0,
+            "moving_average": 17.571428571428573
+          },
+          {
+            "date": "2023-09-10",
+            "value": 34.0,
+            "moving_average": 20.142857142857142
+          },
+          {
+            "date": "2023-09-11",
+            "value": 29.0,
+            "moving_average": 22.0
+          },
+          {
+            "date": "2023-09-12",
+            "value": 28.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2023-09-13",
+            "value": 21.0,
+            "moving_average": 24.571428571428573
+          },
+          {
+            "date": "2023-09-14",
+            "value": 6.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2023-09-15",
+            "value": 8.0,
+            "moving_average": 22.0
+          },
+          {
+            "date": "2023-09-16",
+            "value": 10.0,
+            "moving_average": 19.428571428571427
+          },
+          {
+            "date": "2023-09-17",
+            "value": 12.0,
+            "moving_average": 16.285714285714285
+          },
+          {
+            "date": "2023-09-18",
+            "value": 16.0,
+            "moving_average": 14.428571428571429
+          },
+          {
+            "date": "2023-09-19",
+            "value": 26.0,
+            "moving_average": 14.142857142857142
+          },
+          {
+            "date": "2023-09-20",
+            "value": 19.0,
+            "moving_average": 13.857142857142858
+          },
+          {
+            "date": "2023-09-21",
+            "value": 9.0,
+            "moving_average": 14.285714285714286
+          },
+          {
+            "date": "2023-09-22",
+            "value": 19.0,
+            "moving_average": 15.857142857142858
+          },
+          {
+            "date": "2023-09-23",
+            "value": 16.0,
+            "moving_average": 16.714285714285715
+          },
+          {
+            "date": "2023-09-24",
+            "value": 10.0,
+            "moving_average": 16.428571428571427
+          },
+          {
+            "date": "2023-09-25",
+            "value": 11.0,
+            "moving_average": 15.714285714285714
+          },
+          {
+            "date": "2023-09-26",
+            "value": 4.0,
+            "moving_average": 12.571428571428571
+          },
+          {
+            "date": "2023-09-27",
+            "value": 9.0,
+            "moving_average": 11.142857142857142
+          },
+          {
+            "date": "2023-09-28",
+            "value": 44.0,
+            "moving_average": 16.142857142857142
+          },
+          {
+            "date": "2023-09-29",
+            "value": 28.0,
+            "moving_average": 17.428571428571427
+          },
+          {
+            "date": "2023-09-30",
+            "value": 26.0,
+            "moving_average": 18.857142857142858
+          },
+          {
+            "date": "2023-10-01",
+            "value": 25.0,
+            "moving_average": 21.0
+          },
+          {
+            "date": "2023-10-02",
+            "value": 17.0,
+            "moving_average": 21.857142857142858
+          },
+          {
+            "date": "2023-10-03",
+            "value": 19.0,
+            "moving_average": 24.0
+          },
+          {
+            "date": "2023-10-04",
+            "value": 20.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2023-10-05",
+            "value": 30.0,
+            "moving_average": 23.571428571428573
+          },
+          {
+            "date": "2023-10-06",
+            "value": 22.0,
+            "moving_average": 22.714285714285715
+          },
+          {
+            "date": "2023-10-07",
+            "value": 18.0,
+            "moving_average": 21.571428571428573
+          },
+          {
+            "date": "2023-10-08",
+            "value": 9.0,
+            "moving_average": 19.285714285714285
+          },
+          {
+            "date": "2023-10-09",
+            "value": 10.0,
+            "moving_average": 18.285714285714285
+          },
+          {
+            "date": "2023-10-10",
+            "value": 16.0,
+            "moving_average": 17.857142857142858
+          },
+          {
+            "date": "2023-10-11",
+            "value": 33.0,
+            "moving_average": 19.714285714285715
+          },
+          {
+            "date": "2023-10-12",
+            "value": 26.0,
+            "moving_average": 19.142857142857142
+          },
+          {
+            "date": "2023-10-13",
+            "value": 33.0,
+            "moving_average": 20.714285714285715
+          },
+          {
+            "date": "2023-10-14",
+            "value": 26.0,
+            "moving_average": 21.857142857142858
+          },
+          {
+            "date": "2023-10-15",
+            "value": 23.0,
+            "moving_average": 23.857142857142858
+          },
+          {
+            "date": "2023-10-16",
+            "value": 43.0,
+            "moving_average": 28.571428571428573
+          },
+          {
+            "date": "2023-10-17",
+            "value": 34.0,
+            "moving_average": 31.142857142857142
+          },
+          {
+            "date": "2023-10-18",
+            "value": 31.0,
+            "moving_average": 30.857142857142858
+          },
+          {
+            "date": "2023-10-19",
+            "value": 28.0,
+            "moving_average": 31.142857142857142
+          },
+          {
+            "date": "2023-10-20",
+            "value": 19.0,
+            "moving_average": 29.142857142857142
+          },
+          {
+            "date": "2023-10-21",
+            "value": 17.0,
+            "moving_average": 27.857142857142858
+          },
+          {
+            "date": "2023-10-22",
+            "value": 22.0,
+            "moving_average": 27.714285714285715
+          },
+          {
+            "date": "2023-10-23",
+            "value": 28.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2023-10-24",
+            "value": 31.0,
+            "moving_average": 25.142857142857142
+          },
+          {
+            "date": "2023-10-25",
+            "value": 34.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2023-10-26",
+            "value": 43.0,
+            "moving_average": 27.714285714285715
+          },
+          {
+            "date": "2023-10-27",
+            "value": 26.0,
+            "moving_average": 28.714285714285715
+          },
+          {
+            "date": "2023-10-28",
+            "value": 35.0,
+            "moving_average": 31.285714285714285
+          },
+          {
+            "date": "2023-10-29",
+            "value": 28.0,
+            "moving_average": 32.142857142857146
+          },
+          {
+            "date": "2023-10-30",
+            "value": 39.0,
+            "moving_average": 33.714285714285715
+          },
+          {
+            "date": "2023-10-31",
+            "value": 47.0,
+            "moving_average": 36.0
+          },
+          {
+            "date": "2023-11-01",
+            "value": 49.0,
+            "moving_average": 38.142857142857146
+          },
+          {
+            "date": "2023-11-02",
+            "value": 39.0,
+            "moving_average": 37.57142857142857
+          },
+          {
+            "date": "2023-11-03",
+            "value": 33.0,
+            "moving_average": 38.57142857142857
+          },
+          {
+            "date": "2023-11-04",
+            "value": 43.0,
+            "moving_average": 39.714285714285715
+          },
+          {
+            "date": "2023-11-05",
+            "value": 12.0,
+            "moving_average": 37.42857142857143
+          },
+          {
+            "date": "2023-11-06",
+            "value": 19.0,
+            "moving_average": 34.57142857142857
+          },
+          {
+            "date": "2023-11-07",
+            "value": 20.0,
+            "moving_average": 30.714285714285715
+          },
+          {
+            "date": "2023-11-08",
+            "value": 24.0,
+            "moving_average": 27.142857142857142
+          },
+          {
+            "date": "2023-11-09",
+            "value": 28.0,
+            "moving_average": 25.571428571428573
+          },
+          {
+            "date": "2023-11-10",
+            "value": 16.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2023-11-11",
+            "value": 18.0,
+            "moving_average": 19.571428571428573
+          },
+          {
+            "date": "2023-11-12",
+            "value": 18.0,
+            "moving_average": 20.428571428571427
+          },
+          {
+            "date": "2023-11-13",
+            "value": 22.0,
+            "moving_average": 20.857142857142858
+          },
+          {
+            "date": "2023-11-14",
+            "value": 26.0,
+            "moving_average": 21.714285714285715
+          },
+          {
+            "date": "2023-11-15",
+            "value": 43.0,
+            "moving_average": 24.428571428571427
+          },
+          {
+            "date": "2023-11-16",
+            "value": 47.0,
+            "moving_average": 27.142857142857142
+          },
+          {
+            "date": "2023-11-17",
+            "value": 18.0,
+            "moving_average": 27.428571428571427
+          },
+          {
+            "date": "2023-11-18",
+            "value": 21.0,
+            "moving_average": 27.857142857142858
+          },
+          {
+            "date": "2023-11-19",
+            "value": 40.0,
+            "moving_average": 31.0
+          },
+          {
+            "date": "2023-11-20",
+            "value": 30.0,
+            "moving_average": 32.142857142857146
+          },
+          {
+            "date": "2023-11-21",
+            "value": 33.0,
+            "moving_average": 33.142857142857146
+          },
+          {
+            "date": "2023-11-22",
+            "value": 41.0,
+            "moving_average": 32.857142857142854
+          },
+          {
+            "date": "2023-11-23",
+            "value": 93.0,
+            "moving_average": 39.42857142857143
+          },
+          {
+            "date": "2023-11-24",
+            "value": 16.0,
+            "moving_average": 39.142857142857146
+          },
+          {
+            "date": "2023-11-25",
+            "value": 18.0,
+            "moving_average": 38.714285714285715
+          },
+          {
+            "date": "2023-11-26",
+            "value": 24.0,
+            "moving_average": 36.42857142857143
+          },
+          {
+            "date": "2023-11-27",
+            "value": 42.0,
+            "moving_average": 38.142857142857146
+          },
+          {
+            "date": "2023-11-28",
+            "value": 31.0,
+            "moving_average": 37.857142857142854
+          },
+          {
+            "date": "2023-11-29",
+            "value": 17.0,
+            "moving_average": 34.42857142857143
+          },
+          {
+            "date": "2023-11-30",
+            "value": 18.0,
+            "moving_average": 23.714285714285715
+          },
+          {
+            "date": "2023-12-01",
+            "value": 22.0,
+            "moving_average": 24.571428571428573
+          },
+          {
+            "date": "2023-12-02",
+            "value": 35.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2023-12-03",
+            "value": 38.0,
+            "moving_average": 29.0
+          },
+          {
+            "date": "2023-12-04",
+            "value": 43.0,
+            "moving_average": 29.142857142857142
+          },
+          {
+            "date": "2023-12-05",
+            "value": 43.0,
+            "moving_average": 30.857142857142858
+          },
+          {
+            "date": "2023-12-06",
+            "value": 67.0,
+            "moving_average": 38.0
+          },
+          {
+            "date": "2023-12-07",
+            "value": 62.0,
+            "moving_average": 44.285714285714285
+          },
+          {
+            "date": "2023-12-08",
+            "value": 78.0,
+            "moving_average": 52.285714285714285
+          },
+          {
+            "date": "2023-12-09",
+            "value": 72.0,
+            "moving_average": 57.57142857142857
+          },
+          {
+            "date": "2023-12-10",
+            "value": 78.0,
+            "moving_average": 63.285714285714285
+          },
+          {
+            "date": "2023-12-11",
+            "value": 5.0,
+            "moving_average": 57.857142857142854
+          },
+          {
+            "date": "2023-12-12",
+            "value": 9.0,
+            "moving_average": 53.0
+          },
+          {
+            "date": "2023-12-13",
+            "value": 12.0,
+            "moving_average": 45.142857142857146
+          },
+          {
+            "date": "2023-12-14",
+            "value": 10.0,
+            "moving_average": 37.714285714285715
+          },
+          {
+            "date": "2023-12-15",
+            "value": 7.0,
+            "moving_average": 27.571428571428573
+          },
+          {
+            "date": "2023-12-16",
+            "value": 19.0,
+            "moving_average": 20.0
+          },
+          {
+            "date": "2023-12-17",
+            "value": 13.0,
+            "moving_average": 10.714285714285714
+          },
+          {
+            "date": "2023-12-18",
+            "value": 13.0,
+            "moving_average": 11.857142857142858
+          },
+          {
+            "date": "2023-12-19",
+            "value": 24.0,
+            "moving_average": 14.0
+          },
+          {
+            "date": "2023-12-20",
+            "value": 40.0,
+            "moving_average": 18.0
+          },
+          {
+            "date": "2023-12-21",
+            "value": 20.0,
+            "moving_average": 19.428571428571427
+          },
+          {
+            "date": "2023-12-22",
+            "value": 21.0,
+            "moving_average": 21.428571428571427
+          },
+          {
+            "date": "2023-12-23",
+            "value": 32.0,
+            "moving_average": 23.285714285714285
+          },
+          {
+            "date": "2023-12-24",
+            "value": 37.0,
+            "moving_average": 26.714285714285715
+          },
+          {
+            "date": "2023-12-25",
+            "value": 43.0,
+            "moving_average": 31.0
+          },
+          {
+            "date": "2023-12-26",
+            "value": 51.0,
+            "moving_average": 34.857142857142854
+          },
+          {
+            "date": "2023-12-27",
+            "value": 83.0,
+            "moving_average": 41.0
+          },
+          {
+            "date": "2023-12-28",
+            "value": 54.0,
+            "moving_average": 45.857142857142854
+          },
+          {
+            "date": "2023-12-29",
+            "value": 45.0,
+            "moving_average": 49.285714285714285
+          },
+          {
+            "date": "2023-12-30",
+            "value": 39.0,
+            "moving_average": 50.285714285714285
+          },
+          {
+            "date": "2023-12-31",
+            "value": 22.0,
+            "moving_average": 48.142857142857146
+          },
+          {
+            "date": "2024-01-01",
+            "value": 23.0,
+            "moving_average": 45.285714285714285
+          },
+          {
+            "date": "2024-01-02",
+            "value": 41.0,
+            "moving_average": 43.857142857142854
+          },
+          {
+            "date": "2024-01-03",
+            "value": 44.0,
+            "moving_average": 38.285714285714285
+          },
+          {
+            "date": "2024-01-04",
+            "value": 56.0,
+            "moving_average": 38.57142857142857
+          },
+          {
+            "date": "2024-01-05",
+            "value": 88.0,
+            "moving_average": 44.714285714285715
+          },
+          {
+            "date": "2024-01-06",
+            "value": 24.0,
+            "moving_average": 42.57142857142857
+          },
+          {
+            "date": "2024-01-07",
+            "value": 24.0,
+            "moving_average": 42.857142857142854
+          },
+          {
+            "date": "2024-01-08",
+            "value": 23.0,
+            "moving_average": 42.857142857142854
+          },
+          {
+            "date": "2024-01-09",
+            "value": 37.0,
+            "moving_average": 42.285714285714285
+          },
+          {
+            "date": "2024-01-10",
+            "value": 71.0,
+            "moving_average": 46.142857142857146
+          },
+          {
+            "date": "2024-01-11",
+            "value": 68.0,
+            "moving_average": 47.857142857142854
+          },
+          {
+            "date": "2024-01-12",
+            "value": 55.0,
+            "moving_average": 43.142857142857146
+          },
+          {
+            "date": "2024-01-13",
+            "value": 26.0,
+            "moving_average": 43.42857142857143
+          },
+          {
+            "date": "2024-01-14",
+            "value": 34.0,
+            "moving_average": 44.857142857142854
+          },
+          {
+            "date": "2024-01-15",
+            "value": 22.0,
+            "moving_average": 44.714285714285715
+          },
+          {
+            "date": "2024-01-16",
+            "value": 32.0,
+            "moving_average": 44.0
+          },
+          {
+            "date": "2024-01-17",
+            "value": 37.0,
+            "moving_average": 39.142857142857146
+          },
+          {
+            "date": "2024-01-18",
+            "value": 26.0,
+            "moving_average": 33.142857142857146
+          },
+          {
+            "date": "2024-01-19",
+            "value": 13.0,
+            "moving_average": 27.142857142857142
+          },
+          {
+            "date": "2024-01-20",
+            "value": 4.0,
+            "moving_average": 24.0
+          },
+          {
+            "date": "2024-01-21",
+            "value": 17.0,
+            "moving_average": 21.571428571428573
+          },
+          {
+            "date": "2024-01-22",
+            "value": 33.0,
+            "moving_average": 23.142857142857142
+          },
+          {
+            "date": "2024-01-23",
+            "value": 22.0,
+            "moving_average": 21.714285714285715
+          },
+          {
+            "date": "2024-01-24",
+            "value": 23.0,
+            "moving_average": 19.714285714285715
+          },
+          {
+            "date": "2024-01-25",
+            "value": 23.0,
+            "moving_average": 19.285714285714285
+          },
+          {
+            "date": "2024-01-26",
+            "value": 34.0,
+            "moving_average": 22.285714285714285
+          },
+          {
+            "date": "2024-01-27",
+            "value": 51.0,
+            "moving_average": 29.0
+          },
+          {
+            "date": "2024-01-28",
+            "value": 30.0,
+            "moving_average": 30.857142857142858
+          },
+          {
+            "date": "2024-01-29",
+            "value": 44.0,
+            "moving_average": 32.42857142857143
+          },
+          {
+            "date": "2024-01-30",
+            "value": 58.0,
+            "moving_average": 37.57142857142857
+          },
+          {
+            "date": "2024-01-31",
+            "value": 57.0,
+            "moving_average": 42.42857142857143
+          },
+          {
+            "date": "2024-02-01",
+            "value": 83.0,
+            "moving_average": 51.0
+          },
+          {
+            "date": "2024-02-02",
+            "value": 40.0,
+            "moving_average": 51.857142857142854
+          },
+          {
+            "date": "2024-02-03",
+            "value": 33.0,
+            "moving_average": 49.285714285714285
+          },
+          {
+            "date": "2024-02-04",
+            "value": 23.0,
+            "moving_average": 48.285714285714285
+          },
+          {
+            "date": "2024-02-05",
+            "value": 6.0,
+            "moving_average": 42.857142857142854
+          },
+          {
+            "date": "2024-02-06",
+            "value": 14.0,
+            "moving_average": 36.57142857142857
+          },
+          {
+            "date": "2024-02-07",
+            "value": 33.0,
+            "moving_average": 33.142857142857146
+          },
+          {
+            "date": "2024-02-08",
+            "value": 40.0,
+            "moving_average": 27.0
+          },
+          {
+            "date": "2024-02-09",
+            "value": 34.0,
+            "moving_average": 26.142857142857142
+          },
+          {
+            "date": "2024-02-10",
+            "value": 48.0,
+            "moving_average": 28.285714285714285
+          },
+          {
+            "date": "2024-02-11",
+            "value": 68.0,
+            "moving_average": 34.714285714285715
+          },
+          {
+            "date": "2024-02-12",
+            "value": 67.0,
+            "moving_average": 43.42857142857143
+          },
+          {
+            "date": "2024-02-13",
+            "value": 68.0,
+            "moving_average": 51.142857142857146
+          },
+          {
+            "date": "2024-02-14",
+            "value": 52.0,
+            "moving_average": 53.857142857142854
+          },
+          {
+            "date": "2024-02-15",
+            "value": 23.0,
+            "moving_average": 51.42857142857143
+          }
+        ]
+      },
+      "limits": "본 도구 결과는 교육용 기술통계이며 대표성/인과관계 미보증"
+    },
+    {
+      "status": "executed_locally",
+      "backend": "pandas",
+      "source": "data_air_2022.csv",
+      "input_rows": 673,
+      "filtered_rows": 673,
+      "scenario": {
+        "name": "PM10 대 PM25 상관",
+        "method": "correlation",
+        "value_col": "pm10",
+        "second_col": "pm25",
+        "group_col": null,
+        "date_col": null,
+        "start_date": null,
+        "end_date": null,
+        "filter_col": null,
+        "filter_equals": null,
+        "min_value": null,
+        "max_value": null,
+        "window": 7,
+        "missing_policy": "drop"
+      },
+      "result": {
+        "pairs": 673,
+        "pearson": 0.6984792906278725,
+        "spearman": 0.8774649906150541,
+        "causality_warning": "상관은 인과관계를 뜻하지 않습니다."
+      },
+      "limits": "본 도구 결과는 교육용 기술통계이며 대표성/인과관계 미보증"
+    },
+    {
+      "status": "executed_locally",
+      "backend": "pandas",
+      "source": "data_air_2022.csv",
+      "input_rows": 673,
+      "filtered_rows": 673,
+      "scenario": {
+        "name": "지역별 평균",
+        "method": "group_compare",
+        "value_col": "pm10",
+        "second_col": null,
+        "group_col": "location",
+        "date_col": null,
+        "start_date": null,
+        "end_date": null,
+        "filter_col": null,
+        "filter_equals": null,
+        "min_value": null,
+        "max_value": null,
+        "window": 7,
+        "missing_policy": "drop"
+      },
+      "result": {
+        "groups": [
+          {
+            "location": "종로구",
+            "count": 673,
+            "mean": 33.09806835066865,
+            "median": 28.0
+          }
+        ]
+      },
+      "limits": "본 도구 결과는 교육용 기술통계이며 대표성/인과관계 미보증"
+    }
+  ],
+  "note": "조건·기법 변경 시 다시 계산함; 서로 다른 표본의 결과를 직접 비교할 때 주의"
+}

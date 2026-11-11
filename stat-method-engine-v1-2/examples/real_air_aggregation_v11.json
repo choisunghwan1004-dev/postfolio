@@ -1,0 +1,11 @@
+{
+  "status": "executed",
+  "backend": "pandas",
+  "result": [
+    {
+      "location": "종로구",
+      "count": 673,
+      "mean": 33.09806835066865
+    }
+  ]
+}
