@@ -1,0 +1,24 @@
+{
+  "project": "교육용 모의 선거방송 개표상황실",
+  "version": "0.1.0-demo",
+  "file_count": 15,
+  "files": {
+    ".gitignore": "80a3443923afa02d77e05c5cdc981e39c8ed014f02d6d509dd200fb34a2dd814",
+    "rag_demo.py": "492ef9bbab56ca4c455b50aecfb171236676ebb6d332dd859b45f036e03bac32",
+    "README.md": "66f2d7549ed1316547b17f0eafe05b7b96c8f9b1b628b220eceb38f4bab887b6",
+    "server.py": "7323f6ae28d443dc7c3b39bcd6512e0c41c010b518764022a48d23a122c4c564",
+    "engine.py": "a10f1b8959720a8ef56dcd2a2dfa4d6d91a439b7e3847eef3c49a255f065ef78",
+    "start_windows.bat": "63da618962c2d1b8e8db4f2c5a6e2be780f0d599cbcbe8d7dcfdc99a95077c9c",
+    "ASSIGNMENT_CHECKLIST.md": "a5d6122fc8916f12aa1a3efac391536a360da09575375be6d4c36ebe7fa5c1a5",
+    "requirements.txt": "7301fd0faa747357db8c2089c07b48c9e8b5213cde0d72b52eb6fe4d054b69f1",
+    "data/mock_documents.json": "fb2b9f50c249adeba13d550fa33176cf33e628db2afda3c3350cbb52510397dc",
+    "evidence/pytest.txt": "c2ca698c52c090fcac2a5cc4a9626a2ccb01ab64abf41377a43d30d59af04b43",
+    "tests/test_api.py": "e4bcccfe1918e5b31f7daec5d1e3cc0af8088db4302a6528666d2043db9e7641",
+    "tests/test_engine.py": "5de2b86712c1278d38a80d8adfc2763a76975b072fa13bf155213cbc7f01bec7",
+    "static/index.html": "3fe7965ef01ae9875662cfc525c323e20001e72a9df64f456e30bce4bfbde004",
+    "static/app.js": "4098c71ee14af8ae906299461f68ca0b93d9d68c4ca99575783550b364928eb6",
+    "static/style.css": "e83b5dd57ceca3d0ac3473b37cf3979656977a02517d9deaca3e2ab2e79e5831"
+  },
+  "test": "17 passed",
+  "mode": "SIMULATION_ONLY"
+}
