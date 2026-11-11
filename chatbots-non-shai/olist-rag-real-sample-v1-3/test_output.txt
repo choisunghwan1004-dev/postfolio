@@ -1,0 +1,9 @@
+test_15_rows (test_demo.DemoTests.test_15_rows) ... ok
+test_out_of_channel (test_demo.DemoTests.test_out_of_channel) ... ok
+test_reference_present (test_demo.DemoTests.test_reference_present) ... ok
+test_unsupported (test_demo.DemoTests.test_unsupported) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.001s
+
+OK
