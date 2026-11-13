@@ -11,7 +11,7 @@ st.caption('수업용 별도 검증 UI. 규정 PDF는 가상 교육용 자료입
 channel=st.radio('검색할 근거 범위', ['A','B','C'],horizontal=True,format_func=lambda x:{'A':'A 사실표','B':'B + 모델 설명서','C':'C + 가상 규정집'}[x])
 folder=st.text_input('자료 폴더', value=os.getenv('OLIST_RAG_DATA_DIR',str(Path(__file__).resolve().parents[1]/'data')))
 key=st.text_input('OpenAI API Key (화면 세션에만 입력)',type='password',value='')
-model=st.text_input('LLM 모델 ID',value='gpt-4.1-mini')
+model=st.text_input('LLM 모델 ID',value='gpt-6-luna')
 question=st.text_input('질문',value='늦게 도착한 주문의 리뷰 점수는?')
 k=st.slider('검색 조각 수 k',1,10,4)
 @st.cache_resource(show_spinner='근거 검색 인덱스 구성 중…')
